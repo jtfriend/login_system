@@ -1,7 +1,7 @@
 <?php
 require_once 'core/init.php';
 
-$user = DB::getInstance()->delete('users', ['u_id', '=', 4]);
+// $user = DB::getInstance()->delete('users', ['u_id', '=', 4]);
 
 if (Session::exists('home')) {
     echo '<p>'. Session::flash('home') . '</p>';

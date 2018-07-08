@@ -58,6 +58,8 @@ class User {
         if ($user) {
             if ($this->data()->u_password === Hash::make($password, $this->data()->u_salt)) {
                 Session::put($this->_sessionName, $this->data()->u_id);
+                echo 'session created';
+                var_dump($this->_sessionName);
                 return true;
             } else {
                 echo 'Password incorrect : (';
@@ -70,8 +72,8 @@ class User {
     }
 
     public function logout() {
-        Session::delete($this->_isLoggedIn);
-        echo 'session deleted';
+        Session::delete($this->_sessionName);
+        // echo 'session deleted';
     }
 
     public function data() {
