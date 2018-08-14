@@ -14,6 +14,7 @@ if (Session::exists('home')) {
 // }
 
 $user = new User();
+
 if ($user->isLoggedIn()) {
 ?>
     <p>Hello <a href="#"><?php echo escape($user->data()->u_username); ?></a>!</p>
