@@ -57,15 +57,14 @@ class User {
 
         if ($user) {
             if ($this->data()->u_password === Hash::make($password, $this->data()->u_salt)) {
-                Session::put($this->_sessionName, $this->data()->u_id);
-                echo 'session created';
-                var_dump($this->_sessionName);
+                // Session::put($this->_sessionName, $this->data()->u_id);
+                // echo 'session created';
                 return true;
             } else {
-                echo 'Password incorrect : (';
+                echo 'Password incorrect';
             }
         } else {
-            echo 'Can\'t find you in the database';
+            echo 'Username doesn\'t exist';
         }
 
         return false;

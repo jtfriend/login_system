@@ -13,15 +13,13 @@ if(Input::exists()) {
         if ($validation->passed()) {
             $user = new User();
             $login = $user->login(Input::get('username'), Input::get('password'));
-            // if ($login) {
-            //     Redirect::to('index.php');
-            // } else {
-            //     echo 'No user';
-            // }
-        } else {
-            foreach ($validation->errors() as $error) {
-                echo $error, '<br>';
+            if ($login) {
+                Redirect::to('index.php');
             }
+        } else {
+            // foreach ($validation->errors() as $error) {
+            //     echo $error, '<br>';
+            // }
         }
     }
 
