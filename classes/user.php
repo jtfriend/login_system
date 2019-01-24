@@ -57,8 +57,8 @@ class User {
 
         if ($user) {
             if ($this->data()->u_password === Hash::make($password, $this->data()->u_salt)) {
-                // Session::put($this->_sessionName, $this->data()->u_id);
-                // echo 'session created';
+                Session::put($this->_sessionName, $this->data()->u_id);
+                echo 'session created';
                 return true;
             } else {
                 echo 'Password incorrect';
