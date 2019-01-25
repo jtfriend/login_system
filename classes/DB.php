@@ -5,10 +5,10 @@ class DB {
     private $_pdo,
             $_query,
             $_error = false,
-            $_results,
             $_count = 0;
+    public  $_results;
 
-    private function __construct() {
+    public function __construct() {
         try {
             $this->_pdo = new PDO('mysql:host='. Config::get('mysql/host') . ';dbname=' . Config::get('mysql/db'), Config::get('mysql/username'), Config::get('mysql/password'));
         } catch (PDOException $e) {
@@ -54,7 +54,6 @@ class DB {
 
             if(in_array($operator, $operators)) {
                 $sql = "{$action} FROM {$table} WHERE {$field} {$operator} ?";
-
                 if(!$this->query($sql, [$value])->error()) {
                     return $this;
                 } else {
@@ -69,6 +68,10 @@ class DB {
         return $this->action('SELECT *', $table, $where);
     }
 
+    public function getAllFromTable($table, $orderField) {
+        return $this->query("SELECT * ". "from `". $table . "`" ." where 1 order by " . $orderField . " desc");
+    }
+
     public function delete($table, $where) {
         return $this->action('DELETE', $table, $where);
     }
@@ -79,14 +82,20 @@ class DB {
         $x = 1;
 
         foreach($fields as $field) {
-            $values .= '?';
+            if (!is_Numeric($field)) {
+                $values .='"';
+                $values .= $field;
+                $values .='"';
+            } else {
+                $values .= $field;
+            }
             if($x < count($fields)) {
                 $values .= ', ';
             }
             $x++;
         }
 
-        $sql = "INSERT INTO users (`" . implode('`, `', $keys) . "`) VALUES ({$values})";
+        $sql = "INSERT INTO `". $table ."` (`" . implode('`, `', $keys) . "`) VALUES ({$values})";
 
         if(!$this->query($sql, $fields)->error()) {
             return true;
