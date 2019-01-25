@@ -45,7 +45,7 @@ class DB {
     }
 
     public function action($action, $table, $where = []) {
-        if(count($where == 3)) {
+        if(count($where) == 3) {
             $operators = ['=', '>', '<', '>=', '<='];
 
             $field      = $where[0];
