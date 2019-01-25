@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 25, 2019 at 12:36 AM
+-- Generation Time: Jan 25, 2019 at 12:44 AM
 -- Server version: 5.7.21
 -- PHP Version: 5.6.35
 
@@ -116,6 +116,70 @@ INSERT INTO `data` (`d_id`, `d_field`, `d_value`, `d_timestamp`) VALUES
 (112, 'field1', '41', '2019-01-25 00:33:01'),
 (113, 'field1', '41', '2019-01-25 00:33:19'),
 (114, 'field1', '41', '2019-01-25 00:33:21');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `groups`
+--
+
+DROP TABLE IF EXISTS `groups`;
+CREATE TABLE IF NOT EXISTS `groups` (
+  `g_id` int(11) NOT NULL AUTO_INCREMENT,
+  `g_name` varchar(20) NOT NULL,
+  `g_permissions` text NOT NULL,
+  PRIMARY KEY (`g_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `groups`
+--
+
+INSERT INTO `groups` (`g_id`, `g_name`, `g_permissions`) VALUES
+(1, 'standard', ''),
+(2, 'administrator', '{\"admin\":1}');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `u_id` int(11) NOT NULL AUTO_INCREMENT,
+  `u_username` varchar(20) DEFAULT '',
+  `u_password` varchar(64) NOT NULL DEFAULT '',
+  `u_salt` varchar(32) NOT NULL DEFAULT '',
+  `u_name` varchar(50) NOT NULL DEFAULT '',
+  `u_joined` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `u_group` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`u_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`u_id`, `u_username`, `u_password`, `u_salt`, `u_name`, `u_joined`, `u_group`) VALUES
+(2, 'jp1bloggs', 'password', 'salt', 'Joe Bloggs', '2018-05-15 00:00:00', 1),
+(25, 'jtf3', '06056790e0cc1e61ac9ea2f922a2f212583169c511f729abd00dcdb32a8b2668', '“×/Ï»töœI×s-šçòbÝï×ríËª8™Ä‹nO', 'JTF3', '2019-01-24 14:19:57', 1),
+(24, 'jtf2', 'fca6e5b0f83c82d08fff401640bd808a0aa3a2457dd020a182294f04cba55cd9', 'ØüÄÂ\'ÞÙ1\"CÅêò¾éVÃ–¦ô«©á±ÍS', 'JTF2', '2019-01-24 13:22:47', 1),
+(23, 'jumper', 'ff3595f00e8744f9e08d6d5a4dcc5fedb8603a7272c8d834d06c3b29613c726e', '”åd6YxÚ!’×£„ùŠÁ¢ÌGÕW®+å¡ƒ\'Mä£9ö', 'Jump', '2019-01-09 23:05:24', 1),
+(22, 'jtf', '87b5f633ce46d360a2b15f61fdbd63e9424e66275ff4b3200591b40472b3008a', 'Çö€\rÿf‚ÏW±ùWÖºHób:r5ù$ÒâO@q(—d', 'JTF', '2018-09-16 10:29:58', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users_session`
+--
+
+DROP TABLE IF EXISTS `users_session`;
+CREATE TABLE IF NOT EXISTS `users_session` (
+  `us_id` int(11) NOT NULL,
+  `us_uid` int(11) NOT NULL,
+  `us_hash` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
