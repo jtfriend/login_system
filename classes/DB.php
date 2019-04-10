@@ -69,7 +69,7 @@ class DB {
     }
 
     public function getAllFromTable($table, $orderField) {
-        return $this->query("SELECT * ". "from `". $table . "`" ." where 1 order by " . $orderField . " desc");
+        return $this->query("SELECT * ". "from `". $table . "`" ." where 1 order by " . $orderField . " desc LIMIT 50");
     }
 
     public function delete($table, $where) {

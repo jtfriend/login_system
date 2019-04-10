@@ -24,7 +24,16 @@ if ($user->isLoggedIn()) {
 }
 
 $db = new DB();
-    
+
+if (isset($_POST)) {
+    foreach($_POST as $key => $data){
+        $db->insert("data", [
+            "d_field" => $key,
+            "d_value" => $data,
+
+        ]);
+    }
+}
 
 if (isset($_GET)) {
     foreach($_GET as $key => $data){
@@ -36,7 +45,7 @@ if (isset($_GET)) {
     }
 }
 
-$allData = $db->getAllFromTable("data", "d_timestamp");
+$allData = $db->getAllFromTable("data", "d_id");
 
 echo "<table>
         <tr>
