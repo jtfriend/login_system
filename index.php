@@ -18,12 +18,7 @@ if ($user->isLoggedIn()) {
         <li><a href="logout.php">Log out</a></li>
     </ul>
 <?php
-
-} else {
-    echo '<p>You need to <a href="login.php">log in</a> or <a href="register.php">register</a></p>';
-}
-
-$db = new DB();
+    $db = new DB();
 
 if (isset($_POST)) {
     foreach($_POST as $key => $data){
@@ -64,43 +59,50 @@ echo "<table>
         </tr>";
     }
 echo "</table>";
+
+
+} else {
+    echo '<p>You need to <a href="login.php">log in</a> or <a href="register.php">register</a></p>';
+}
+
+
 ?>
 
 <body>
     <canvas id="chartJSContainer" width="600" height="400"></canvas>
 </body>
-<script src="JS/Chart.bundle.min.js"></script>
+<!-- <script src="JS/Chart.bundle.min.js"></script>
 <script>
 
-    var options = {
-        type: 'line',
-        data: {
-            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-            datasets: [
-                {
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                borderWidth: 1
-                },
-                    {
-                        label: '# of Points',
-                        data: [7, 11, 5, 8, 3, 7],
-                        borderWidth: 1
-                    }
-                ]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                ticks: {
-                    reverse: false
-                }
-            }]
-            }
-        }
-    }
+    // var options = {
+    //     type: 'line',
+    //     data: {
+    //         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    //         datasets: [
+    //             {
+    //             label: '# of Votes',
+    //             data: [12, 19, 3, 5, 2, 3],
+    //             borderWidth: 1
+    //             },
+    //                 {
+    //                     label: '# of Points',
+    //                     data: [7, 11, 5, 8, 3, 7],
+    //                     borderWidth: 1
+    //                 }
+    //             ]
+    //     },
+    //     options: {
+    //         scales: {
+    //             yAxes: [{
+    //             ticks: {
+    //                 reverse: false
+    //             }
+    //         }]
+    //         }
+    //     }
+    // }
 
-    var ctx = document.getElementById('chartJSContainer').getContext('2d');
-    new Chart(ctx, options);
+    // var ctx = document.getElementById('chartJSContainer').getContext('2d');
+    // new Chart(ctx, options);
 
-</script>
+</script> -->
