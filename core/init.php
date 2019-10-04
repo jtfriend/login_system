@@ -5,8 +5,8 @@ session_start();
 $GLOBALS['config'] = [
     'mysql' => [
         'host'  => '127.0.0.1',
-        'username'  => 'root',
-        'password'  => 'password',
+        'username'  => 'joseph',
+        'password'  => 'iqblock',
         'db'  => 'login_system',
     ],
     'remember'  => [
