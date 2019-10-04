@@ -10,6 +10,10 @@ if (Session::exists('home')) {
 
 $user = new User();
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 if ($user->isLoggedIn()) {
 ?>
     <p>Hello <a href="#"><?php echo escape($user->data()->u_username); ?></a>!</p>

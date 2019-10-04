@@ -1,5 +1,5 @@
 <?php
-
+//setting up gitignore for use with raspberry pi
 session_start();
 
 $GLOBALS['config'] = [
