@@ -1,9 +1,6 @@
 <?php
 require_once 'core/init.php';
 
-// $user = DB::getInstance()->delete('users', ['u_id', '=', 4]);
-
-//flashes a message only once e.g You are now registered
 if (Session::exists('home')) {
     echo '<p>'. Session::flash('home') . '</p>';
 }
@@ -16,97 +13,35 @@ error_reporting(E_ALL);
 
 if ($user->isLoggedIn()) {
 ?>
-    <p>Hello <a href="#"><?php echo escape($user->data()->u_username); ?></a>!</p>
-
-    <ul>
-        <li><a href="logout.php">Log out</a></li>
-    </ul>
+    <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
+    <div style="background-color:#595959;">
+        <div class="container-fluid bg-dark" style="height:10%;">
+            <div class="row justify-content-md-center bg-blue text-white">
+                <div class="mx-auto">Hello <a href="#"><?php echo escape($user->data()->u_username); ?></a>!</div>
+                <ul>
+                        <li><a href="logout.php">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container bg-dark" style="height:80%;">
+            <div class="row justify-content-md-center bg-dark"></div>
+            <div class="row justify-content-md-center bg-dark">
+                <div class="d-flex p-2 bd-highlight">I'm a flexbox container!</div>
+                    
+        
+                    
+                </div>
+            </div>
+        <div class="container-fluid bg-dark" style="height:10%;">
+            <div class="row justify-content-md-center bg-dark">Footer</div>
+        </div>
+    </div>
 <?php
-    $db = new DB();
-
-if (isset($_POST)) {
-    foreach($_POST as $key => $data){
-        $db->insert("data", [
-            "d_field" => $key,
-            "d_value" => $data,
-
-        ]);
-    }
-}
-
-if (isset($_GET)) {
-    foreach($_GET as $key => $data){
-        $db->insert("data", [
-            "d_field" => $key,
-            "d_value" => $data,
-
-        ]);
-    }
-}
-
-$allData = $db->getAllFromTable("data", "d_id");
-
-echo "<table>
-        <tr>
-            <th>ID</th>
-            <th>Field</th>
-            <th>Value</th>
-            <th>Timestamp</th>
-        </tr>";
-    foreach($allData->_results as $count => $row) {
-        echo "
-        <tr>
-            <th> ". $row->d_id . "</th>
-            <th> ". $row->d_field . "</th>
-            <th> ". $row->d_value . "</th>
-            <th> ". $row->d_timestamp . "</th>
-        </tr>";
-    }
-echo "</table>";
-
-
 } else {
-    echo '<p>You need to <a href="login.php">log in</a> or <a href="register.php">register</a></p>';
+    Redirect::to('login.php');
+    // echo '<p>You need to <a href="login.php">log in</a> or <a href="register.php">register</a></p>';
 }
 
 
 ?>
-
-<body>
-    <canvas id="chartJSContainer" width="600" height="400"></canvas>
-</body>
-<!-- <script src="JS/Chart.bundle.min.js"></script>
-<script>
-
-    // var options = {
-    //     type: 'line',
-    //     data: {
-    //         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-    //         datasets: [
-    //             {
-    //             label: '# of Votes',
-    //             data: [12, 19, 3, 5, 2, 3],
-    //             borderWidth: 1
-    //             },
-    //                 {
-    //                     label: '# of Points',
-    //                     data: [7, 11, 5, 8, 3, 7],
-    //                     borderWidth: 1
-    //                 }
-    //             ]
-    //     },
-    //     options: {
-    //         scales: {
-    //             yAxes: [{
-    //             ticks: {
-    //                 reverse: false
-    //             }
-    //         }]
-    //         }
-    //     }
-    // }
-
-    // var ctx = document.getElementById('chartJSContainer').getContext('2d');
-    // new Chart(ctx, options);
-
-</script> -->
