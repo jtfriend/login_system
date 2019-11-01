@@ -35,25 +35,27 @@ if(Input::exists()) {
 <html>
 <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
 <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
-<div class="container">
-  <div class="row justify-content-md-center">
-    <div class="col-xl-auto no-gutters">
-        <form action="" method="post">
-            <div class="field">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" autocomplete="off">
-            </div>
+<div style="background-color:#595959;">
+    <div class="container-fluid bg-dark">
+        <div class="row justify-content-md-center">
+            <div class="col-xl-auto no-gutters">
+                <form action="" method="post">
+                    <div class="field">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" autocomplete="off">
+                    </div>
 
-            <div class="field">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" autocomplete="off">
-            </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" autocomplete="off">
+                    </div>
 
-            <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
-            <input class="btn" type="submit" value="Log in">
-        </form>
+                    <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
+                    <input class="btn" type="submit" value="Log in">
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
