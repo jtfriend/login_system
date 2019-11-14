@@ -10,33 +10,34 @@ $user = new User();
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+//#e67300
 
 if ($user->isLoggedIn()) {
 ?>
     <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
-    <div style="background-color:#595959;">
-        <div class="container-fluid bg-dark" style="height:10%;">
-            <div class="row justify-content-md-center bg-blue text-white">
+    <link rel="stylesheet" href="CSS/my_css.css">
+    <div style="background-color:#ffffff; height:100%;">
+        <div class="container-fluid bg-dark">
+            <div class="row justify-content-md-center bg-blue text-white" style="padding:20px;">
                 <div class="mx-auto">Hello <a href="#"><?php echo escape($user->data()->u_username); ?></a>!</div>
-                <ul>
-                        <li><a href="logout.php">Log out</a></li>
-                </ul>
+                <div class="mx-auto">Content Selection</div>
+                <div class="mx-auto"><a href="logout.php">Log out</a></div>
             </div>
         </div>
-        <div class="container bg-dark" style="height:80%;">
-            <div class="row justify-content-md-center bg-dark"></div>
-            <div class="row justify-content-md-center bg-dark">
-                <div class="d-flex p-2 bd-highlight">I'm a flexbox container!</div>
-                    
-        
-                    
+        <div class="container" style="background-color:#e67300;">
+            <div class="row" style="padding:10px;">
+                <div class="col-sm-4" style="text-align:center; height:200px; margin-bottom: 15px; margin-top: 15px;">
+                    <div class="box-1 h-100 justify-content-center" style="display:flex;flex-direction: column;">test</div>
+                </div>
+                <div class="col-sm-4  " style="text-align:center; height:200px; margin-bottom: 15px; margin-top: 15px;">
+                    <div class="box-1 h-100 justify-content-center" style="display:flex;flex-direction: column;">test</div>
+                </div>
+                <div class="col-sm-4  " style="text-align:center; height:200px; margin-bottom: 15px; margin-top: 15px;">
+                    <div class=" box-1 h-100  justify-content-center" style="display:flex;flex-direction: column;">test</div>
                 </div>
             </div>
-        <div class="container-fluid bg-dark" style="height:10%;">
-            <div class="row justify-content-md-center bg-dark">Footer</div>
         </div>
-    </div>
 <?php
 } else {
     Redirect::to('login.php');
