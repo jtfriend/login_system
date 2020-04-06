@@ -2,7 +2,7 @@
 require_once 'core/init.php';
 
 if(Input::exists()) {
-    echo 'Input type : Yes';
+    echo 'Input type : Yes\n';
     if(Token::check(Input::get('token'))) {
         echo Token::check(Input::get('token'));
         $validate = new Validate();
@@ -45,19 +45,33 @@ if(Input::exists()) {
         <div class="row justify-content-md-center">
             <div class="col-md-6 no-gutters text-center">
                 <form style="margin-top:15px;" action="" method="post">
-                    <div class="form-group field">
-                        <label for="username">Username</label>
-                        <input type="text" name="username" id="username" autocomplete="off">
+                    <div class="form-group field row" >
+                        <div class="field col-md-6" style="text-align:right" >
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="field col-md-6" style="text-align:left" >
+                            <input type="text" name="username" id="username" autocomplete="off">
+                        </div>
                     </div>
 
-                    <div class="form-group field">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" autocomplete="off">
-                    </div>
+                    <div class="form-group field row" >
+                        <div class="field col-md-6" style="text-align:right" >
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="field col-md-6" style="text-align:left" >
+                            <input type="password" name="password" id="password" autocomplete="off">
+                        </div>
+                    </div>  
 
-                    <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
-                    <input style="background-color:#4542ff;" class="btn" type="submit" value="Log in">
-                    <a href="register.php" style="background-color:#4542ff;" class="btn">Register</a>
+                    <div class="form-group field row" >
+                        <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
+                        <div class="field col-md-6" style="text-align:right" >
+                            <input style="background-color:#4542ff;" class="btn" type="submit" value="Log in">
+                        </div>
+                        <div class="field col-md-6" style="text-align:left" >
+                            <a href="register.php" style="background-color:#4542ff;" class="btn">Register</a>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

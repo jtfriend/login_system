@@ -60,24 +60,64 @@ if(Input::exists()) {
     }
 }
 ?>
-<form action"" method="post">
-    <div class="field">
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username" value="<?php echo escape(Input::get('username'));?>" autocomplete="off">
-    </div>
-    <div class="field">
-        <label for="password">Choose a password</label>
-        <input type="password" name="password" id="password">
-    </div>
-    <div class="field">
-        <label for="password_again">Enter your password again</label>
-        <input type="password" name="password_again" id="password_again">
-    </div>
-    <div class="field">
-        <label for="name">Choose a name</label>
-        <input type="text" name="name" id="name" value="<?php echo escape(Input::get('name'));?>">
-    </div>
+<html>
+<link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
+<div style="background-color:#595959;">
+    <div class="container-fluid bg-dark">
+            <div class="row justify-content-md-center bg-blue text-white" style="padding:20px;">
+                <div class="mx-auto">Catch in the Dark</div>
+            </div>
+        </div>
+    <div class="container-fluid" style="background-color:#e67300;">
+        <div class="row justify-content-md-center">
+            <div class="col-md-6 no-gutters text-center">
+                <form style="margin-top:15px;" action="" method="post">
+                    <div class="form-group field row" >
+                        <div class="field col-md-6" style="text-align:right" >
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="field col-md-6" style="text-align:left" >
+                            <input type="text" name="username" id="username" value="<?php echo escape(Input::get('username'));?>" autocomplete="off">
+                        </div>
+                    </div>
 
-    <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
-    <input type="submit" value="Register">
-</form>
+                    <div class="form-group field row" >
+                        <div class="field col-md-6" style="text-align:right" >
+                            <label for="password">Choose a password</label>
+                        </div>
+                        <div class="field col-md-6" style="text-align:left" >
+                            <input type="password" name="password" id="password">
+                        </div>
+                    </div>
+
+                    <div class="form-group field row" >
+                        <div class="field col-md-6" style="text-align:right" >
+                            <label for="password_again">Re-enter your password</label>
+                        </div>
+                        <div class="field col-md-6" style="text-align:left" >
+                            <input type="password" name="password_again" id="password_again">
+                        </div>
+                    </div>
+
+                    <div class="form-group field row" >
+                        <div class="field col-md-6" style="text-align:right" >
+                            <label for="name">Choose a name</label>
+                        </div>
+                        <div class="field col-md-6" style="text-align:left" >
+                            <input type="text" name="name" id="name" value="<?php echo escape(Input::get('name'));?>">
+                        </div>
+                    </div>
+
+                    <div class="form-group field" >
+                        <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
+                        <input style="background-color:#4542ff;" class="btn" type="submit" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</html>
