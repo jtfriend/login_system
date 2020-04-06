@@ -28,7 +28,7 @@ if ($user->isLoggedIn()) {
         <div class="container" style="background-color:#e67300;">
             <div class="row" style="padding:10px;">
                 <div class="col-sm-4" style="text-align:center; height:200px; margin-bottom: 15px; margin-top: 15px;">
-                    <div class="box-1 h-100 justify-content-center" style="display:flex;flex-direction: column;">test</div>
+                    <div class="box-1 h-100 justify-content-center" style="display:flex;flex-direction: column;"><a href="elf_rescue/index.php">Play Elf Rescue</a></div>
                 </div>
                 <div class="col-sm-4  " style="text-align:center; height:200px; margin-bottom: 15px; margin-top: 15px;">
                     <div class="box-1 h-100 justify-content-center" style="display:flex;flex-direction: column;">test</div>
@@ -46,3 +46,5 @@ if ($user->isLoggedIn()) {
 
 
 ?>
+
+

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'core/init.php';
+require_once __DIR__ . '../../core/init.php';
 
 class Config {
     public static function get($path = null) {

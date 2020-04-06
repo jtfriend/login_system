@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
+<!-- <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
 <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
 <div class="container">
   <div class="row justify-content-md-center">
@@ -9,4 +9,4 @@
             <li><a href="logout.php">Log out</a></li>
         </ul>
     </div>
-</div>
+</div> -->
