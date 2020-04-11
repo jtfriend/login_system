@@ -2,25 +2,42 @@
     <body>
         <div id="score-bar">
         </div>
+
     </body>
 </html>
 
 
 <script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="touchscreen.js"></script>
 <script src="index.js"></script>
 
 <?php
 
 require_once '../core/init.php';
 
+$user = new User();
+
+if ($user->isLoggedIn()) {
+    if (isset($_POST['name'])) {
+    } else {
+        Redirect::to( 'index.php');
+    }
+} else {
+    Redirect::to( '../login.php');
+}
+
+
+
 $dbUser = new DB();
 $userExists = $dbUser->get("users", ["u_name", "=", isset($_POST['name']) ? $_POST['name'] : ""]);
 $db = new DB();
 
 $scoreIdMax = $db->getMax("scores", ["s_id", "!=", 0]);
-$scoreIdCount = get_object_vars($scoreIdMax->_results[0]) == null ? 0 : get_object_vars($scoreIdMax->_results[0]);
+$scoreIdCount = $scoreIdMax == null ? 0 : get_object_vars($scoreIdMax->_results[0]);
 $newScoreId = intval($scoreIdCount['MAX(s_id)'])+1;
 
+
+$userName = "bob";
 
 if (isset($userExists->_results)) {
     if(count($userExists->_results)) {
@@ -34,7 +51,7 @@ if (isset($userExists->_results)) {
         ]);
     } else {
         $userIdMax = $db->getMax("users", ["u_id", "!=", 0]);
-        $userIdCount = get_object_vars($userIdMax->_results[0]);
+        $userIdCount = $userIdMax == null ? 0 :get_object_vars($userIdMax->_results[0]);
         $newUserId = intval($userIdCount['MAX(u_id)'])+1;
         $userName = $_POST['name'];
 
@@ -48,14 +65,17 @@ if (isset($userExists->_results)) {
             's_userid' => $newUserId,
             's_value' => 0
         ]);
-        $test =2;
     }
 }
 
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 ?>
 <script>
     postData = "<?php echo $userName; ?>"
- </script>
+</script>
 
 
 <script>main()</script>

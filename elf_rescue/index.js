@@ -22,7 +22,6 @@ class Shape {
         canvas.style.marginTop = posY;
         canvas.style.zIndex = 8;
         canvas.style.position = "absolute";
-        canvas.style.border = "1px solid";
 
         var ctx = canvas.getContext('2d');
 
@@ -32,15 +31,84 @@ class Shape {
         };
         img.src = imageName + '.png';
 
-        var body = document.getElementsByTagName("body")[0];
+        var background = document.getElementById("background");
 
-        body.appendChild(canvas);
+        background.appendChild(canvas);
     }
 
     setCoords(posX, posY) {
         this.posX = posX;
         this.posY = posY;
     }
+}
+
+
+class Bar {
+    colour
+
+    constructor (id, colour) {
+        this.colour = colour;
+        $('#'+id).css({
+            'width':642,
+            'height':26,
+            'z-index':10,
+            'position':'relative',
+            'background-color': colour,
+            'margin':'auto',
+            'margin-top': '-8px'
+        });
+    }
+}
+
+class WordValue {
+    score =0;
+    lives= 500;
+    highscore
+
+    constructor (word, value, posX) {
+        this.word = word;
+        this.value = value;
+        this.posX = posX;
+
+        var div = document.createElement('div');
+
+        div.id = word;
+        div.style.width = 80;
+        div.style.height = 24;
+        div.style.zIndex = 10;
+        div.style.position = "absolute";
+        div.style.border = "1px solid";
+        // div.style.margin = "10px";
+        div.style.marginTop = "0px";
+        div.style.marginLeft = posX + "px";
+        div.style.fontFamily = "sans-serif";
+        div.style.textAlign = "center";
+        div.style.lineHeight = 1.5;
+
+        div.textContent = CapitaliseFirst(word) + ": " + value; 
+        
+        var bar = document.getElementById("score-bar");
+        bar.appendChild(div);
+    }
+
+    setScore(id, score) {
+        this.score = score;
+        $('#'+id).text(CapitaliseFirst(id) + ": " + this.score.toString());
+    }
+
+    getScore() {
+        return this.score;
+    }
+
+    setLives(id, lives) {
+        this.lives = lives;
+        $('#'+id).text(CapitaliseFirst(id) + ": " + this.lives.toString());
+    }
+
+    getLives() {
+        return this.lives;
+    }
+
 }
 
 // $(document).ready(function(){
@@ -230,8 +298,8 @@ class Shape {
             blobPosY += blobSpeed;
 
             $('#blob'+i).css({
-                'margin-top': blobPosY+'px',
-                'margin-left': blobPosX+'px'
+                'margin-top': '-' + blobPosY+'px',
+                'margin-left': '-' + blobPosX+'px'
             });
 
             if (blobPosX > maxX) {
@@ -288,73 +356,7 @@ class Shape {
 
     }
 
-    class Bar {
-        colour
-
-        constructor (colour) {
-            this.colour = colour;
-            $('#score-bar').css({
-                'width':642,
-                'height':25,
-                'z-index':10,
-                'position':'absolute',
-                'background-color': colour,
-                'margin-top': 2,
-                'margin-left': 2
-            });
-        }
-    }
-
-    class WordValue {
-        score =0;
-        lives= 500;
-        highscore
-
-        constructor (word, value, posX) {
-            this.word = word;
-            this.value = value;
-            this.posX = posX;
-
-            var div = document.createElement('div');
-
-            div.id = word;
-            div.style.width = 80;
-            div.style.height = 24;
-            div.style.zIndex = 10;
-            div.style.position = "absolute";
-            div.style.border = "1px solid";
-            // div.style.margin = "10px";
-            div.style.marginTop = "0px";
-            div.style.marginLeft = posX + "px";
-            div.style.fontFamily = "sans-serif";
-            div.style.textAlign = "center";
-            div.style.lineHeight = 1.5;
-
-            div.textContent = CapitaliseFirst(word) + ": " + value; 
-            
-            var bar = document.getElementById("score-bar");
-            bar.appendChild(div);
-        }
-
-        setScore(id, score) {
-            this.score = score;
-            $('#'+id).text(CapitaliseFirst(id) + ": " + this.score.toString());
-        }
-
-        getScore() {
-            return this.score;
-        }
-
-        setLives(id, lives) {
-            this.lives = lives;
-            $('#'+id).text(CapitaliseFirst(id) + ": " + this.lives.toString());
-        }
-
-        getLives() {
-            return this.lives;
-        }
-
-    }
+    
 
     function CapitaliseFirst(word) {
         return nameCapitalized = word.charAt(0).toUpperCase() + word.slice(1);
@@ -364,49 +366,44 @@ class Shape {
 
         var html = document.getElementsByTagName("body");
 
-        var div = document.createElement('div');
+        var background = document.createElement('div');
 
-        div.id = "background";
-        div.style.width = 800;
-        div.style.height = 10;
-        div.style.zIndex = 10;
-        div.style.position = "absolute";
-        div.style.left = "0px";
-        div.style.top = "0px";
-        div.style.margin = "0px";
-        div.style.marginTop = "0px";
-        div.style.marginLeft = 0 + "px";
-        div.style.fontFamily = "sans-serif";
-        div.style.textAlign = "center";
-        div.style.lineHeight = 1.5;
-        div.style.backgroundColor = "white";
+        background.id = "background";
+        background.style.width = 800;
+        background.style.height = 0;
+        background.style.zIndex = 10;
+        background.style.position = "relative";
+        background.style.margin = "auto";
+        background.style.fontFamily = "sans-serif";
+        background.style.textAlign = "center";
+        background.style.lineHeight = 1.5;
+        background.style.backgroundColor = "white";
 
-        html[0].appendChild(div);
+        html[0].appendChild(background);
         
 
-        new Bar ('green');
+        new Bar ('score-bar','green');
         score = new WordValue ('score', 0, 0);
         lives = new WordValue ('lives', 2, 560);
 
-        var div = document.createElement('div');
+        var title = document.createElement('div');
         var bar = document.getElementById("score-bar");
 
-        div.id = "name";
-        div.style.width = "640";
-        div.style.height = 25;
-        div.style.zIndex = 10;
-        div.style.position = "absolute";
-        div.style.top = "0px";
-        div.style.margin = "0px";
-        div.style.marginTop = "0px";
-        div.style.marginLeft = 0 + "px";
-        div.style.fontFamily = "sans-serif";
-        div.style.textAlign = "center";
-        div.style.lineHeight = 1.5;
-        div.style.color = "orange";
-        div.textContent = postData;
 
-        bar.appendChild(div);
+        title.id = "name";
+        title.style.width = "640";
+        title.style.height = 25;
+        title.style.zIndex = 10;
+        title.style.position = "relative";
+        title.style.top = "0px";
+        title.style.margin = "auto";
+        title.style.fontFamily = "sans-serif";
+        title.style.textAlign = "center";
+        title.style.lineHeight = 1.5;
+        title.style.color = "orange";
+        title.textContent = postData;
+
+        bar.appendChild(title);
 
         
 
@@ -416,15 +413,14 @@ class Shape {
         canvas.width = 640;
         canvas.height = 480;
         canvas.style.zIndex = 0;
-        canvas.style.left = "0px";
-        canvas.style.top = "0px";
-        canvas.style.position = "absolute";
+        canvas.style.position = "relative";
         canvas.style.border = "1px solid";
-        canvas.style.marginLeft = "10px";
-        canvas.style.marginTop = "35px";
+        canvas.style.margin = 'auto';
+        canvas.style.marginTop = '-1px';
+        // canvas.style.marginTop = "35px";
         
-        var body = document.getElementsByTagName("body")[0];
-        body.appendChild(canvas);
+        // var body = document.getElementsByTagName("body")[0];
+        background.appendChild(canvas);
 
         // background shapes
         var ctx = canvas.getContext("2d");
@@ -448,6 +444,8 @@ class Shape {
     }
 
     function main() {
+
+        screenSetup();
         //set dimensions of screen
         $('#heading-box').css({
             display:'none'
@@ -456,11 +454,11 @@ class Shape {
             display:'none'
         });
         
-        maxX=640;
+        maxX=0;
         maxY=480;
 
         //create player
-        man = new Shape('man', 40,40,2,25, 'man');
+        man = new Shape('man', 40,40,-640,0, 'man');
         death = 0;
         end = 0;
         numberOfBlobs = 8;
@@ -470,10 +468,10 @@ class Shape {
         man.speed = 5;
         manWidth = parseFloat($('#man').css('width'));
         manHeight = parseFloat($('#man').css('height'));
-        manXLimit = maxX - manWidth + 1;
-        manYLimit = maxY - manHeight + 26;
-        minYLimit = 25;
-        minXLimit = 2;
+        manXLimit = maxX - manWidth;
+        manYLimit = maxY - manHeight + 1;
+        minYLimit = 0;
+        minXLimit = -641;
         manX = parseFloat($('#man').css('margin-left'));
         manY = parseFloat($('#man').css('margin-top'));
 
@@ -512,10 +510,10 @@ class Shape {
         };
 
         setInterval(runMovement,intervalSpeed);
-        screenSetup();
+
         createBlobs();
         createTarget();
-        setInterval(moveBlobs, 10);
+        // setInterval(moveBlobs, 10);
 
         if (end == 1) {
             lives.setLives('lives', lives.getLives()-1);
