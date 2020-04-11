@@ -43,12 +43,12 @@ class User {
     public function findByUsername($user = null) {
         if ($user) {
             $data = $this->_db->get('users', ['u_username', '=', $user]);
+            if ($data->count()) {
+                $this->_data = $data->first();
+                return true;
+            }
         }
 
-        if ($data->count()) {
-            $this->_data = $data->first();
-            return true;
-        }
         return false;
     }
 

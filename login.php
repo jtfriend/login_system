@@ -7,9 +7,7 @@ if ($user->isLoggedIn()) {
     Redirect::to('index.php');
 } else {
     if(Input::exists()) {
-        echo 'Input type : Yes\n';
         if(Token::check(Input::get('token'))) {
-            echo Token::check(Input::get('token'));
             $validate = new Validate();
             $validation = $validate->check($_POST, [
                 'username'  => ['required'  => true],
@@ -21,11 +19,8 @@ if ($user->isLoggedIn()) {
             if ($validation->passed()) {
                 $user = new User();
                 $login = $user->login(Input::get('username'), Input::get('password'));
-                var_dump($user->data());
                 if ($login) {
                     Redirect::to('index.php');
-                    echo "success!";
-
                 }
             } else {
                 foreach ($validation->errors() as $error) {
@@ -56,7 +51,7 @@ if ($user->isLoggedIn()) {
                                 <label for="username">Username</label>
                             </div>
                             <div class="field col-md-6" style="text-align:left" >
-                                <input type="text" name="username" id="username" autocomplete="off">
+                                <input type="text" name="username" id="username" autocomplete="off" required>
                             </div>
                         </div>
 
@@ -65,7 +60,7 @@ if ($user->isLoggedIn()) {
                                 <label for="password">Password</label>
                             </div>
                             <div class="field col-md-6" style="text-align:left" >
-                                <input type="password" name="password" id="password" autocomplete="off">
+                                <input type="password" name="password" id="password" autocomplete="off" required>
                             </div>
                         </div>  
 
