@@ -27,9 +27,9 @@ if ($user->isLoggedIn()) {
                 <div class="text-center">Name</div><br>
                 <div class="center text-center">
                     <?php if (isset($_GET['username'])) { ?>
-                        <input style="width:50%;" class="text-center" type="text" value ="<?php echo $_GET['username'] ?>" name="name" readonly>
+                        <input style="width:50%;" class="text-center" type="text" value ="<?php echo $_GET['username'] ?>" name="username" readonly>
                     <?php } else { ?>
-                        <input style="width:50%;" class="text-center" type="text" name="name" required>
+                        <input style="width:50%;" class="text-center" type="text" name="username" required>
                     <?php } ?>
                     
                 </div>

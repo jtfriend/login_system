@@ -18,63 +18,20 @@ require_once '../core/init.php';
 $user = new User();
 
 if ($user->isLoggedIn()) {
-    if (isset($_GET['name'])) {
+    if (isset($_GET['username'])) {
     } else {
         Redirect::to('index.php');
     }
 
-    Redirect::to( 'index.php?username=' + $_GET['name']);
+    Redirect::to( 'index.php?username=' + $_GET['username']);
 } else {
     Redirect::to( '../login.php');
 }
 
-
-
-$dbUser = new DB();
-$userExists = $dbUser->get("users", ["u_name", "=", isset($_GET['name']) ? $_GET['name'] : ""]);
-$db = new DB();
-
-$scoreIdMax = $db->getMax("scores", ["s_id", "!=", 0]);
-$scoreIdCount = $scoreIdMax == null ? 0 : get_object_vars($scoreIdMax->_results[0]);
-$newScoreId = intval($scoreIdCount['MAX(s_id)'])+1;
-
-if (isset($userExists->_results)) {
-    if(count($userExists->_results)) {
-        $userIdHold = get_object_vars($userExists->_results[0]);
-        $userId = intval($userIdHold['u_id']);
-        $userName = $userIdHold['u_name'];
-        $insert = $db->insert('scores',[
-            's_id' => $newScoreId,
-            's_userid' => $userId,
-            's_value' => 0
-        ]);
-    } else {
-        $userIdMax = $db->getMax("users", ["u_id", "!=", 0]);
-        $userIdCount = $userIdMax == null ? 0 :get_object_vars($userIdMax->_results[0]);
-        $newUserId = intval($userIdCount['MAX(u_id)'])+1;
-        $userName = $_GET['name'];
-
-        $insert = $db->insert('users',[
-            'u_name' => $_GET['name'],
-            'u_scoreid' => $newScoreId
-        ]);
-
-        $insert = $db->insert('scores',[
-            's_id' => $newScoreId,
-            's_userid' => $newUserId,
-            's_value' => 0
-        ]);
-    }
-}
-
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 ?>
 <script>
-    postData = "<?php echo $userName; ?>"
+
+    postData = "<?php echo $_GET['username']; ?>"
+    gameInfo = main();
+
 </script>
-
-
-<script>main()</script>

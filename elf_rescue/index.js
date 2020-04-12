@@ -61,9 +61,9 @@ class Bar {
 }
 
 class WordValue {
-    score =0;
-    lives= 500;
-    highscore
+    score = 0;
+    lives = 0;
+    highscore = 0;
 
     constructor (word, value, posX) {
         this.word = word;
@@ -78,7 +78,6 @@ class WordValue {
         div.style.zIndex = 10;
         div.style.position = "absolute";
         div.style.border = "1px solid";
-        // div.style.margin = "10px";
         div.style.marginTop = "0px";
         div.style.marginLeft = posX + "px";
         div.style.fontFamily = "sans-serif";
@@ -91,30 +90,134 @@ class WordValue {
         bar.appendChild(div);
     }
 
-    setScore(id, score) {
-        this.score = score;
-        $('#'+id).text(CapitaliseFirst(id) + ": " + this.score.toString());
+    setValue(word, value) {
+        this.value = value;
+        $('#'+word).text(CapitaliseFirst(word) + ": " + this.value.toString());
     }
 
-    getScore() {
-        return this.score;
+    getValue() {
+        return this.value;
     }
-
-    setLives(id, lives) {
-        this.lives = lives;
-        $('#'+id).text(CapitaliseFirst(id) + ": " + this.lives.toString());
-    }
-
-    getLives() {
-        return this.lives;
-    }
-
 }
 
-// $(document).ready(function(){
+    function createBlobs() {
+        
+        for (i = 0; i < numberOfBlobs; i++) {
+            randomVariance = Math.floor((Math.random() * varianceNumber) + 1);
+            blobArray[i] = new Shape(
+                'blob' + i,
+                30,
+                30,
+                -640 + (safetyColumnWidth+(blobColumn*i)+randomVariance),
+                -20 -randomVariance*10,
+                'blob'
+            );
+            $('#blob'+i).css({
+                'zIndex':-1
+            });
+        }
+    }
 
-    function runMovement() {
-        // LEFT
+    function createTarget() {
+        target = new Shape(
+            'target',
+            30,
+            30,
+            100,
+            -100,
+            'target4'
+        );
+
+        $('#target').css({
+            'margin-top': '100px',
+            'margin-left': '-400px'
+        });
+        target.setCoords(-400, 100);
+    }
+
+    function checkCollision()  {
+        if (collisionWithBlob == true) {
+            if(lives.getValue() == 1) {
+                clearInterval(gameMovement);
+                $.post(
+                    "saveScore.php",
+                    {
+                        score : score.getValue(), 
+                        username : postData
+                    }
+                );
+                window.location.href = 'index.php';
+                collisionWithBlob = false;
+            } else {
+                manX = -640;
+                manY = 0;
+                lives.setValue('lives', lives.getValue()-1);
+                collisionWithBlob = false;
+            }
+
+        }
+        if (collisionWithTarget == true) {
+            console.log('hit target');
+            score.setValue('score',score.getValue()+1)
+            randomX = -1 *getRandomInt(610);
+            randomY = getRandomInt(450);
+            $('#target').css({
+                'margin-left': randomX+'px',
+                'margin-top': randomY+'px'
+            });
+            target.setCoords(randomX, randomY);
+            collisionWithTarget = false;
+        }
+
+
+        $('#man').css({'margin-left': manX+'px','margin-top': manY+'px'});
+    }
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
+
+    function checkForCollisionBetween(objA, objB) {
+        let isWithinX = (objB.posX + objB.width) > objA.posX && objB.posX < (objA.posX + objA.width);
+        let isWithinY = (objB.posY + objB.height) > objA.posY && objB.posY < (objA.posY + objA.height);
+        
+        return isWithinX && isWithinY;
+    }
+
+    function runMovementAndmoveBlobs() {
+        for (i = 0; i < numberOfBlobs; i++) {
+            // randomVariance = 
+            blobWidth = parseFloat($('#blob'+i).css('width'));
+            blobHeight = parseFloat($('#blob'+i).css('height'));
+            blobPosX = parseFloat($('#blob'+i).css('margin-left'));
+            blobPosY = parseFloat($('#blob'+i).css('margin-top'));
+            blobArray[i].setCoords(blobPosX, blobPosY);
+            blobPosY += blobSpeed;
+
+            $('#blob'+i).css({
+                'margin-top': blobPosY+'px',
+                'margin-left': '-' + blobPosX+'px'
+            });
+
+            if (blobPosX > maxX) {
+                $('#blob'+i).css({
+                    'margin-left': Math.floor((Math.random() * varianceNumber) + 1)+'px'
+                });
+            }
+
+            if (blobPosY > (maxY-blobHeight)) {
+                $('#blob'+i).css({
+                    'margin-top': -Math.floor((Math.random() * varianceNumber) + 1)*10 +'px',
+                    'margin-left': Math.floor(-640 + (safetyColumnWidth+(blobColumn*i)+ (Math.random() *varianceNumber))) +'px'
+                });
+            }
+
+            collisionWithBlob = checkForCollisionBetween(blobArray[i], man);
+            collisionWithTarget = checkForCollisionBetween(target, man);
+            checkCollision();
+        }
+
+
         if (keyStatus.left){
             manX -=man.speed;
             if (manX < minXLimit){manX = minXLimit;}
@@ -142,117 +245,7 @@ class WordValue {
             if (manY > manYLimit){manY = manYLimit;}
         }
 
-        if (death == 0) {
-            checkCollision();
-            man.setCoords(manX, manY);
-        } else {
-            end = 1;
-        }
-
-        
-    }
-    var blobArray = [];
-
-    function createBlobs() {
-        
-        for (i = 0; i < numberOfBlobs; i++) {
-            randomVariance = Math.floor((Math.random() * varianceNumber) + 1);
-            blobArray[i] = new Shape(
-                'blob' + i,
-                30,
-                30,
-                -640 + (safetyColumnWidth+10+blobColumn*i+randomVariance),
-                -20 -randomVariance*10,
-                'blob'
-            );
-            $('#blob'+i).css({
-                'zIndex':-1
-            });
-        }
-    }
-    // below 30 ,30
-    //
-
-    function createTarget() {
-        target = new Shape(
-            'target',
-            30,
-            30,
-            safetyColumnWidth+10+blobColumn*i+randomVariance,
-            -20 -randomVariance*10,
-            'target'
-        );
-    }
-
-    function checkCollision()  {
-        if (collision == true) {
-            if(lives.getLives() == 1) {
-                death = 1;
-                collision = false;
-            } else {
-                manX = -640;
-                manY = 0;
-                score.setScore('score',score.getScore()+1);
-                lives.setLives('lives', lives.getLives()-1);
-    
-                collision = false;
-            }
-        } else {
-        }
-        $('#man').css({'margin-left': manX+'px','margin-top': manY+'px'});
-    }
-
-    function getRandomInt(max) {
-        return Math.floor(Math.random() * Math.floor(max));
-    }
-
-
-    function checkForCollisionBetween(objA, objB) {
-        let isWithinX = (objB.posX + objB.width) > objA.posX && objB.posX < (objA.posX + objA.width);
-        let isWithinY = (objB.posY + objB.height) > objA.posY && objB.posY < (objA.posY + objA.height);
-        if (isWithinX && isWithinY) {
-            console.log('hit');
-        }
-        
-        return isWithinX && isWithinY;
-    }
-
-    function moveBlobs() {
-
-        for (i = 0; i < numberOfBlobs; i++) {
-            // randomVariance = 
-            blobWidth = parseFloat($('#blob'+i).css('width'));
-            blobHeight = parseFloat($('#blob'+i).css('height'));
-            blobPosX = parseFloat($('#blob'+i).css('margin-left'));
-            blobPosY = parseFloat($('#blob'+i).css('margin-top'));
-            blobArray[i].setCoords(blobPosX, blobPosY);
-            blobPosY += blobSpeed;
-
-            $('#blob'+i).css({
-                'margin-top': blobPosY+'px',
-                'margin-left': '-' + blobPosX+'px'
-            });
-
-            if (blobPosX > maxX) {
-                $('#blob'+i).css({
-                    'margin-left': Math.floor((Math.random() * varianceNumber) + 1)+'px'
-                });
-            }
-
-            if (blobPosY > (maxY-blobHeight)) {
-                $('#blob'+i).css({
-                    'margin-top': -Math.floor((Math.random() * varianceNumber) + 1)*10 +'px'
-                });
-            }
-
-            collision = checkForCollisionBetween(blobArray[i], man);
-            checkCollision();
-        }
-
-        $('#target').css({
-            'margin-top': '100px',
-            'margin-left': '-100px'
-        });
+        man.setCoords(manX, manY);
 
     }
 
@@ -263,7 +256,6 @@ class WordValue {
     function screenSetup() {
 
         var html = document.getElementsByTagName("body");
-
         var background = document.createElement('div');
 
         background.id = "background";
@@ -282,7 +274,7 @@ class WordValue {
 
         new Bar ('score-bar','green');
         score = new WordValue ('score', 0, 0);
-        lives = new WordValue ('lives', 2, 560);
+        lives = new WordValue ('lives', 200, 560);
 
         var title = document.createElement('div');
         var bar = document.getElementById("score-bar");
@@ -302,8 +294,6 @@ class WordValue {
         title.textContent = postData;
 
         bar.appendChild(title);
-
-        
 
         var canvas = document.createElement('canvas');
 
@@ -326,10 +316,7 @@ class WordValue {
         ctx.fillRect(150, 150, 200, 200);
         ctx.fillStyle = "rgba(0, 0, 255, 0.2)";
         ctx.fillRect(200, 50, 200, 200);
-    }
 
-    function endGame() {
-        stillDiv('man');
     }
 
     function stillDiv(id) {
@@ -339,47 +326,25 @@ class WordValue {
         });
     }
 
-    function main() {
+    function showBlobPlacementLines() {
+        var c = document.getElementById("matrix");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(safetyColumnWidth, 0);
+        ctx.lineTo(safetyColumnWidth, 480);
+        ctx.stroke();
 
-        screenSetup();
-        //set dimensions of screen
-        $('#heading-box').css({
-            display:'none'
-        });
-        $('#main-box').css({
-            display:'none'
-        });
-        
-        maxX=0;
-        maxY=480;
+        for (i = 0; i < numberOfBlobs; i++) {
+            var c = document.getElementById("matrix");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.moveTo(safetyColumnWidth+((i+1)*blobColumn), 0);
+            ctx.lineTo(safetyColumnWidth+((i+1)*blobColumn), 480);
+            ctx.stroke();
+        }
+    }
 
-        //create player
-        man = new Shape('man', 30,30,-641,0, 'man');
-        death = 0;
-        end = 0;
-        numberOfBlobs = 5;
-        collision = false;
-        intervalSpeed = 10;
-        blobSpeed = 2;
-        man.speed = 5;
-        manWidth = parseFloat($('#man').css('width'));
-        manHeight = parseFloat($('#man').css('height'));
-        manXLimit = maxX - manWidth;
-        manYLimit = maxY - manHeight;
-        minYLimit = 0;
-        minXLimit = -641;
-        manX = parseFloat($('#man').css('margin-left'));
-        manY = parseFloat($('#man').css('margin-top'));
-
-
-        safetyColumnWidth = 50;
-        totalWidth = 640;
-        totalBlobsWidth = totalWidth - safetyColumnWidth;
-        blobColumn = totalBlobsWidth / numberOfBlobs;
-        varianceNumber = 30;
-        randomVariance = Math.floor((Math.random() * varianceNumber) + 1);
-
-
+    function movementKeyPresses() {
         keyStatus = {
             up: false,
             down: false,
@@ -404,17 +369,56 @@ class WordValue {
             else if (e.keyCode === 39) keyStatus.right = true;
             else if (e.keyCode === 40) keyStatus.down = true;
         };
-
-        setInterval(runMovement,intervalSpeed);
-
-        createBlobs();
-        createTarget();
-        setInterval(moveBlobs, 10);
-
-        if (end == 1) {
-            lives.setLives('lives', lives.getLives()-1);
-            endGame();
-        }
     }
 
+    function main() {
 
+        screenSetup();
+        //set dimensions of screen
+        $('#heading-box').css({
+            display:'none'
+        });
+        $('#main-box').css({
+            display:'none'
+        });
+        
+        maxX=0;
+        maxY=480;
+
+        blobArray = [];
+
+        //create player
+        man = new Shape('man', 30,30,-641,0, 'man');
+        death = 0;
+        end = 0;
+        numberOfBlobs = 10;
+        collisionWithBlob = false;
+        intervalSpeed = 10;
+        blobSpeed = 2;
+        man.speed = 5;
+        manWidth = parseFloat($('#man').css('width'));
+        manHeight = parseFloat($('#man').css('height'));
+        blobWidth = 30;
+        blobHeight = 30;
+        manXLimit = maxX - manWidth;
+        manYLimit = maxY - manHeight;
+        minYLimit = 0;
+        minXLimit = -641;
+        manX = parseFloat($('#man').css('margin-left'));
+        manY = parseFloat($('#man').css('margin-top'));
+
+        safetyColumnWidth = 50;
+        totalWidth = 640;
+        totalBlobsWidth = totalWidth - safetyColumnWidth;
+        blobColumn = totalBlobsWidth / numberOfBlobs;
+        varianceNumber = 30;
+        randomVariance = Math.floor((Math.random() * varianceNumber) + 1);
+
+        // showBlobPlacementLines();
+
+        movementKeyPresses();
+        createBlobs();
+        createTarget();
+        gameMovement = setInterval(runMovementAndmoveBlobs, intervalSpeed);
+
+    }
