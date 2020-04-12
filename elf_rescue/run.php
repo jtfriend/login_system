@@ -18,10 +18,12 @@ require_once '../core/init.php';
 $user = new User();
 
 if ($user->isLoggedIn()) {
-    if (isset($_POST['name'])) {
+    if (isset($_GET['name'])) {
     } else {
-        Redirect::to( 'index.php');
+        Redirect::to('index.php');
     }
+
+    Redirect::to( 'index.php?username=' + $_GET['name']);
 } else {
     Redirect::to( '../login.php');
 }
@@ -29,15 +31,12 @@ if ($user->isLoggedIn()) {
 
 
 $dbUser = new DB();
-$userExists = $dbUser->get("users", ["u_name", "=", isset($_POST['name']) ? $_POST['name'] : ""]);
+$userExists = $dbUser->get("users", ["u_name", "=", isset($_GET['name']) ? $_GET['name'] : ""]);
 $db = new DB();
 
 $scoreIdMax = $db->getMax("scores", ["s_id", "!=", 0]);
 $scoreIdCount = $scoreIdMax == null ? 0 : get_object_vars($scoreIdMax->_results[0]);
 $newScoreId = intval($scoreIdCount['MAX(s_id)'])+1;
-
-
-$userName = "bob";
 
 if (isset($userExists->_results)) {
     if(count($userExists->_results)) {
@@ -53,10 +52,10 @@ if (isset($userExists->_results)) {
         $userIdMax = $db->getMax("users", ["u_id", "!=", 0]);
         $userIdCount = $userIdMax == null ? 0 :get_object_vars($userIdMax->_results[0]);
         $newUserId = intval($userIdCount['MAX(u_id)'])+1;
-        $userName = $_POST['name'];
+        $userName = $_GET['name'];
 
         $insert = $db->insert('users',[
-            'u_name' => $_POST['name'],
+            'u_name' => $_GET['name'],
             'u_scoreid' => $newScoreId
         ]);
 

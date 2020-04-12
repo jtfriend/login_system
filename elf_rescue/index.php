@@ -7,6 +7,10 @@ $user = new User();
 
 
 if ($user->isLoggedIn()) {
+    if (isset($_GET['username'])) {
+    } else {
+        Redirect::to( '../index.php');
+    }
 } else {
     Redirect::to( '../login.php');
 }
@@ -19,7 +23,7 @@ if ($user->isLoggedIn()) {
             <div class="text-center" style="color:white;">ELF RESCUE</div>
         </div>
         <div id="main-box" class="center" style="height:140px; margin-top:10px; background-color: blue">
-            <form action="run.php" method="POST">
+            <form action="run.php" method="GET">
                 <div class="text-center">Name</div><br>
                 <div class="center text-center">
                     <?php if (isset($_GET['username'])) { ?>

@@ -31,15 +31,15 @@ if ($user->isLoggedIn()) {
                     <form style="" action="elf_rescue/index.php" method="get">
                         <input type="hidden" name="username" value="<?php echo $user->data()->u_username; ?>">
                         <div class="box-1 h-100 justify-content-center" style="display:flex;flex-direction: column;">
-                            <input class="boring_button" type="submit" value="Play">
+                            <input class="boring_button" type="submit" value="Play Elf Rescue">
                         </div>
                     </form>
                 </div>
 
-                <div class="col-sm-4  " style="text-align:center; height:200px; margin-bottom: 15px; margin-top: 15px;">
+                <div class="col-sm-4" style="text-align:center; height:200px; margin-bottom: 15px; margin-top: 15px;">
                     <div class="box-1 h-100 justify-content-center" style="display:flex;flex-direction: column;">test</div>
                 </div>
-                <div class="col-sm-4  " style="text-align:center; height:200px; margin-bottom: 15px; margin-top: 15px;">
+                <div class="col-sm-4" style="text-align:center; height:200px; margin-bottom: 15px; margin-top: 15px;">
                     <div class=" box-1 h-100  justify-content-center" style="display:flex;flex-direction: column;">test</div>
                 </div>
             </div>
