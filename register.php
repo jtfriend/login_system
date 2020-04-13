@@ -44,8 +44,8 @@ if(Input::exists()) {
 
                 ]);
 
-                Session::flash('home', 'You are now registered!');
-                Redirect::to('index.php');
+                Session::flash('login', 'You are now registered!');
+                Redirect::to('login.php');
                 // Redirect::to(404);
 
             } catch (Exception $e) {

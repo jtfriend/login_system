@@ -3,6 +3,8 @@ require_once 'core/init.php';
 
 $user = new User();
 
+
+
 if ($user->isLoggedIn()) {
     Redirect::to('index.php');
 } else {
@@ -18,7 +20,9 @@ if ($user->isLoggedIn()) {
             }
             if ($validation->passed()) {
                 $user = new User();
-                $login = $user->login(Input::get('username'), Input::get('password'));
+
+                $remember = (Input::get('remember') === '1') ? true : false;
+                $login = $user->login(Input::get('username'), Input::get('password'), $remember);
                 if ($login) {
                     Redirect::to('index.php');
                 }
@@ -65,6 +69,7 @@ if ($user->isLoggedIn()) {
                         </div>  
 
                         <div class="form-group field row" >
+                            <input type="hidden" name="remember" id="remember" value="1">
                             <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
                             <div class="field col-md-6" style="text-align:right" >
                                 <input style="background-color:#4542ff;" class="btn" type="submit" value="Log in">
