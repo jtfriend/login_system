@@ -18,12 +18,12 @@ require_once '../core/init.php';
 $user = new User();
 
 if ($user->isLoggedIn()) {
-    if (isset($_GET['username'])) {
+    if (isset($_POST['username'])) {
     } else {
         Redirect::to('index.php');
     }
 
-    Redirect::to( 'index.php?username=' + $_GET['username']);
+    Redirect::to( 'index.php?username=' + $_POST['username']);
 } else {
     Redirect::to( '../login.php');
 }
@@ -31,7 +31,7 @@ if ($user->isLoggedIn()) {
 ?>
 <script>
 
-    postData = "<?php echo $_GET['username']; ?>"
+    postData = "<?php echo $_POST['username']; ?>"
     gameInfo = main();
 
 </script>

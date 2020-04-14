@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 11, 2020 at 01:39 PM
+-- Generation Time: Apr 14, 2020 at 06:12 PM
 -- Server version: 5.7.21
 -- PHP Version: 5.6.35
 
@@ -7597,49 +7597,30 @@ INSERT INTO `groups` (`g_id`, `g_name`, `g_permissions`) VALUES
 
 DROP TABLE IF EXISTS `scores`;
 CREATE TABLE IF NOT EXISTS `scores` (
-  `s_id` int(11) NOT NULL,
-  `s_userid` int(11) NOT NULL,
-  `s_value` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `s_id` int(11) NOT NULL AUTO_INCREMENT,
+  `s_uid` int(11) NOT NULL,
+  `s_value` int(11) NOT NULL,
+  `s_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  KEY `s_id` (`s_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `scores`
 --
 
-INSERT INTO `scores` (`s_id`, `s_userid`, `s_value`) VALUES
-(1, 22, 0),
-(1, 1, 0),
-(1, 1, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 1, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0),
-(1, 22, 0);
+INSERT INTO `scores` (`s_id`, `s_uid`, `s_value`, `s_timestamp`) VALUES
+(2, 30, 1, '0000-00-00 00:00:00'),
+(3, 30, 1, '2020-04-12 23:08:44'),
+(4, 30, 0, '2020-04-12 23:12:36'),
+(5, 35, 17, '2020-04-13 22:45:49'),
+(6, 25, 8, '2020-04-14 08:14:12'),
+(7, 25, 3, '2020-04-14 08:30:44'),
+(8, 25, 7, '2020-04-14 08:58:48'),
+(9, 25, 8, '2020-04-14 09:00:21'),
+(10, 34, 16, '2020-04-14 13:31:04'),
+(11, 25, 1, '2020-04-14 14:38:32'),
+(12, 30, 16, '2020-04-14 15:10:30'),
+(13, 30, 13, '2020-04-14 15:15:38');
 
 -- --------------------------------------------------------
 
@@ -7657,7 +7638,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `u_joined` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `u_group` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`u_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
@@ -7665,13 +7646,19 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`u_id`, `u_username`, `u_password`, `u_salt`, `u_name`, `u_joined`, `u_group`) VALUES
 (2, 'jp1bloggs', 'password', 'salt', 'Joe Bloggs', '2018-05-15 00:00:00', 1),
+(32, 'person2', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Person2', '2020-04-13 10:52:23', 1),
+(31, 'person1', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Person1', '2020-04-13 10:50:51', 1),
 (29, 'test1', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Shhhhh', '2020-04-07 14:47:07', 1),
 (28, 'jtf5993', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'JJJJ', '2020-04-04 15:15:40', 1),
 (27, 'one2', '41d9b3edfbb18b3ae5fde17aa84d67ecbf5b57a5fb6009edae69288d549f7822', 'iwishthiswasabettersaltiwiththis', 'One2', '2019-12-03 18:04:52', 1),
+(30, 'jtf5', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'JTF5', '2020-04-12 09:06:55', 1),
 (25, 'jtf3', '06056790e0cc1e61ac9ea2f922a2f212583169c511f729abd00dcdb32a8b2668', '“×/Ï»töœI×s-šçòbÝï×ríËª8™Ä‹nO', 'JTF3', '2019-01-24 14:19:57', 1),
 (24, 'jtf2', 'fca6e5b0f83c82d08fff401640bd808a0aa3a2457dd020a182294f04cba55cd9', 'ØüÄÂ\'ÞÙ1\"CÅêò¾éVÃ–¦ô«©á±ÍS', 'JTF2', '2019-01-24 13:22:47', 1),
 (23, 'jumper', 'ff3595f00e8744f9e08d6d5a4dcc5fedb8603a7272c8d834d06c3b29613c726e', '”åd6YxÚ!’×£„ùŠÁ¢ÌGÕW®+å¡ƒ\'Mä£9ö', 'Jump', '2019-01-09 23:05:24', 1),
-(22, 'jtf', '87b5f633ce46d360a2b15f61fdbd63e9424e66275ff4b3200591b40472b3008a', 'Çö€\rÿf‚ÏW±ùWÖºHób:r5ù$ÒâO@q(—d', 'JTF', '2018-09-16 10:29:58', 1);
+(22, 'jtf', '87b5f633ce46d360a2b15f61fdbd63e9424e66275ff4b3200591b40472b3008a', 'Çö€\rÿf‚ÏW±ùWÖºHób:r5ù$ÒâO@q(—d', 'JTF', '2018-09-16 10:29:58', 1),
+(33, 'person3', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Person3', '2020-04-13 10:53:07', 1),
+(34, 'person4', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Person4', '2020-04-13 16:27:22', 1),
+(35, 'person5', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Person5', '2020-04-13 21:47:02', 1);
 
 -- --------------------------------------------------------
 
@@ -7681,10 +7668,18 @@ INSERT INTO `users` (`u_id`, `u_username`, `u_password`, `u_salt`, `u_name`, `u_
 
 DROP TABLE IF EXISTS `users_session`;
 CREATE TABLE IF NOT EXISTS `users_session` (
-  `us_id` int(11) NOT NULL,
+  `us_id` int(11) NOT NULL AUTO_INCREMENT,
   `us_uid` int(11) NOT NULL,
-  `us_hash` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `us_hash` varchar(64) NOT NULL,
+  KEY `us_id` (`us_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users_session`
+--
+
+INSERT INTO `users_session` (`us_id`, `us_uid`, `us_hash`) VALUES
+(12, 30, '9c17825589970840e6428ee72c97b27a43f66c8a5e46010d4e4e520e8994851f');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

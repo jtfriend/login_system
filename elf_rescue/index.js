@@ -78,11 +78,13 @@ class WordValue {
         div.style.zIndex = 10;
         div.style.position = "absolute";
         div.style.border = "1px solid";
+        div.style.borderColor = "black";
         div.style.marginTop = "0px";
         div.style.marginLeft = posX + "px";
         div.style.fontFamily = "sans-serif";
         div.style.textAlign = "center";
         div.style.lineHeight = 1.5;
+        div.style.color = "white";
 
         div.textContent = CapitaliseFirst(word) + ": " + value; 
         
@@ -157,7 +159,6 @@ class WordValue {
 
         }
         if (collisionWithTarget == true) {
-            console.log('hit target');
             score.setValue('score',score.getValue()+1)
             randomX = -1 *getRandomInt(610);
             randomY = getRandomInt(450);
@@ -217,7 +218,9 @@ class WordValue {
             checkCollision();
         }
 
+        changeBlobSpeed();
 
+        // LEFT
         if (keyStatus.left){
             manX -=man.speed;
             if (manX < minXLimit){manX = minXLimit;}
@@ -274,11 +277,10 @@ class WordValue {
 
         new Bar ('score-bar','green');
         score = new WordValue ('score', 0, 0);
-        lives = new WordValue ('lives', 200, 560);
+        lives = new WordValue ('lives', 5, 560);
 
         var title = document.createElement('div');
         var bar = document.getElementById("score-bar");
-
 
         title.id = "name";
         title.style.width = "640";
@@ -316,6 +318,11 @@ class WordValue {
         ctx.fillRect(150, 150, 200, 200);
         ctx.fillStyle = "rgba(0, 0, 255, 0.2)";
         ctx.fillRect(200, 50, 200, 200);
+        ctx.fillStyle = "rgba(0, 0, 255, 0.2)";
+        ctx.fillRect(300, 50, 200, 200);
+
+        ctx.fillStyle = "rgba(0, 230, 64, 1)";
+        ctx.fillRect(0, 0, 50, 480);
 
     }
 
@@ -369,6 +376,29 @@ class WordValue {
             else if (e.keyCode === 39) keyStatus.right = true;
             else if (e.keyCode === 40) keyStatus.down = true;
         };
+    }
+
+    //environment
+    //blob size, blob type, blob movement
+    //man speed, man size, shielded
+    //random unmoveable objects
+
+    //Easy things to set first would be speed of blobs
+
+
+    function changeBlobSpeed() {
+        if (score.getValue() >= 5  && score.getValue() < 10) {
+            blobSpeed = 3;
+            
+        }
+
+        if (score.getValue() >= 10 && score.getValue() < 15) {
+            blobSpeed = 5;
+        }
+
+        if (score.getValue() >= 15 && score.getValue() < 20) {
+            blobSpeed = 7;
+        }
     }
 
     function main() {

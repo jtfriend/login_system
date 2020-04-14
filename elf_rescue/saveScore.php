@@ -19,7 +19,7 @@ $userData = $dbUser->get("users", ["u_username", "=", isset($_POST['username']) 
 $userObjData = get_object_vars($userData->_results[0]);
 
 $insert = $dbUser->insert('scores',[
-    's_userid' => $userObjData['u_id'],
+    's_uid' => $userObjData['u_id'],
     's_value' => $_POST['score']
 ]);
 

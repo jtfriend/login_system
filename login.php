@@ -37,7 +37,8 @@ if ($user->isLoggedIn()) {
 }
 
     ?>
-    <html>
+    <html >
+    <body onload="clearInputBoxes()">
     <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
     <div style="background-color:#595959;">
@@ -55,7 +56,7 @@ if ($user->isLoggedIn()) {
                                 <label for="username">Username</label>
                             </div>
                             <div class="field col-md-6" style="text-align:left" >
-                                <input type="text" name="username" id="username" autocomplete="off" required>
+                                <input type="text" value="" name="username" id="username" autocomplete="off" required>
                             </div>
                         </div>
 
@@ -64,7 +65,7 @@ if ($user->isLoggedIn()) {
                                 <label for="password">Password</label>
                             </div>
                             <div class="field col-md-6" style="text-align:left" >
-                                <input type="password" name="password" id="password" autocomplete="off" required>
+                                <input type="password" value="" name="password" id="password" autocomplete="off" required>
                             </div>
                         </div>  
 
@@ -84,3 +85,10 @@ if ($user->isLoggedIn()) {
         </div>
     </div>
     </html>
+
+
+    <script>
+function clearInputBoxes() {
+  document.getElementById("username").reset();
+}
+</script>

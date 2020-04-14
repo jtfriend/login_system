@@ -67,6 +67,10 @@ class DB {
     public function get($table, $where) {
         return $this->action('SELECT *', $table, $where);
     }
+
+    public function rawMySQL($mySQL) {
+        return $this->query($mySQL);
+    }
     
     public function getMax($table, $where) {
         return $this->action('SELECT MAX('.$where[0].')',$table,$where);
