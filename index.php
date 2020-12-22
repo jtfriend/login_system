@@ -35,9 +35,13 @@ if ($user->isLoggedIn()) {
                         </div>
                     </form>
                 </div>
-
                 <div class="col-sm-4" style="text-align:center; height:200px; margin-bottom: 15px; margin-top: 15px;">
-                    <div class="box-1 h-100 justify-content-center" style="display:flex;flex-direction: column;">test</div>
+                    <form style="" action="learn_swansea/index.php" method="post">
+                        <input type="hidden" name="username" value="<?php echo $user->data()->u_username; ?>">
+                        <div class="box-1 h-100 justify-content-center" style="display:flex;flex-direction: column;">
+                            <input class="boring_button" type="submit" value="Learn Swansea">
+                        </div>
+                    </form>
                 </div>
                 <div class="col-sm-4" style="text-align:center; height:200px; margin-bottom: 15px; margin-top: 15px;">
                     <div class=" box-1 h-100  justify-content-center" style="display:flex;flex-direction: column;">test</div>
