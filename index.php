@@ -1,9 +1,12 @@
 <?php
 require_once 'core/init.php';
 
-if (Session::exists('home')) {
-    echo '<p>'. Session::flash('home') . '</p>';
-}
+// if (Session::exists('jtf3')) {
+//     echo '<p>'. Session::flash('home') . '</p>';
+//     echo "session exists";
+// } else {
+//     echo "no session exists";
+// }
 
 $user = new User();
 
@@ -44,7 +47,12 @@ if ($user->isLoggedIn()) {
                     </form>
                 </div>
                 <div class="col-sm-4" style="text-align:center; height:200px; margin-bottom: 15px; margin-top: 15px;">
-                    <div class=" box-1 h-100  justify-content-center" style="display:flex;flex-direction: column;">test</div>
+                    <form style="" action="location_finder/index.php" method="post">
+                        <input type="hidden" name="username" value="<?php echo $user->data()->u_username; ?>">
+                        <div class="box-1 h-100 justify-content-center" style="display:flex;flex-direction: column;">
+                            <input class="boring_button" type="submit" value="Location Finder">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

@@ -137,6 +137,8 @@ class WordValue {
         target.setCoords(-400, 100);
     }
 
+
+
     function checkCollision()  {
         if (collisionWithBlob == true) {
             if(lives.getValue() == 1) {
@@ -148,7 +150,13 @@ class WordValue {
                         username : postData
                     }
                 );
-                window.location.href = 'index.php';
+                var url = '/login_system/elf_rescue/index.php';
+                var form = $('<form action="' + url + '" method="post">' +
+                            '<input type="hidden" name="username" value="' + postData + '" />' +
+                            '</form>');
+                $('body').append(form);
+                form.submit();
+                // window.location.href = '/login_system/elf_rescue/index.php';
                 collisionWithBlob = false;
             } else {
                 manX = -640;

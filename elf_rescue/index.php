@@ -2,15 +2,13 @@
 require_once '../core/init.php';
 
 
+// if (Session::exists('home')) {
+//     echo '<p>'. Session::flash('home') . '</p>';
+// }
+
 $user = new User();
 
-
-
 if ($user->isLoggedIn()) {
-    if (isset($_POST['username'])) {
-    } else {
-        Redirect::to( '../index.php');
-    }
 } else {
     Redirect::to( '../login.php');
 }
@@ -25,7 +23,11 @@ if ($user->isLoggedIn()) {
         <div id="heading-box" class="center">
             <div class="text-center" style="color:white;">ELF RESCUE</div>
         </div>
+
         <div id="main-box" class="center" style="height:174px; margin-top:10px; background-color: blue">
+            <div class="home_button" >
+                <a href="../login.php">Home</a>
+            </div>
             <form action="run.php" method="POST">
                 <div  class="text-center" style="padding-top: 10px; color:white">Name</div>
                 <div class="center text-center" style="padding-top: 10px;">
@@ -123,6 +125,27 @@ if ($user->isLoggedIn()) {
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+    }
+
+    .home_button {
+        position:fixed;
+        background-color: #ff6600; /* Green */
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    a {
+        color:white;
+    }
+
+    a:hover {
+        color: white;
+        text-decoration:inherit;
     }
 </style>
 

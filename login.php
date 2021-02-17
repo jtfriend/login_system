@@ -20,10 +20,11 @@ if ($user->isLoggedIn()) {
             }
             if ($validation->passed()) {
                 $user = new User();
-
                 $remember = (Input::get('remember') === '1') ? true : false;
                 $login = $user->login(Input::get('username'), Input::get('password'), $remember);
+                $typeOfUser = "loyal";
                 if ($login) {
+                    Session::flash(Input::get('username'), $typeOfUser);
                     Redirect::to('index.php');
                 }
             } else {
@@ -89,6 +90,6 @@ if ($user->isLoggedIn()) {
 
     <script>
 function clearInputBoxes() {
-  document.getElementById("username").reset();
+  document.getElementById("username").value= "";
 }
 </script>
