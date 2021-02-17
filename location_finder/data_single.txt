@@ -1,0 +1,15 @@
+{
+  "postcode":"SA1 6TN",
+  "latitude":51.6316443,
+  "longitude":-3.9564338,
+  "addresses":[
+    {"formatted_address":[
+      "43 Gwili Terrace",
+      "",
+      "",
+      "Mayhill, Swansea",
+      "West Glamorgan"
+    ],
+    "thoroughfare":
+    "Gwili Terrace",
+    "building_name":"","sub_building_name":"","sub_building_number":"","building_number":"43","line_1":"43 Gwili Terrace","line_2":"","line_3":"","line_4":"","locality":"Mayhill","town_or_city":"Swansea","county":"West Glamorgan","district":"Swansea","country":"Wales"}]}

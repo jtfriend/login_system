@@ -51,20 +51,59 @@ $photos = curl_get($url);
 
 $json_photos = json_decode($photos, true);
 
-foreach ($json_photos as $photo) {
-  echo $photo['id'];
-  echo "\n";
-}
-
-// var_dump(json_decode($photos, true));
-
-
-// foreach ($photos[0] as $photo) {
-//   echo $photo;
+// foreach ($json_photos as $photo) {
+//   echo $photo['id'];
 //   echo "\n";
 // }
 
 
+
+//Create decode from results of location query
+
+$myfile = fopen("data.txt", "r") or die("Unable to open file!");
+$myData = fread($myfile,filesize("data.txt"));
+fclose($myfile);
+
+
+
+$myDecodedData = json_decode($myData, true);
+
+foreach($myDecodedData['addresses'] as $house) {
+    // var_dump($house);
+    echo $house['building_number'];
+    echo " ";
+    echo $house['thoroughfare'];
+    echo "<br>";
+}
+
+
+
+// $new_url = "https://api.getaddress.io/find/" . $postcodeRec . "/" . $selectedHouse . "?expand=true&api-key=J5-Q1p37qE-34kThfUkGMw30248";
+
+
+
+
+
+$mySinglefile = fopen("data_single.txt", "r") or die("Unable to open file!");
+$mySingleData = fread($mySinglefile,filesize("data_single.txt"));
+fclose($mySinglefile);
+
+$myDecodedSingleData = json_decode($mySingleData, true);
+
+var_dump($myDecodedSingleData);
+
+$locationLat = $myDecodedSingleData['latitude'];
+$locationLon = $myDecodedSingleData['longitude'];
+
+"https://www.google.com/maps/search/?api=1&query=" . $locationLat . "," . $locationLon;
+
+echo $locationLat;
+echo $locationLon;
+echo "<br>";
+echo "https://www.google.com/maps/search/?api=1&query=" . $locationLat . "," . $locationLon;
+
+
+// 51.6315504!4d-3.9568673
 
 
 //https://api.getaddress.io/find/sw1a2aa?expand=true&api-key=J5-Q1p37qE-34kThfUkGMw30248
@@ -77,18 +116,24 @@ foreach ($json_photos as $photo) {
 
 // print_r($result);
 // curl_close($ch);
+$pageContents = '
+
+<html >
+<link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
+<link rel="stylesheet" href="../CSS/my_css.css">
+<body style="margin:10px;">
+<a href="https://www.google.com/maps/search/?api=1&query='. $locationLat . "," . $locationLon . '">Test $GET</a>
+
+    </body>
+</html>"';
+
+echo $pageContents;
+
 
 ?>
 
-<html >
-    <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="../CSS/my_css.css">
-    <body style="margin:10px;">
-    <a href="test_get.php?subject=PHP&web=W3schools.com">Test $GET</a>
 
-    </body>
-</html>
 
 <style>
     body{
