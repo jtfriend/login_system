@@ -102,11 +102,25 @@ class User {
         echo 'session deleted';
     }
 
+    public function delete($userId) {
+        $this->_db->delete('users', ['u_id', '=', $userId]);
+        echo "User Deleted";
+    }
+
     public function data() {
         return $this->_data;
     }
 
     public function isLoggedIn() {
         return $this->_isLoggedIn;
+    }
+
+    public function isSuper($user = null) {
+        if ($user) {
+            $data = $this->_db->get('users', ['u_username', '=', $user]);
+            if ($data->first()->u_group == 5) {
+                return true;
+            }
+        }
     }
 } ?>

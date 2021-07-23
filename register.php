@@ -26,6 +26,10 @@ if(Input::exists()) {
                 'min'   => 2,
                 'max'   =>20,
             ],
+            'phrase' => [
+                'required' => true,
+                'value' => 'pulpfiction'
+            ]
         ]);
 
         if($validation->passed()) {
@@ -106,6 +110,15 @@ if(Input::exists()) {
                         </div>
                         <div class="field col-md-6" style="text-align:left" >
                             <input type="text" name="name" id="name" value="<?php echo escape(Input::get('name'));?>">
+                        </div>
+                    </div>
+
+                    <div class="form-group field row" >
+                        <div class="field col-md-6" style="text-align:right" >
+                            <label for="name">Pass phrase</label>
+                        </div>
+                        <div class="field col-md-6" style="text-align:left" >
+                            <input type="text" name="phrase" id="phrase" value="<?php echo escape(Input::get('phrase'));?>">
                         </div>
                     </div>
 

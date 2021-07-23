@@ -23,7 +23,7 @@ if ($user->isLoggedIn()) {
         Redirect::to('index.php');
     }
 
-    Redirect::to( 'index.php?username=' + $_POST['username']);
+    // Redirect::to( 'index.php?username=' + $_POST['username']);
 } else {
     Redirect::to( '../login.php');
 }

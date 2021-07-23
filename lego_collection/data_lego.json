@@ -1,0 +1,1927 @@
+{
+  "architecture": {
+    "0": {
+      "href": "/en-gb/product/burj-khalifa-21055",
+      "Name": "Burj Khalifa"
+    },
+    "2": {
+      "href": "/en-gb/product/empire-state-building-21046",
+      "Name": "Empire State Building"
+    },
+    "3": {
+      "href": "/en-gb/product/statue-of-liberty-21042",
+      "Name": "Statue of Liberty"
+    },
+    "4": {
+      "href": "/en-gb/product/the-white-house-21054",
+      "Name": "The White House"
+    },
+    "5": {
+      "href": "/en-gb/product/trafalgar-square-21045",
+      "Name": "Trafalgar Square"
+    },
+    "6": {
+      "href": "/en-gb/product/dubai-21052",
+      "Name": "Dubai"
+    },
+    "7": {
+      "href": "/en-gb/product/tokyo-21051",
+      "Name": "Tokyo"
+    },
+    "8": {
+      "href": "/en-gb/product/london-21034",
+      "Name": "London"
+    },
+    "9": {
+      "href": "/en-gb/product/new-york-city-21028",
+      "Name": "New York City"
+    },
+    "10": {
+      "href": "/en-gb/product/paris-21044",
+      "Name": "Paris"
+    },
+    "11": {
+      "href": "/en-gb/product/san-francisco-21043",
+      "Name": "San Francisco"
+    }
+  },
+  "lego-batman-sets": {
+    "0": {
+      "href": "/en-gb/product/batman-40386",
+      "Name": "ExclusivesBatman\u2122"
+    },
+    "1": {
+      "href": "/en-gb/product/the-joker-40428",
+      "Name": "ExclusivesThe Joker\u2122"
+    },
+    "2": {
+      "href": "/en-gb/product/batman-vs-the-penguin-harley-quinn-40453",
+      "Name": "NewBatman\u2122 vs. The Penguin\u2122 & Harley Quinn\u2122"
+    },
+    "3": {
+      "href": "/en-gb/product/1989-batmobile-76139",
+      "Name": "Hard to find1989 Batmobile\u2122"
+    },
+    "4": {
+      "href": "/en-gb/product/1989-batwing-76161",
+      "Name": "Hard to find1989 Batwing"
+    },
+    "5": {
+      "href": "/en-gb/product/mobile-bat-base-76160",
+      "Name": "Mobile Bat Base"
+    },
+    "6": {
+      "href": "/en-gb/product/joker-s-trike-chase-76159",
+      "Name": "Joker's Trike Chase"
+    },
+    "7": {
+      "href": "/en-gb/product/batboat-the-penguin-pursuit-76158",
+      "Name": "Batboat The Penguin Pursuit!"
+    },
+    "8": {
+      "href": "/en-gb/product/lego-batman-movie-luggage-tag-5005273",
+      "Name": "- 20%LEGO BATMAN MOVIE LUGGAGE TAGPrice\u00a37.99Sale Price\u00a36.39Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/batcave-10919",
+      "Name": "Batcave\u2122"
+    },
+    "10": {
+      "href": "/en-gb/product/knightmare-batman-acc-set-2018-853744",
+      "Name": "- 30%Knightmare Batman\u2122 Acc. Set 2018"
+    },
+    "11": {
+      "href": "/en-gb/product/batman-keyring-853951",
+      "Name": "Batman\u2122 KeyringPrice\u00a33.99Out of stockAdd to Wish list"
+    }
+  },
+  "boost": {
+    "0": {
+      "href": "/en-gb/product/boost-creative-toolbox-17101",
+      "Name": "BOOST Creative Toolbox"
+    }
+  },
+  "brickheadz": {
+    "0": {
+      "href": "/en-gb/product/chinese-new-year-pandas-40466",
+      "Name": "NewChinese New Year Pandas"
+    },
+    "1": {
+      "href": "/en-gb/product/budgie-40443",
+      "Name": "NewBudgie"
+    },
+    "2": {
+      "href": "/en-gb/product/german-shepherd-40440",
+      "Name": "NewGerman Shepherd"
+    },
+    "3": {
+      "href": "/en-gb/product/goldfish-40442",
+      "Name": "NewGoldfish"
+    },
+    "4": {
+      "href": "/en-gb/product/goofy-pluto-40378",
+      "Name": "ExclusivesGoofy & Pluto"
+    },
+    "5": {
+      "href": "/en-gb/product/shorthair-cats-40441",
+      "Name": "NewShorthair Cats"
+    },
+    "6": {
+      "href": "/en-gb/product/wedding-groom-40384",
+      "Name": "ExclusivesWedding Groom"
+    },
+    "7": {
+      "href": "/en-gb/product/donald-duck-40377",
+      "Name": "ExclusivesDonald Duck"
+    },
+    "8": {
+      "href": "/en-gb/product/lady-liberty-40367",
+      "Name": "ExclusivesLady Liberty"
+    },
+    "9": {
+      "href": "/en-gb/product/monkey-king-40381",
+      "Name": "ExclusivesMonkey King"
+    },
+    "10": {
+      "href": "/en-gb/product/the-mandalorian-the-child-75317",
+      "Name": "The Mandalorian\u2122 & the Child"
+    },
+    "11": {
+      "href": "/en-gb/product/wedding-bride-40383",
+      "Name": "Wedding Bride"
+    },
+    "12": {
+      "href": "/en-gb/product/birthday-clown-40348",
+      "Name": "Birthday Clown"
+    },
+    "13": {
+      "href": "/en-gb/product/easter-sheep-40380",
+      "Name": "Easter Sheep"
+    },
+    "14": {
+      "href": "/en-gb/product/frankenstein-40422",
+      "Name": "Frankenstein"
+    },
+    "15": {
+      "href": "/en-gb/product/nutcracker-40425",
+      "Name": "Nutcracker"
+    },
+    "16": {
+      "href": "/en-gb/product/valentine-s-bear-40379",
+      "Name": "Valentine's Bear"
+    },
+    "17": {
+      "href": "/en-gb/product/lucky-cat-40436",
+      "Name": "ExclusivesLucky Cat"
+    }
+  },
+  "city": {
+    "0": {
+      "href": "/en-gb/product/town-center-60292",
+      "Name": "NewTown Center"
+    },
+    "2": {
+      "href": "/en-gb/product/shopping-street-60306",
+      "Name": "NewShopping Street"
+    },
+    "3": {
+      "href": "/en-gb/product/fire-command-unit-60282",
+      "Name": "NewFire Command Unit"
+    },
+    "4": {
+      "href": "/en-gb/product/family-house-60291",
+      "Name": "NewFamily House"
+    },
+    "5": {
+      "href": "/en-gb/product/police-patrol-boat-60277",
+      "Name": "NewPolice Patrol Boat"
+    },
+    "6": {
+      "href": "/en-gb/product/airshow-jet-transporter-60289",
+      "Name": "NewAirshow Jet Transporter"
+    },
+    "7": {
+      "href": "/en-gb/product/car-transporter-60305",
+      "Name": "NewCar Transporter"
+    },
+    "8": {
+      "href": "/en-gb/product/fire-rescue-helicopter-60281",
+      "Name": "NewFire Rescue Helicopter"
+    },
+    "9": {
+      "href": "/en-gb/product/skate-park-60290",
+      "Name": "NewSkate Park"
+    },
+    "10": {
+      "href": "/en-gb/product/fire-ladder-truck-60280",
+      "Name": "NewFire Ladder Truck"
+    },
+    "11": {
+      "href": "/en-gb/product/holiday-camper-van-60283",
+      "Name": "NewHoliday Camper Van"
+    },
+    "12": {
+      "href": "/en-gb/product/race-buggy-transporter-60288",
+      "Name": "NewRace Buggy Transporter"
+    },
+    "13": {
+      "href": "/en-gb/product/road-plates-60304",
+      "Name": "NewRoad Plates"
+    },
+    "14": {
+      "href": "/en-gb/product/police-prisoner-transport-60276",
+      "Name": "NewPolice Prisoner Transport"
+    },
+    "15": {
+      "href": "/en-gb/product/tractor-60287",
+      "Name": "NewTractor"
+    },
+    "16": {
+      "href": "/en-gb/product/beach-rescue-atv-60286",
+      "Name": "NewBeach Rescue ATV"
+    },
+    "17": {
+      "href": "/en-gb/product/fire-hazard-truck-60279",
+      "Name": "NewFire Hazard TruckPrice\u00a38.99Add to BagAdd to Wish list"
+    }
+  },
+  "classic": {
+    "0": {
+      "href": "/en-gb/product/bricks-and-wheels-11014",
+      "Name": "NewBricks and WheelsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "1": {
+      "href": "/en-gb/product/creative-building-bricks-11016",
+      "Name": "NewCreative Building Bricks"
+    },
+    "2": {
+      "href": "/en-gb/product/creative-transparent-bricks-11013",
+      "Name": "NewCreative Transparent Bricks"
+    },
+    "3": {
+      "href": "/en-gb/product/creative-white-bricks-11012",
+      "Name": "NewCreative White BricksPrice\u00a34.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/bricks-bricks-plates-11717",
+      "Name": "Bricks Bricks Plates"
+    },
+    "5": {
+      "href": "/en-gb/product/bricks-and-animals-11011",
+      "Name": "Bricks and Animals"
+    },
+    "6": {
+      "href": "/en-gb/product/bricks-bricks-bricks-10717",
+      "Name": "Bricks Bricks Bricks"
+    },
+    "7": {
+      "href": "/en-gb/product/lego-large-creative-brick-box-10698",
+      "Name": "LEGO\u00ae Large Creative Brick Box"
+    },
+    "8": {
+      "href": "/en-gb/product/bricks-and-lights-11009",
+      "Name": "Bricks and Lights"
+    },
+    "9": {
+      "href": "/en-gb/product/lego-medium-creative-brick-box-10696",
+      "Name": "LEGO\u00ae Medium Creative Brick Box"
+    },
+    "10": {
+      "href": "/en-gb/product/bricks-on-a-roll-10715",
+      "Name": "Bricks on a Roll"
+    },
+    "11": {
+      "href": "/en-gb/product/basic-brick-set-11002",
+      "Name": "Basic Brick Set"
+    },
+    "12": {
+      "href": "/en-gb/product/bricks-and-houses-11008",
+      "Name": "Bricks and Houses"
+    },
+    "13": {
+      "href": "/en-gb/product/creative-suitcase-10713",
+      "Name": "Creative Suitcase"
+    },
+    "14": {
+      "href": "/en-gb/product/gray-baseplate-10701",
+      "Name": "Gray Baseplate"
+    },
+    "15": {
+      "href": "/en-gb/product/lego-creative-bricks-10692",
+      "Name": "LEGO\u00ae Creative Bricks"
+    },
+    "16": {
+      "href": "/en-gb/product/bricks-and-ideas-11001",
+      "Name": "Bricks and Ideas"
+    },
+    "17": {
+      "href": "/en-gb/product/blue-baseplate-10714",
+      "Name": "Blue Baseplate"
+    }
+  },
+  "creator-3-in-1": {
+    "0": {
+      "href": "/en-gb/product/surfer-beach-house-31118",
+      "Name": "NewSurfer Beach House"
+    },
+    "1": {
+      "href": "/en-gb/product/mosaic-maker-40179?icmp=LP-SHD-Standard-NO_Disruptor_Mosaic_Maker-PR-NO-Y8YKHRA3PL",
+      "Name": "Picture yourself in a LEGO\u00ae MosaicPicture yourself in a LEGO\u00ae MosaicTry Mosaic Maker now"
+    },
+    "2": {
+      "href": "/en-gb/product/safari-wildlife-tree-house-31116",
+      "Name": "NewSafari Wildlife Tree HousePrice\u00a329.99Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/race-car-transporter-31113",
+      "Name": "NewRace Car Transporter"
+    },
+    "4": {
+      "href": "/en-gb/product/space-mining-mech-31115",
+      "Name": "NewSpace Mining MechPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/superbike-31114",
+      "Name": "NewSuperbike"
+    },
+    "6": {
+      "href": "/en-gb/product/wild-lion-31112",
+      "Name": "NewWild Lion"
+    },
+    "7": {
+      "href": "/en-gb/product/cyber-drone-31111",
+      "Name": "NewCyber Drone"
+    },
+    "8": {
+      "href": "/en-gb/product/tuk-tuk-40469",
+      "Name": "NewTuk Tuk"
+    },
+    "9": {
+      "href": "/en-gb/product/yellow-taxi-40468",
+      "Name": "NewYellow Taxi"
+    },
+    "10": {
+      "href": "/en-gb/product/pirate-ship-31109",
+      "Name": "Pirate Ship"
+    },
+    "11": {
+      "href": "/en-gb/product/caravan-family-holiday-31108",
+      "Name": "Caravan Family Holiday"
+    },
+    "12": {
+      "href": "/en-gb/product/townhouse-pet-shop-cafe-31097",
+      "Name": "Townhouse Pet Shop & Caf\u00e9"
+    },
+    "13": {
+      "href": "/en-gb/product/monster-burger-truck-31104",
+      "Name": "Monster Burger Truck"
+    },
+    "14": {
+      "href": "/en-gb/product/space-rover-explorer-31107",
+      "Name": "Space Rover Explorer"
+    },
+    "15": {
+      "href": "/en-gb/product/townhouse-toy-store-31105",
+      "Name": "Townhouse Toy Store"
+    },
+    "16": {
+      "href": "/en-gb/product/riverside-houseboat-31093",
+      "Name": "Riverside Houseboat"
+    },
+    "17": {
+      "href": "/en-gb/product/fire-dragon-31102",
+      "Name": "Fire Dragon"
+    }
+  },
+  "creator-expert": {
+    "0": {
+      "href": "/en-gb/product/colosseum-10276",
+      "Name": "ExclusivesColosseum"
+    },
+    "1": {
+      "href": "/en-gb/product/tbd-ip-car2-2021-10295?icmp=LP-SHD-Standard-CE_Disruptor_10295_Porsche_911-EX-CE-Q0U6Z11TVF",
+      "Name": "One legendary car. Two iconic models.One legendary car. Two iconic models.New LEGO\u00ae Porsche 911."
+    },
+    "2": {
+      "href": "/en-gb/product/police-station-10278",
+      "Name": "NewPolice Station"
+    },
+    "3": {
+      "href": "/en-gb/product/porsche-911-10295",
+      "Name": "NewPorsche 911"
+    },
+    "4": {
+      "href": "/en-gb/product/roller-coaster-10261",
+      "Name": "Hard to findRoller Coaster"
+    },
+    "5": {
+      "href": "/en-gb/product/old-trafford-manchester-united-10272",
+      "Name": "Hard to findOld Trafford - Manchester United"
+    },
+    "6": {
+      "href": "/en-gb/product/haunted-house-10273",
+      "Name": "Hard to findHaunted House"
+    },
+    "7": {
+      "href": "/en-gb/product/ghostbusters-ecto-1-10274",
+      "Name": "Hard to findGhostbusters\u2122 ECTO-1"
+    },
+    "8": {
+      "href": "/en-gb/product/james-bond-aston-martin-db5-10262",
+      "Name": "Hard to findJames Bond\u2122 Aston Martin DB5"
+    },
+    "9": {
+      "href": "/en-gb/product/ford-mustang-10265",
+      "Name": "Hard to findFord Mustang"
+    },
+    "10": {
+      "href": "/en-gb/product/london-bus-10258",
+      "Name": "Hard to findLondon Bus"
+    },
+    "11": {
+      "href": "/en-gb/product/elf-club-house-10275",
+      "Name": "Hard to findElf Club House"
+    },
+    "12": {
+      "href": "/en-gb/product/gingerbread-house-10267",
+      "Name": "Hard to findGingerbread House"
+    },
+    "13": {
+      "href": "/en-gb/product/nasa-apollo-11-lunar-lander-10266",
+      "Name": "Hard to findNASA Apollo 11 Lunar Lander"
+    },
+    "14": {
+      "href": "/en-gb/product/fiat-500-10271",
+      "Name": "Hard to findFiat 500"
+    },
+    "15": {
+      "href": "/en-gb/product/crocodile-locomotive-10277",
+      "Name": "Crocodile Locomotive"
+    },
+    "16": {
+      "href": "/en-gb/product/harley-davidson-fat-boy-10269",
+      "Name": "Harley-Davidson\u00ae Fat Boy\u00ae"
+    },
+    "17": {
+      "href": "/en-gb/product/race-car-30572",
+      "Name": "Race CarPrice\u00a33.49Add to BagAdd to Wish list"
+    }
+  },
+  "dc": {
+    "0": {
+      "href": "/en-gb/product/batman-40386",
+      "Name": "ExclusivesBatman\u2122"
+    },
+    "1": {
+      "href": "/en-gb/product/the-joker-40428",
+      "Name": "ExclusivesThe Joker\u2122"
+    },
+    "2": {
+      "href": "/en-gb/product/batman-vs-the-penguin-harley-quinn-40453",
+      "Name": "NewBatman\u2122 vs. The Penguin\u2122 & Harley Quinn\u2122"
+    },
+    "3": {
+      "href": "/en-gb/product/1989-batmobile-76139",
+      "Name": "Hard to find1989 Batmobile\u2122"
+    },
+    "4": {
+      "href": "/en-gb/product/1989-batwing-76161",
+      "Name": "Hard to find1989 Batwing"
+    },
+    "5": {
+      "href": "/en-gb/product/mobile-bat-base-76160",
+      "Name": "Mobile Bat Base"
+    },
+    "6": {
+      "href": "/en-gb/product/joker-s-trike-chase-76159",
+      "Name": "Joker's Trike Chase"
+    },
+    "7": {
+      "href": "/en-gb/product/wonder-woman-vs-cheetah-76157",
+      "Name": "Wonder Woman\u2122 vs Cheetah"
+    },
+    "8": {
+      "href": "/en-gb/product/batboat-the-penguin-pursuit-76158",
+      "Name": "Batboat The Penguin Pursuit!"
+    },
+    "9": {
+      "href": "/en-gb/product/batwoman-key-chain-853953",
+      "Name": "Batwoman\u2122 Key ChainPrice\u00a33.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/lego-super-heroes-wonder-woman-keyring-853433",
+      "Name": "LEGO\u00ae Super Heroes Wonder Woman Keyring"
+    },
+    "11": {
+      "href": "/en-gb/product/batcave-10919",
+      "Name": "Batcave\u2122"
+    },
+    "12": {
+      "href": "/en-gb/product/knightmare-batman-acc-set-2018-853744",
+      "Name": "- 30%Knightmare Batman\u2122 Acc. Set 2018"
+    },
+    "13": {
+      "href": "/en-gb/product/batman-keyring-853951",
+      "Name": "Batman\u2122 KeyringPrice\u00a33.99Out of stockAdd to Wish list"
+    },
+    "14": {
+      "href": "/en-gb/product/superman-keyring-853952",
+      "Name": "Superman\u2122 KeyringPrice\u00a33.99Out of stockAdd to Wish list"
+    }
+  },
+  "disney": {
+    "0": {
+      "href": "/en-gb/product/disney-train-and-station-71044",
+      "Name": "ExclusivesDisney Train and Station"
+    },
+    "1": {
+      "href": "/en-gb/product/the-disney-castle-71040",
+      "Name": "ExclusivesThe Disney Castle"
+    },
+    "2": {
+      "href": "/en-gb/product/raya-and-the-heart-palace-43181",
+      "Name": "NewRaya and the Heart PalacePrice\u00a374.99Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/boun-s-boat-43185",
+      "Name": "NewBoun's BoatPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/cinderella-s-royal-carriage-43192",
+      "Name": "NewCinderella\u2019s Royal Carriage"
+    },
+    "5": {
+      "href": "/en-gb/product/raya-and-sisu-dragon-43184",
+      "Name": "NewRaya and Sisu DragonPrice\u00a327.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/ariel-s-celebration-boat-43191",
+      "Name": "NewAriel's Celebration Boat"
+    },
+    "7": {
+      "href": "/en-gb/product/mickey-minnie-birthday-train-10941",
+      "Name": "NewMickey & Minnie Birthday TrainPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/elsa-and-the-nokk-storybook-adventures-43189",
+      "Name": "NewElsa and the Nokk Storybook Adventures"
+    },
+    "9": {
+      "href": "/en-gb/product/mickey-mouse-40456",
+      "Name": "NewMickey Mouse"
+    },
+    "10": {
+      "href": "/en-gb/product/minnie-mouse-40457",
+      "Name": "NewMinnie Mouse"
+    },
+    "11": {
+      "href": "/en-gb/product/goofy-pluto-40378",
+      "Name": "ExclusivesGoofy & Pluto"
+    },
+    "12": {
+      "href": "/en-gb/product/bruni-the-salamander-buildable-character-43186",
+      "Name": "NewBruni the Salamander Buildable Character"
+    },
+    "13": {
+      "href": "/en-gb/product/donald-duck-40377",
+      "Name": "ExclusivesDonald Duck"
+    },
+    "14": {
+      "href": "/en-gb/product/mickey-mouse-minnie-mouse-buildable-characters-43179",
+      "Name": "Hard to findMickey Mouse & Minnie Mouse Buildable Characters"
+    },
+    "15": {
+      "href": "/en-gb/product/arendelle-castle-village-41167",
+      "Name": "Arendelle Castle Village"
+    },
+    "16": {
+      "href": "/en-gb/product/elsa-s-magical-ice-palace-43172",
+      "Name": "Elsa's Magical Ice Palace"
+    },
+    "17": {
+      "href": "/en-gb/product/rapunzel-s-tower-43187",
+      "Name": "Rapunzel's Tower"
+    }
+  },
+  "dots": {},
+  "duplo": {
+    "0": {
+      "href": "/en-gb/product/happy-childhood-moments-10943",
+      "Name": "NewHappy Childhood Moments"
+    },
+    "2": {
+      "href": "/en-gb/product/barn-tractor-farm-animal-care-10952",
+      "Name": "NewBarn, Tractor & Farm Animal CarePrice\u00a359.99Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/creative-birthday-party-10958",
+      "Name": "NewCreative Birthday Party"
+    },
+    "4": {
+      "href": "/en-gb/product/horse-stable-and-pony-care-10951",
+      "Name": "NewHorse Stable and Pony CarePrice\u00a327.99Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/mickey-minnie-birthday-train-10941",
+      "Name": "NewMickey & Minnie Birthday TrainPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/animal-train-10955",
+      "Name": "NewAnimal TrainPrice\u00a319.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/farm-tractor-animal-care-10950",
+      "Name": "NewFarm Tractor & Animal CarePrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/farm-animal-care-10949",
+      "Name": "NewFarm Animal CarePrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/fire-helicopter-police-car-10957",
+      "Name": "NewFire Helicopter & Police CarPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/unicorn-10953",
+      "Name": "NewUnicornPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/lego-education-my-xl-world-45028",
+      "Name": "LEGO\u00ae Education My XL WorldPrice\u00a3235.99Add to BagAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/coding-express-45025",
+      "Name": "Coding ExpressPrice\u00a3222.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/tech-machines-45002",
+      "Name": "Tech Machines"
+    },
+    "14": {
+      "href": "/en-gb/product/tubes-45026",
+      "Name": "Tubes"
+    },
+    "15": {
+      "href": "/en-gb/product/tower-crane-construction-10933",
+      "Name": "Tower Crane & ConstructionPrice\u00a3114.99Add to BagAdd to Wish list"
+    },
+    "16": {
+      "href": "/en-gb/product/cargo-train-10875",
+      "Name": "Cargo Train"
+    },
+    "17": {
+      "href": "/en-gb/product/world-animals-10907",
+      "Name": "World Animals"
+    }
+  },
+  "friends": {
+    "0": {
+      "href": "/en-gb/product/heartlake-city-shopping-mall-41450",
+      "Name": "NewHeartlake City Shopping Mall"
+    },
+    "1": {
+      "href": "/en-gb/product/andreas-family-house-41449?icmp=LP-SHD-Standard-VIP_Disruptor_VIP2x_41449_Product-P-VIP-T1J09AH792",
+      "Name": "Get double VIP points on this set 01/03 - 31/03*Get double VIP points on this set 01/03 - 31/03*LEGO\u00ae Friends Andrea's Family House"
+    },
+    "2": {
+      "href": "/en-gb/product/andrea-s-family-house-41449",
+      "Name": "NewAndrea's Family House"
+    },
+    "3": {
+      "href": "/en-gb/product/heartlake-city-movie-theater-41448",
+      "Name": "NewHeartlake City Movie Theater"
+    },
+    "4": {
+      "href": "/en-gb/product/heartlake-city-park-41447",
+      "Name": "NewHeartlake City Park"
+    },
+    "5": {
+      "href": "/en-gb/product/heartlake-city-vet-clinic-41446",
+      "Name": "NewHeartlake City Vet ClinicPrice\u00a334.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/vet-clinic-ambulance-41445",
+      "Name": "NewVet Clinic AmbulancePrice\u00a327.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/heartlake-city-organic-cafe-41444",
+      "Name": "NewHeartlake City Organic Caf\u00e9"
+    },
+    "8": {
+      "href": "/en-gb/product/doggy-day-care-41691",
+      "Name": "NewDoggy Day Care"
+    },
+    "9": {
+      "href": "/en-gb/product/vet-clinic-rescue-helicopter-41692",
+      "Name": "NewVet Clinic Rescue Helicopter"
+    },
+    "10": {
+      "href": "/en-gb/product/heartlake-city-bakery-41440",
+      "Name": "NewHeartlake City BakeryPrice\u00a314.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/olivia-s-electric-car-41443",
+      "Name": "NewOlivia's Electric Car"
+    },
+    "12": {
+      "href": "/en-gb/product/andrea-s-bunny-cube-41666",
+      "Name": "NewAndrea's Bunny CubePrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/emma-s-dalmatian-cube-41663",
+      "Name": "NewEmma's Dalmatian CubePrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "14": {
+      "href": "/en-gb/product/mia-s-pug-cube-41664",
+      "Name": "NewMia's Pug Cube"
+    },
+    "15": {
+      "href": "/en-gb/product/olivia-s-flamingo-cube-41662",
+      "Name": "NewOlivia's Flamingo Cube"
+    },
+    "16": {
+      "href": "/en-gb/product/stephanie-s-cat-cube-41665",
+      "Name": "NewStephanie's Cat CubePrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "17": {
+      "href": "/en-gb/product/vet-clinic-rescue-buggy-41442",
+      "Name": "NewVet Clinic Rescue BuggyPrice\u00a38.99Add to BagAdd to Wish list"
+    }
+  },
+  "disney-frozen-2": {
+    "0": {
+      "href": "/en-gb/product/elsa-and-the-nokk-storybook-adventures-43189",
+      "Name": "NewElsa and the Nokk Storybook Adventures"
+    },
+    "1": {
+      "href": "/en-gb/product/bruni-the-salamander-buildable-character-43186",
+      "Name": "NewBruni the Salamander Buildable Character"
+    },
+    "2": {
+      "href": "/en-gb/product/arendelle-castle-village-41167",
+      "Name": "Arendelle Castle Village"
+    },
+    "3": {
+      "href": "/en-gb/product/elsa-s-magical-ice-palace-43172",
+      "Name": "Elsa's Magical Ice Palace"
+    },
+    "4": {
+      "href": "/en-gb/product/frozen-ice-castle-10899",
+      "Name": "Frozen Ice Castle"
+    },
+    "5": {
+      "href": "/en-gb/product/elsa-s-jewelry-box-creation-41168",
+      "Name": "Elsa's Jewelry Box Creation"
+    },
+    "6": {
+      "href": "/en-gb/product/elsa-s-wagon-adventure-41166",
+      "Name": "Elsa's Wagon Adventure"
+    },
+    "7": {
+      "href": "/en-gb/product/anna-and-elsa-s-storybook-adventures-43175",
+      "Name": "Anna and Elsa's Storybook Adventures"
+    },
+    "8": {
+      "href": "/en-gb/product/anna-s-canoe-expedition-41165",
+      "Name": "Anna's Canoe Expedition"
+    },
+    "9": {
+      "href": "/en-gb/product/elsa-and-olaf-s-tea-party-10920",
+      "Name": "Elsa and Olaf's Tea Party"
+    },
+    "10": {
+      "href": "/en-gb/product/lego-\u01c0-disney-frozen-2-anna-key-chain-853969",
+      "Name": "LEGO\u00ae \u01c0 Disney Frozen 2 Anna Key ChainPrice\u00a33.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/lego-\u01c0-disney-frozen-2-elsa-keyring-853968",
+      "Name": "LEGO\u00ae \u01c0 Disney Frozen 2 Elsa KeyringPrice\u00a33.99Add to BagAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/lego-\u01c0-disney-frozen-2-olaf-keyring-853970",
+      "Name": "LEGO\u00ae \u01c0 Disney Frozen 2 Olaf KeyringPrice\u00a33.99Add to BagAdd to Wish list"
+    }
+  },
+  "harry-potter": {
+    "0": {
+      "href": "/en-gb/product/diagon-alley-75978",
+      "Name": "ExclusivesDiagon Alley\u2122"
+    },
+    "2": {
+      "href": "/en-gb/product/hogwarts-clock-tower-75948",
+      "Name": "ExclusivesHogwarts\u2122 Clock Tower"
+    },
+    "3": {
+      "href": "/en-gb/product/hogwarts-moment-charms-class-76385",
+      "Name": "NewHogwarts\u2122 Moment: Charms Class"
+    },
+    "4": {
+      "href": "/en-gb/product/hogwarts-moment-herbology-class-76384",
+      "Name": "NewHogwarts\u2122 Moment: Herbology Class"
+    },
+    "5": {
+      "href": "/en-gb/product/hogwarts-moment-potions-class-76383",
+      "Name": "NewHogwarts\u2122 Moment: Potions Class"
+    },
+    "6": {
+      "href": "/en-gb/product/hogwarts-moment-transfiguration-class-76382",
+      "Name": "NewHogwarts\u2122 Moment: Transfiguration Class"
+    },
+    "7": {
+      "href": "/en-gb/product/hogwarts-castle-71043",
+      "Name": "Hard to findHogwarts\u2122 Castle"
+    },
+    "8": {
+      "href": "/en-gb/product/lego-harry-potter-advent-calendar-75981",
+      "Name": "Retiring soonLEGO\u00ae Harry Potter\u2122 Advent Calendar"
+    },
+    "9": {
+      "href": "/en-gb/product/attack-on-the-burrow-75980",
+      "Name": "Attack on the Burrow"
+    },
+    "10": {
+      "href": "/en-gb/product/hogwarts-astronomy-tower-75969",
+      "Name": "Hogwarts\u2122 Astronomy Tower"
+    },
+    "11": {
+      "href": "/en-gb/product/hogwarts-great-hall-75954",
+      "Name": "Hogwarts\u2122 Great Hall"
+    },
+    "12": {
+      "href": "/en-gb/product/hogwarts-express-75955",
+      "Name": "Hogwarts\u2122 Express"
+    },
+    "13": {
+      "href": "/en-gb/product/4-privet-drive-75968",
+      "Name": "4 Privet Drive"
+    },
+    "14": {
+      "href": "/en-gb/product/hogwarts-whomping-willow-75953",
+      "Name": "Hogwarts\u2122 Whomping Willow\u2122"
+    },
+    "15": {
+      "href": "/en-gb/product/hagrid-s-hut-buckbeak-s-rescue-75947",
+      "Name": "Hagrid's Hut: Buckbeak's Rescue"
+    },
+    "16": {
+      "href": "/en-gb/product/hedwig-75979",
+      "Name": "Hedwig\u2122"
+    },
+    "17": {
+      "href": "/en-gb/product/the-knight-bus-75957",
+      "Name": "The Knight Bus\u2122"
+    }
+  },
+  "ideas": {
+    "0": {
+      "href": "/en-gb/product/medieval-blacksmith-21325",
+      "Name": "NewMedieval Blacksmith"
+    },
+    "2": {
+      "href": "/en-gb/product/pirates-of-barracuda-bay-21322",
+      "Name": "Hard to findPirates of Barracuda Bay"
+    },
+    "3": {
+      "href": "/en-gb/product/123-sesame-street-21324",
+      "Name": "Hard to find123 Sesame Street"
+    },
+    "4": {
+      "href": "/en-gb/product/international-space-station-21321",
+      "Name": "Hard to findInternational Space Station"
+    },
+    "5": {
+      "href": "/en-gb/product/lego-nasa-apollo-saturn-v-92176",
+      "Name": "LEGO\u00ae NASA Apollo Saturn V"
+    },
+    "6": {
+      "href": "/en-gb/product/ship-in-a-bottle-92177",
+      "Name": "Ship in a Bottle"
+    },
+    "7": {
+      "href": "/en-gb/product/winnie-the-pooh-21326",
+      "Name": "Winnie the PoohPrice\u00a389.99Coming SoonAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/chandler-keyring-854118",
+      "Name": "Chandler KeyringPrice\u00a33.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/joey-keyring-854119",
+      "Name": "Joey Keyring"
+    },
+    "10": {
+      "href": "/en-gb/product/monica-keyring-854121",
+      "Name": "Monica KeyringPrice\u00a33.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/phoebe-keyring-854122",
+      "Name": "Phoebe KeyringPrice\u00a33.99Add to BagAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/rachel-keyring-854120",
+      "Name": "Rachel KeyringPrice\u00a33.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/ross-keyring-854117",
+      "Name": "Ross KeyringPrice\u00a33.99Add to BagAdd to Wish list"
+    },
+    "14": {
+      "href": "/en-gb/product/grand-piano-21323",
+      "Name": "Hard to findGrand Piano"
+    },
+    "15": {
+      "href": "/en-gb/product/tree-house-21318",
+      "Name": "Hard to findTree House"
+    },
+    "16": {
+      "href": "/en-gb/product/central-perk-21319",
+      "Name": "Hard to findCentral Perk"
+    },
+    "17": {
+      "href": "/en-gb/product/dinosaur-fossils-21320",
+      "Name": "Hard to findDinosaur Fossils"
+    }
+  },
+  "jurassic-world": {
+    "0": {
+      "href": "/en-gb/product/jurassic-park-t-rex-rampage-75936",
+      "Name": "Hard to findJurassic Park: T. rex Rampage"
+    },
+    "1": {
+      "href": "/en-gb/product/indominus-rex-vs-ankylosaurus-75941",
+      "Name": "Indominus Rex vs. Ankylosaurus"
+    },
+    "2": {
+      "href": "/en-gb/product/baryonyx-face-off-the-treasure-hunt-75935",
+      "Name": "Baryonyx Face-Off: The Treasure Hunt"
+    },
+    "3": {
+      "href": "/en-gb/product/gallimimus-and-pteranodon-breakout-75940",
+      "Name": "Gallimimus and Pteranodon Breakout"
+    },
+    "4": {
+      "href": "/en-gb/product/velociraptor-biplane-rescue-mission-75942",
+      "Name": "Velociraptor: Biplane Rescue Mission\u200b"
+    },
+    "5": {
+      "href": "/en-gb/product/dr-wu-s-lab-baby-dinosaurs-breakout-75939",
+      "Name": "Dr. Wu's Lab: Baby Dinosaurs Breakout\u200b"
+    }
+  },
+  "art": {
+    "0": {
+      "href": "/en-gb/product/marvel-studios-iron-man-31199",
+      "Name": "Hard to findMarvel Studios Iron Man"
+    },
+    "2": {
+      "href": "/en-gb/product/andy-warhol-s-marilyn-monroe-31197",
+      "Name": "Andy Warhol's Marilyn Monroe"
+    },
+    "3": {
+      "href": "/en-gb/product/star-wars-the-sith-31200",
+      "Name": "Star\u00a0Wars\u2122 The Sith\u2122"
+    },
+    "4": {
+      "href": "/en-gb/product/the-beatles-31198",
+      "Name": "The Beatles"
+    },
+    "5": {
+      "href": "/en-gb/product/disney-s-mickey-mouse-31202",
+      "Name": "NewDisney's Mickey Mouse"
+    },
+    "6": {
+      "href": "/en-gb/product/harry-potter-hogwarts-crests-31201",
+      "Name": "NewHarry Potter\u2122 Hogwarts\u2122 Crests"
+    }
+  },
+  "brick-sketches": {
+    "0": {
+      "href": "/en-gb/product/batman-40386",
+      "Name": "ExclusivesBatman\u2122"
+    },
+    "1": {
+      "href": "/en-gb/product/brick-sketches-bb-8-40431",
+      "Name": "ExclusivesBrick Sketches\u2122 BB-8\u2122"
+    },
+    "2": {
+      "href": "/en-gb/product/first-order-stormtrooper-40391",
+      "Name": "ExclusivesFirst Order Stormtrooper\u2122"
+    },
+    "3": {
+      "href": "/en-gb/product/mickey-mouse-40456",
+      "Name": "NewMickey Mouse"
+    },
+    "4": {
+      "href": "/en-gb/product/minnie-mouse-40457",
+      "Name": "NewMinnie Mouse"
+    },
+    "5": {
+      "href": "/en-gb/product/the-joker-40428",
+      "Name": "ExclusivesThe Joker\u2122"
+    }
+  },
+  "lego-education-sets": {
+    "0": {
+      "href": "/en-gb/product/lego-education-bricq-motion-essential-set-45401",
+      "Name": "NewLEGO\u00ae Education BricQ Motion Essential SetPrice\u00a3106.99Add to BagAdd to Wish list"
+    },
+    "1": {
+      "href": "/en-gb/product/lego-education-bricq-motion-prime-set-45400",
+      "Name": "NewLEGO\u00ae Education BricQ Motion Prime SetPrice\u00a3106.99Add to BagAdd to Wish list"
+    },
+    "2": {
+      "href": "/en-gb/product/lego-education-spike-prime-set-45678",
+      "Name": "LEGO\u00ae Education SPIKE\u2122 Prime Set"
+    },
+    "3": {
+      "href": "/en-gb/product/lego-education-my-xl-world-45028",
+      "Name": "LEGO\u00ae Education My XL WorldPrice\u00a3235.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/coding-express-45025",
+      "Name": "Coding ExpressPrice\u00a3222.99Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/tech-machines-45002",
+      "Name": "Tech Machines"
+    },
+    "6": {
+      "href": "/en-gb/product/lego-education-wedo-2-0-core-set-45300",
+      "Name": "LEGO\u00ae Education WeDo 2.0 Core Set"
+    },
+    "7": {
+      "href": "/en-gb/product/tubes-45026",
+      "Name": "Tubes"
+    },
+    "8": {
+      "href": "/en-gb/product/storytales-45005",
+      "Name": "StoryTalesPrice\u00a3114.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/lego-education-spike-prime-expansion-set-45680",
+      "Name": "LEGO\u00ae Education SPIKE\u2122 Prime Expansion SetPrice\u00a3108.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/steam-park-45024",
+      "Name": "STEAM ParkPrice\u00a3179.99Out of stockAdd to Wish list"
+    }
+  },
+  "super-mario": {
+    "0": {
+      "href": "/en-gb/product/nintendo-entertainment-system-71374",
+      "Name": "ExclusivesNintendo Entertainment System\u2122"
+    },
+    "2": {
+      "href": "/en-gb/product/master-your-adventure-maker-set-71380",
+      "Name": "NewMaster Your Adventure Maker Set"
+    },
+    "3": {
+      "href": "/en-gb/product/wiggler-s-poison-swamp-expansion-set-71383",
+      "Name": "NewWiggler\u2019s Poison Swamp Expansion Set"
+    },
+    "4": {
+      "href": "/en-gb/product/piranha-plant-puzzling-challenge-expansion-set-71382",
+      "Name": "NewPiranha Plant Puzzling Challenge Expansion Set"
+    },
+    "5": {
+      "href": "/en-gb/product/chain-chomp-jungle-encounter-expansion-set-71381",
+      "Name": "NewChain Chomp Jungle Encounter Expansion Set"
+    },
+    "6": {
+      "href": "/en-gb/product/penguin-mario-power-up-pack-71384",
+      "Name": "NewPenguin Mario Power-Up Pack"
+    },
+    "7": {
+      "href": "/en-gb/product/tanooki-mario-power-up-pack-71385",
+      "Name": "NewTanooki Mario Power-Up Pack"
+    },
+    "8": {
+      "href": "/en-gb/product/character-packs-series-2-71386",
+      "Name": "NewCharacter Packs \u2013 Series 2"
+    },
+    "9": {
+      "href": "/en-gb/product/bowser-s-castle-boss-battle-expansion-set-71369",
+      "Name": "Bowser's Castle Boss Battle Expansion Set"
+    },
+    "10": {
+      "href": "/en-gb/product/toad-s-treasure-hunt-expansion-set-71368",
+      "Name": "Toad\u2019s Treasure Hunt Expansion Set"
+    },
+    "11": {
+      "href": "/en-gb/product/adventures-with-mario-starter-course-71360",
+      "Name": "Adventures with Mario Starter Course"
+    },
+    "12": {
+      "href": "/en-gb/product/guarded-fortress-expansion-set-71362",
+      "Name": "Guarded Fortress Expansion Set"
+    },
+    "13": {
+      "href": "/en-gb/product/king-boo-and-the-haunted-yard-expansion-set-71377",
+      "Name": "King Boo and the Haunted Yard Expansion Set"
+    },
+    "14": {
+      "href": "/en-gb/product/thwomp-drop-expansion-set-71376",
+      "Name": "Thwomp Drop Expansion Set"
+    },
+    "15": {
+      "href": "/en-gb/product/boomer-bill-barrage-expansion-set-71366",
+      "Name": "Boomer Bill Barrage Expansion Set"
+    },
+    "16": {
+      "href": "/en-gb/product/mario-s-house-yoshi-expansion-set-71367",
+      "Name": "Mario\u2019s House & Yoshi Expansion Set"
+    },
+    "17": {
+      "href": "/en-gb/product/piranha-plant-power-slide-expansion-set-71365",
+      "Name": "Piranha Plant Power Slide Expansion Set"
+    }
+  },
+  "marvel": {
+    "0": {
+      "href": "/en-gb/product/attack-on-the-spider-lair-76175",
+      "Name": "NewAttack on the Spider Lair"
+    },
+    "2": {
+      "href": "/en-gb/product/spider-man-s-monster-truck-vs-mysterio-76174",
+      "Name": "NewSpider-Man's Monster Truck vs. Mysterio"
+    },
+    "3": {
+      "href": "/en-gb/product/iron-man-vs-thanos-76170",
+      "Name": "NewIron Man vs. ThanosPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/spider-man-and-ghost-rider-vs-carnage-76173",
+      "Name": "NewSpider-Man and Ghost Rider vs. Carnage"
+    },
+    "5": {
+      "href": "/en-gb/product/captain-america-mech-armour-76168",
+      "Name": "NewCaptain America Mech Armour"
+    },
+    "6": {
+      "href": "/en-gb/product/miles-morales-mech-armour-76171",
+      "Name": "NewMiles Morales Mech Armour"
+    },
+    "7": {
+      "href": "/en-gb/product/spider-man-and-sandman-showdown-76172",
+      "Name": "NewSpider-Man and Sandman Showdown"
+    },
+    "8": {
+      "href": "/en-gb/product/thor-mech-armour-76169",
+      "Name": "NewThor Mech Armour"
+    },
+    "9": {
+      "href": "/en-gb/product/marvel-studios-iron-man-31199",
+      "Name": "Hard to findMarvel Studios Iron Man"
+    },
+    "10": {
+      "href": "/en-gb/product/spiderjet-vs-venom-mech-76150",
+      "Name": "Spiderjet vs. Venom Mech"
+    },
+    "11": {
+      "href": "/en-gb/product/avengers-helicarrier-76153",
+      "Name": "Avengers Helicarrier"
+    },
+    "12": {
+      "href": "/en-gb/product/venomosaurus-ambush-76151",
+      "Name": "Venomosaurus Ambush"
+    },
+    "13": {
+      "href": "/en-gb/product/avengers-wrath-of-loki-76152",
+      "Name": "Avengers Wrath of Loki"
+    },
+    "14": {
+      "href": "/en-gb/product/iron-man-hall-of-armor-76125",
+      "Name": "Iron Man Hall of Armor"
+    },
+    "15": {
+      "href": "/en-gb/product/iron-man-helmet-76165",
+      "Name": "Iron Man Helmet"
+    },
+    "16": {
+      "href": "/en-gb/product/avengers-truck-take-down-76143",
+      "Name": "Avengers Truck Take-down"
+    },
+    "17": {
+      "href": "/en-gb/product/iron-man-hulkbuster-versus-a-i-m-agent-76164",
+      "Name": "Iron Man Hulkbuster versus A.I.M. Agent"
+    }
+  },
+  "mindstorms": {
+    "0": {
+      "href": "/en-gb/product/robot-inventor-51515",
+      "Name": "Robot Inventor"
+    },
+    "1": {
+      "href": "/en-gb/product/ev3-intelligent-brick-45500",
+      "Name": "EV3 Intelligent Brick"
+    },
+    "2": {
+      "href": "/en-gb/product/ev3-color-sensor-45506",
+      "Name": "EV3 Color Sensor"
+    },
+    "3": {
+      "href": "/en-gb/product/ev3-gyro-sensor-45505",
+      "Name": "EV3 Gyro Sensor"
+    },
+    "4": {
+      "href": "/en-gb/product/transformer-10v-dc-45517",
+      "Name": "Transformer 10V DC"
+    },
+    "5": {
+      "href": "/en-gb/product/ev3-medium-servo-motor-45503",
+      "Name": "EV3 Medium Servo Motor"
+    },
+    "6": {
+      "href": "/en-gb/product/ev3-cable-pack-45514",
+      "Name": "EV3 Cable PackPrice\u00a315.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/ev3-touch-sensor-45507",
+      "Name": "EV3 Touch SensorPrice\u00a315.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/ev3-rechargeable-dc-battery-45501",
+      "Name": "EV3 Rechargeable DC Battery"
+    },
+    "9": {
+      "href": "/en-gb/product/ev3-ultrasonic-sensor-45504",
+      "Name": "EV3 Ultrasonic Sensor"
+    },
+    "10": {
+      "href": "/en-gb/product/ev3-large-servo-motor-45502",
+      "Name": "EV3 Large Servo Motor"
+    }
+  },
+  "minecraft": {
+    "0": {
+      "href": "/en-gb/product/the-first-adventure-21169",
+      "Name": "NewThe First Adventure"
+    },
+    "2": {
+      "href": "/en-gb/product/the-pig-house-21170",
+      "Name": "NewThe Pig House"
+    },
+    "3": {
+      "href": "/en-gb/product/the-warped-forest-21168",
+      "Name": "NewThe Warped Forest"
+    },
+    "4": {
+      "href": "/en-gb/product/the-coral-reef-21164",
+      "Name": "NewThe Coral Reef"
+    },
+    "5": {
+      "href": "/en-gb/product/the-pirate-ship-adventure-21152",
+      "Name": "The Pirate Ship Adventure"
+    },
+    "6": {
+      "href": "/en-gb/product/the-creeper-mine-21155",
+      "Name": "The Creeper\u2122 Mine"
+    },
+    "7": {
+      "href": "/en-gb/product/the-crafting-box-3-0-21161",
+      "Name": "The Crafting Box 3.0"
+    },
+    "8": {
+      "href": "/en-gb/product/the-illager-raid-21160",
+      "Name": "The Illager Raid"
+    },
+    "9": {
+      "href": "/en-gb/product/the-redstone-battle-21163",
+      "Name": "The Redstone Battle"
+    },
+    "10": {
+      "href": "/en-gb/product/the-blaze-bridge-21154",
+      "Name": "The Blaze Bridge"
+    },
+    "11": {
+      "href": "/en-gb/product/the-pillager-outpost-21159",
+      "Name": "The Pillager Outpost"
+    },
+    "12": {
+      "href": "/en-gb/product/the-end-battle-21151",
+      "Name": "The End Battle"
+    },
+    "13": {
+      "href": "/en-gb/product/the-panda-nursery-21158",
+      "Name": "The Panda Nursery"
+    },
+    "14": {
+      "href": "/en-gb/product/the-wool-farm-21153",
+      "Name": "The Wool Farm"
+    },
+    "15": {
+      "href": "/en-gb/product/the-abandoned-mine-21166",
+      "Name": "The \"Abandoned\" Mine"
+    },
+    "16": {
+      "href": "/en-gb/product/the-bee-farm-21165",
+      "Name": "The Bee Farm"
+    },
+    "17": {
+      "href": "/en-gb/product/the-trading-post-21167",
+      "Name": "The Trading Post"
+    }
+  },
+  "minifigures": {
+    "0": {
+      "href": "/en-gb/product/series-21-71029",
+      "Name": "NewSeries 21"
+    },
+    "1": {
+      "href": "/en-gb/product/series-20-71027",
+      "Name": "Series 20"
+    },
+    "2": {
+      "href": "/en-gb/product/hogwarts-students-acc-set-40419",
+      "Name": "ExclusivesHogwarts\u2122 Students Acc. Set"
+    },
+    "3": {
+      "href": "/en-gb/product/fairground-mf-acc-set-40373",
+      "Name": "ExclusivesFairground MF Acc. Set"
+    },
+    "4": {
+      "href": "/en-gb/product/golden-zane-mf-acc-set-40374",
+      "Name": "ExclusivesGolden Zane MF Acc. Set"
+    },
+    "5": {
+      "href": "/en-gb/product/minifigure-belight-backpack-5005918",
+      "Name": "Minifigure Belight BackpackPrice\u00a339.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/tlm2-accessory-set-2019-853865",
+      "Name": "- 30%TLM2 Accessory Set 2019"
+    },
+    "7": {
+      "href": "/en-gb/product/minifigure-lunch-box-5005928",
+      "Name": "Minifigure Lunch Box"
+    },
+    "8": {
+      "href": "/en-gb/product/teen-minifigure-backpack-5005924",
+      "Name": "Teen Minifigure BackpackPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/display-case-8-black-5006152",
+      "Name": "Display Case 8 \u2013 BlackPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/knightmare-batman-acc-set-2018-853744",
+      "Name": "- 30%Knightmare Batman\u2122 Acc. Set 2018"
+    },
+    "11": {
+      "href": "/en-gb/product/lego-minifigure-display-case-16-5005375",
+      "Name": "LEGO\u00ae Minifigure Display Case 16"
+    }
+  },
+  "minions": {
+    "0": {
+      "href": "/en-gb/product/brick-built-minions-and-their-lair-75551",
+      "Name": "Brick-built Minions and their Lair"
+    },
+    "1": {
+      "href": "/en-gb/product/unstoppable-bike-chase-75549",
+      "Name": "Unstoppable Bike Chase"
+    }
+  },
+  "monkie-kid": {
+    "0": {
+      "href": "/en-gb/product/monkie-kid-s-team-secret-hq-80013",
+      "Name": "ExclusivesMonkie Kid\u2019s Team Secret HQ"
+    },
+    "1": {
+      "href": "/en-gb/product/the-legendary-flower-fruit-mountain-80024",
+      "Name": "NewThe Legendary Flower Fruit Mountain"
+    },
+    "2": {
+      "href": "/en-gb/product/monkey-king-warrior-mech-80012",
+      "Name": "ExclusivesMonkey King Warrior Mech"
+    },
+    "3": {
+      "href": "/en-gb/product/monkie-kid-s-team-dronecopter-80023",
+      "Name": "NewMonkie Kid's Team DronecopterPrice\u00a3119.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/red-son-s-inferno-truck-80011",
+      "Name": "ExclusivesRed Son\u2019s Inferno Truck"
+    },
+    "5": {
+      "href": "/en-gb/product/spider-queen-s-arachnoid-base-80022",
+      "Name": "NewSpider Queen\u2019s Arachnoid Base"
+    },
+    "6": {
+      "href": "/en-gb/product/demon-bull-king-80010",
+      "Name": "ExclusivesDemon Bull King"
+    },
+    "7": {
+      "href": "/en-gb/product/monkie-kid-s-lion-guardian-80021",
+      "Name": "NewMonkie Kid's Lion Guardian"
+    },
+    "8": {
+      "href": "/en-gb/product/pigsy-s-food-truck-80009",
+      "Name": "ExclusivesPigsy\u2019s Food Truck"
+    },
+    "9": {
+      "href": "/en-gb/product/monkie-kid-s-cloud-jet-80008",
+      "Name": "ExclusivesMonkie Kid\u2019s Cloud Jet"
+    },
+    "10": {
+      "href": "/en-gb/product/iron-bull-tank-80007",
+      "Name": "ExclusivesIron Bull Tank"
+    },
+    "11": {
+      "href": "/en-gb/product/white-dragon-horse-jet-80020",
+      "Name": "NewWhite Dragon Horse JetPrice\u00a334.99Add to BagAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/red-son-s-inferno-jet-80019",
+      "Name": "NewRed Son's Inferno JetPrice\u00a327.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/white-dragon-horse-bike-80006",
+      "Name": "ExclusivesWhite Dragon Horse Bike"
+    },
+    "14": {
+      "href": "/en-gb/product/monkie-kid-s-cloud-bike-80018",
+      "Name": "NewMonkie Kid\u2019s Cloud BikePrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "15": {
+      "href": "/en-gb/product/monkie-kid-s-rc-race-40472",
+      "Name": "NewMonkie Kid's RC RacePrice\u00a311.99Add to BagAdd to Wish list"
+    },
+    "16": {
+      "href": "/en-gb/product/monkey-king-40381",
+      "Name": "ExclusivesMonkey King"
+    },
+    "17": {
+      "href": "/en-gb/product/the-flaming-foundry-80016",
+      "Name": "The Flaming Foundry"
+    }
+  },
+  "ninjago": {
+    "0": {
+      "href": "/en-gb/product/ninjago-city-gardens-71741",
+      "Name": "NewNINJAGO\u00ae City Gardens"
+    },
+    "2": {
+      "href": "/en-gb/product/catamaran-sea-battle-71748",
+      "Name": "NewCatamaran Sea Battle"
+    },
+    "3": {
+      "href": "/en-gb/product/zane-s-titan-mech-battle-71738",
+      "Name": "NewZane's Titan Mech Battle"
+    },
+    "4": {
+      "href": "/en-gb/product/the-keepers-village-71747",
+      "Name": "NewThe Keepers' Village"
+    },
+    "5": {
+      "href": "/en-gb/product/x-1-ninja-charger-71737",
+      "Name": "NewX-1 Ninja Charger"
+    },
+    "6": {
+      "href": "/en-gb/product/boulder-blaster-71736",
+      "Name": "NewBoulder Blaster"
+    },
+    "7": {
+      "href": "/en-gb/product/jungle-dragon-71746",
+      "Name": "NewJungle Dragon"
+    },
+    "8": {
+      "href": "/en-gb/product/overlord-dragon-71742",
+      "Name": "NewOverlord Dragon"
+    },
+    "9": {
+      "href": "/en-gb/product/tournament-of-elements-71735",
+      "Name": "NewTournament of Elements"
+    },
+    "10": {
+      "href": "/en-gb/product/jay-s-electro-mech-71740",
+      "Name": "NewJay's Electro Mech"
+    },
+    "11": {
+      "href": "/en-gb/product/lloyd-s-jungle-chopper-bike-71745",
+      "Name": "NewLloyd's Jungle Chopper Bike"
+    },
+    "12": {
+      "href": "/en-gb/product/epic-battle-set-cole-vs-ghost-warrior-71733",
+      "Name": "NewEpic Battle Set - Cole vs. Ghost Warrior"
+    },
+    "13": {
+      "href": "/en-gb/product/epic-battle-set-jay-vs-serpentine-71732",
+      "Name": "NewEpic Battle Set - Jay vs. Serpentine"
+    },
+    "14": {
+      "href": "/en-gb/product/epic-battle-set-kai-vs-skulkin-71730",
+      "Name": "NewEpic Battle Set - Kai vs. Skulkin"
+    },
+    "15": {
+      "href": "/en-gb/product/epic-battle-set-zane-vs-nindroid-71731",
+      "Name": "NewEpic Battle Set - Zane vs. Nindroid"
+    },
+    "16": {
+      "href": "/en-gb/product/destiny-s-bounty-71705",
+      "Name": "Destiny's Bounty"
+    },
+    "17": {
+      "href": "/en-gb/product/skull-sorcerer-s-dungeons-71722",
+      "Name": "Skull Sorcerer's Dungeons"
+    }
+  },
+  "power-functions": {
+    "0": {
+      "href": "/en-gb/product/transformer-10v-dc-45517",
+      "Name": "Transformer 10V DC"
+    }
+  },
+  "powered-up": {
+    "0": {
+      "href": "/en-gb/product/disney-train-and-station-71044",
+      "Name": "ExclusivesDisney Train and Station"
+    },
+    "1": {
+      "href": "/en-gb/product/haunted-house-10273",
+      "Name": "Hard to findHaunted House"
+    },
+    "2": {
+      "href": "/en-gb/product/passenger-train-60197",
+      "Name": "Passenger Train"
+    },
+    "3": {
+      "href": "/en-gb/product/liebherr-r-9800-excavator-42100",
+      "Name": "Liebherr R 9800 Excavator"
+    },
+    "4": {
+      "href": "/en-gb/product/4x4-x-treme-off-roader-42099",
+      "Name": "4X4 X-treme Off-Roader"
+    },
+    "5": {
+      "href": "/en-gb/product/boost-creative-toolbox-17101",
+      "Name": "BOOST Creative Toolbox"
+    },
+    "6": {
+      "href": "/en-gb/product/app-controlled-top-gear-rally-car-42109",
+      "Name": "App-Controlled Top Gear Rally Car"
+    },
+    "7": {
+      "href": "/en-gb/product/move-hub-88006",
+      "Name": "Move Hub"
+    },
+    "8": {
+      "href": "/en-gb/product/technic-hub-88012",
+      "Name": "Technic\u2122 Hub"
+    },
+    "9": {
+      "href": "/en-gb/product/hub-88009",
+      "Name": "Hub"
+    },
+    "10": {
+      "href": "/en-gb/product/battery-box-88015",
+      "Name": "Battery Box"
+    },
+    "11": {
+      "href": "/en-gb/product/technic-large-motor-88013",
+      "Name": "Technic\u2122 Large Motor"
+    },
+    "12": {
+      "href": "/en-gb/product/technic-xl-motor-88014",
+      "Name": "Technic\u2122 XL MotorPrice\u00a329.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/remote-control-88010",
+      "Name": "Remote Control"
+    },
+    "14": {
+      "href": "/en-gb/product/medium-linear-motor-88008",
+      "Name": "Medium Linear Motor"
+    },
+    "15": {
+      "href": "/en-gb/product/color-distance-sensor-88007",
+      "Name": "Color & Distance Sensor"
+    },
+    "16": {
+      "href": "/en-gb/product/train-motor-88011",
+      "Name": "Train Motor"
+    },
+    "17": {
+      "href": "/en-gb/product/light-88005",
+      "Name": "Light"
+    }
+  },
+  "serious-play": {
+    "0": {
+      "href": "/en-gb/product/identity-and-landscape-kit-2000430",
+      "Name": "Identity and Landscape Kit"
+    },
+    "1": {
+      "href": "/en-gb/product/connections-kit-2000431",
+      "Name": "Connections Kit"
+    },
+    "2": {
+      "href": "/en-gb/product/starter-kit-2000414",
+      "Name": "Starter Kit"
+    },
+    "3": {
+      "href": "/en-gb/product/window-exploration-bag-2000409",
+      "Name": "Window Exploration Bag"
+    }
+  },
+  "speed-champions": {
+    "0": {
+      "href": "/en-gb/product/lamborghini-urus-st-x-lamborghini-huracan-super-trofeo-evo-76899",
+      "Name": "Lamborghini Urus ST-X & Lamborghini Hurac\u00e1n Super Trofeo EVO"
+    },
+    "2": {
+      "href": "/en-gb/product/2018-dodge-challenger-srt-demon-and-1970-dodge-charger-r-t-75893",
+      "Name": "2018 Dodge Challenger SRT Demon and 1970 Dodge Charger R/T"
+    },
+    "3": {
+      "href": "/en-gb/product/formula-e-panasonic-jaguar-racing-gen2-car-jaguar-i-pace-etrophy-76898",
+      "Name": "Formula E Panasonic Jaguar Racing GEN2 car & Jaguar I-PACE eTROPHY"
+    },
+    "4": {
+      "href": "/en-gb/product/ferrari-f8-tributo-76895",
+      "Name": "Ferrari F8 Tributo"
+    },
+    "5": {
+      "href": "/en-gb/product/nissan-gt-r-nismo-76896",
+      "Name": "Nissan GT-R NISMO"
+    },
+    "6": {
+      "href": "/en-gb/product/1974-porsche-911-turbo-3-0-75895",
+      "Name": "1974 Porsche 911 Turbo 3.0"
+    },
+    "7": {
+      "href": "/en-gb/product/chevrolet-camaro-zl1-race-car-75891",
+      "Name": "Chevrolet Camaro ZL1 Race Car"
+    },
+    "8": {
+      "href": "/en-gb/product/ferrari-f40-competizione-75890",
+      "Name": "Ferrari F40 Competizione"
+    },
+    "9": {
+      "href": "/en-gb/product/mclaren-senna-75892",
+      "Name": "McLaren Senna"
+    },
+    "10": {
+      "href": "/en-gb/product/1985-audi-sport-quattro-s1-76897",
+      "Name": "1985 Audi Sport quattro S1"
+    }
+  },
+  "lego-spider-man": {
+    "0": {
+      "href": "/en-gb/product/attack-on-the-spider-lair-76175",
+      "Name": "NewAttack on the Spider Lair"
+    },
+    "1": {
+      "href": "/en-gb/product/spider-man-s-monster-truck-vs-mysterio-76174",
+      "Name": "NewSpider-Man's Monster Truck vs. Mysterio"
+    },
+    "2": {
+      "href": "/en-gb/product/spider-man-and-ghost-rider-vs-carnage-76173",
+      "Name": "NewSpider-Man and Ghost Rider vs. Carnage"
+    },
+    "3": {
+      "href": "/en-gb/product/miles-morales-mech-armour-76171",
+      "Name": "NewMiles Morales Mech Armour"
+    },
+    "4": {
+      "href": "/en-gb/product/spider-man-and-sandman-showdown-76172",
+      "Name": "NewSpider-Man and Sandman Showdown"
+    },
+    "5": {
+      "href": "/en-gb/product/spiderjet-vs-venom-mech-76150",
+      "Name": "Spiderjet vs. Venom Mech"
+    },
+    "6": {
+      "href": "/en-gb/product/venomosaurus-ambush-76151",
+      "Name": "Venomosaurus Ambush"
+    },
+    "7": {
+      "href": "/en-gb/product/venom-crawler-76163",
+      "Name": "Venom Crawler"
+    },
+    "8": {
+      "href": "/en-gb/product/spider-man-mech-76146",
+      "Name": "Spider-Man Mech"
+    },
+    "9": {
+      "href": "/en-gb/product/carnage-76199",
+      "Name": "CarnagePrice\u00a354.99Coming SoonAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/spider-man-keyring-853950",
+      "Name": "Spider-Man Keyring"
+    }
+  },
+  "star-wars": {
+    "0": {
+      "href": "/en-gb/product/imperial-shuttle-75302",
+      "Name": "NewImperial Shuttle\u2122"
+    },
+    "2": {
+      "href": "/en-gb/product/luke-skywalker-s-x-wing-fighter-75301",
+      "Name": "NewLuke Skywalker\u2019s X-Wing Fighter\u2122"
+    },
+    "3": {
+      "href": "/en-gb/product/imperial-tie-fighter-75300",
+      "Name": "NewImperial TIE Fighter\u2122"
+    },
+    "4": {
+      "href": "/en-gb/product/trouble-on-tatooine-75299",
+      "Name": "NewTrouble on Tatooine\u2122"
+    },
+    "5": {
+      "href": "/en-gb/product/at-at-vs-tauntaun-microfighters-75298",
+      "Name": "NewAT-AT\u2122 vs. Tauntaun\u2122 Microfighters"
+    },
+    "6": {
+      "href": "/en-gb/product/resistance-x-wing-75297",
+      "Name": "NewResistance X-Wing\u2122"
+    },
+    "7": {
+      "href": "/en-gb/product/brick-sketches-bb-8-40431",
+      "Name": "ExclusivesBrick Sketches\u2122 BB-8\u2122"
+    },
+    "8": {
+      "href": "/en-gb/product/first-order-stormtrooper-40391",
+      "Name": "ExclusivesFirst Order Stormtrooper\u2122"
+    },
+    "9": {
+      "href": "/en-gb/product/millennium-falcon-microfighter-75295",
+      "Name": "NewMillennium Falcon\u2122 Microfighter"
+    },
+    "10": {
+      "href": "/en-gb/product/imperial-star-destroyer-75252",
+      "Name": "Hard to findImperial Star Destroyer\u2122"
+    },
+    "11": {
+      "href": "/en-gb/product/mos-eisley-cantina-75290",
+      "Name": "Hard to findMos Eisley Cantina\u2122"
+    },
+    "12": {
+      "href": "/en-gb/product/a-wing-starfighter-75275",
+      "Name": "A-wing Starfighter\u2122"
+    },
+    "13": {
+      "href": "/en-gb/product/millennium-falcon-75257",
+      "Name": "Millennium Falcon\u2122"
+    },
+    "14": {
+      "href": "/en-gb/product/at-at-75288",
+      "Name": "AT-AT\u2122"
+    },
+    "15": {
+      "href": "/en-gb/product/darth-vader-s-castle-75251",
+      "Name": "Darth Vader's Castle"
+    },
+    "16": {
+      "href": "/en-gb/product/star-wars-the-sith-31200",
+      "Name": "Star\u00a0Wars\u2122 The Sith\u2122"
+    },
+    "17": {
+      "href": "/en-gb/product/kylo-ren-s-shuttle-75256",
+      "Name": "Kylo Ren's Shuttle\u2122"
+    }
+  },
+  "stranger-things": {
+    "0": {
+      "href": "/en-gb/product/the-upside-down-75810",
+      "Name": "Hard to findThe Upside Down"
+    }
+  },
+  "technic": {
+    "0": {
+      "href": "/en-gb/product/off-road-buggy-42124",
+      "Name": "NewOff-Road Buggy"
+    },
+    "1": {
+      "href": "/en-gb/product/tbd-ip-car2-2021-10295?icmp=LP-SHD-Standard-CE_Disruptor_10295_Porsche_911-EX-CE-Q0U6Z11TVF",
+      "Name": "One legendary car. Two iconic models.One legendary car. Two iconic models.New LEGO\u00ae Porsche 911."
+    },
+    "2": {
+      "href": "/en-gb/product/jeep-wrangler-42122",
+      "Name": "NewJeep\u00ae Wrangler"
+    },
+    "3": {
+      "href": "/en-gb/product/mclaren-senna-gtr-42123",
+      "Name": "NewMcLaren Senna GTR\u2122"
+    },
+    "4": {
+      "href": "/en-gb/product/heavy-duty-excavator-42121",
+      "Name": "NewHeavy-Duty Excavator"
+    },
+    "5": {
+      "href": "/en-gb/product/rescue-hovercraft-42120",
+      "Name": "NewRescue HovercraftPrice\u00a329.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/monster-jam-grave-digger-42118",
+      "Name": "NewMonster Jam\u00ae  Grave Digger\u00ae"
+    },
+    "7": {
+      "href": "/en-gb/product/monster-jam-max-d-42119",
+      "Name": "NewMonster Jam\u00ae Max-D\u00ae"
+    },
+    "8": {
+      "href": "/en-gb/product/race-plane-42117",
+      "Name": "NewRace Plane"
+    },
+    "9": {
+      "href": "/en-gb/product/skid-steer-loader-42116",
+      "Name": "NewSkid Steer Loader"
+    },
+    "10": {
+      "href": "/en-gb/product/lamborghini-sian-fkp-37-42115",
+      "Name": "Hard to findLamborghini Si\u00e1n FKP 37"
+    },
+    "11": {
+      "href": "/en-gb/product/bugatti-chiron-42083",
+      "Name": "Hard to findBugatti Chiron"
+    },
+    "12": {
+      "href": "/en-gb/product/liebherr-r-9800-excavator-42100",
+      "Name": "Liebherr R 9800 Excavator"
+    },
+    "13": {
+      "href": "/en-gb/product/6x6-volvo-articulated-hauler-42114",
+      "Name": "6x6 Volvo Articulated Hauler"
+    },
+    "14": {
+      "href": "/en-gb/product/4x4-x-treme-off-roader-42099",
+      "Name": "4X4 X-treme Off-Roader"
+    },
+    "15": {
+      "href": "/en-gb/product/ferrari-488-gte-af-corse-51-42125",
+      "Name": "Ferrari 488 GTE \u201cAF Corse #51\u201d"
+    },
+    "16": {
+      "href": "/en-gb/product/land-rover-defender-42110",
+      "Name": "Land Rover Defender"
+    },
+    "17": {
+      "href": "/en-gb/product/porsche-911-rsr-42096",
+      "Name": "Porsche 911 RSR"
+    }
+  },
+  "trolls": {
+    "0": {
+      "href": "/en-gb/product/vibe-city-concert-41258",
+      "Name": "Vibe City Concert"
+    },
+    "1": {
+      "href": "/en-gb/product/pop-village-celebration-41255",
+      "Name": "Pop Village Celebration"
+    },
+    "2": {
+      "href": "/en-gb/product/volcano-rock-city-concert-41254",
+      "Name": "Volcano Rock City Concert"
+    },
+    "3": {
+      "href": "/en-gb/product/poppy-s-hot-air-balloon-adventure-41252",
+      "Name": "Poppy's Hot Air Balloon Adventure"
+    },
+    "4": {
+      "href": "/en-gb/product/poppy-s-pod-41251",
+      "Name": "Poppy's Pod"
+    },
+    "5": {
+      "href": "/en-gb/product/branch-key-chain-854004",
+      "Name": "Branch Key ChainPrice\u00a33.99Add to BagAdd to Wish list"
+    }
+  },
+  "toy-story-4": {
+    "0": {
+      "href": "/en-gb/product/toy-story-train-10894",
+      "Name": "Toy Story Train"
+    }
+  },
+  "vidiyo": {
+    "0": {
+      "href": "/en-gb/product/alien-dj-beatbox-43104",
+      "Name": "NewAlien DJ BeatBox"
+    },
+    "2": {
+      "href": "/en-gb/product/candy-mermaid-beatbox-43102",
+      "Name": "NewCandy Mermaid BeatBox"
+    },
+    "3": {
+      "href": "/en-gb/product/hiphop-robot-beatbox-43107",
+      "Name": "NewHipHop Robot BeatBox"
+    },
+    "4": {
+      "href": "/en-gb/product/party-llama-beatbox-43105",
+      "Name": "NewParty Llama BeatBox"
+    },
+    "5": {
+      "href": "/en-gb/product/punk-pirate-beatbox-43103",
+      "Name": "NewPunk Pirate BeatBox"
+    },
+    "6": {
+      "href": "/en-gb/product/unicorn-dj-beatbox-43106",
+      "Name": "NewUnicorn DJ BeatBox"
+    },
+    "7": {
+      "href": "/en-gb/product/bandmates-43101",
+      "Name": "NewBandmates"
+    }
+  }
+}

@@ -16,4 +16,6 @@ class Redirect {
             exit();
         }
     }
-} ?>
+} 
+
+?>

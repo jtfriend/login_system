@@ -1,0 +1,102 @@
+{
+  "Star Wars": {
+    "0": {
+      "name": "Imperial TIE Fighter",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt834c5ddd9d65a669/75300.jpg"
+    },
+    "1": {
+      "name": "Imperial Shuttle",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt1d2a2187c6c1002c/75302.jpg"
+    },
+    "7": {
+      "name": "Kylo Ren",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blta7dfabba6f95c11d/75117.jpg"
+    },
+    "8": {
+      "name": "Jango Fett",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt8a3d817b909ad18d/75107.jpg"
+    },
+    "9": {
+      "name": "Chirrut mwe",
+      "href": "https://www.lego.com/cdn/cs/set/assets/bltc8fdaeaf95e768e7/75524.jpg"
+    },
+    "10": {
+      "name": "K-2SO",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt790e1613a91ea255/75120.jpg"
+    },
+    "11": {
+      "name": "Rey",
+      "href": "https://www.lego.com/cdn/cs/set/assets/bltbfbf2dbd5a772b44/75113.jpg"
+    },
+    "12": {
+      "name": "Finn",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt8ebdc1c37c5dd3a6/75116.jpg"
+    },
+    "13": {
+      "name": "Imperial Death Trooper",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt3d155a54e8c3c611/75121.jpg"
+    },
+    "14": {
+      "name": "Elite TIE Fighter Pilot",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt2a06e6d0d89873b9/75526.jpg"
+    },
+    "15": {
+      "name": "Sergeant Jyn Erso",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt8471a89c6f55f2a0/75119.jpg"
+    },
+    "16": {
+      "name": "Anakin's Podracer  20th Anniversary Edition",
+      "href": "https://www.lego.com/cdn/cs/set/assets/bltd91d336b08698902/75258.jpg"
+    },
+    "17": {
+      "name": "Millennium Falcon",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt309a3607965e6680/75105.jpg"
+    },
+    "18": {
+      "name": "X-Wing Starfighter",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt1a561f9edb28d303/75218.jpg"
+    },
+    "19": {
+      "name": "Resistance Y-Wing Starfighter",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt95bbb82fe5e50bd7/75249.jpg"
+    },
+    "20": {
+      "name": "Resistance A-Wing Starfighter",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt84b3b0caeadeb716/75248.jpg"
+    },
+    "21": {
+      "name": "Anakin's Podracer  20th Anniversary Edition",
+      "href": "https://www.lego.com/cdn/cs/set/assets/bltd91d336b08698902/75258.jpg"
+    },
+    "22": {
+      "name": "Carbon-Freezing Chamber",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blte54b6db0948a787e/75137.jpg"
+    },
+    "23": {
+      "name": "The Mandalorian Bounty Hunter Transport ",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt7a4292faec34e557/75292.png"
+    }
+  },
+  "Ideas": {
+    "2": {
+      "name": "WALLE",
+      "href": "https://www.lego.com/cdn/cs/set/assets/bltda990e13e577af24/21303.jpg"
+    }
+  },
+  "Creator Expert": {
+    "4": {
+      "name": "London Bus",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt676facd0d37f1b7e/10258.jpg"
+    }
+  },
+  "Architecture": {
+    "5": {
+      "name": "San Francisco",
+      "href": "https://www.lego.com/cdn/cs/set/assets/bltd63ae32aac276161/21043.jpg"
+    },
+    "6": {
+      "name": "London",
+      "href": "https://www.lego.com/cdn/cs/set/assets/blt98d7ba0b6a8b2997/21034.jpg"
+    }
+  }
+}

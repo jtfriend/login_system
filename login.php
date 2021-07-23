@@ -3,10 +3,15 @@ require_once 'core/init.php';
 
 $user = new User();
 
-
+$q = $_REQUEST["q"];
 
 if ($user->isLoggedIn()) {
-    Redirect::to('index.php');
+    if($q == "1") {
+        Redirect::to('index.php');
+    } else {
+        Redirect::to('index.php?q=0');
+    }
+    
 } else {
     if(Input::exists()) {
         if(Token::check(Input::get('token'))) {
@@ -39,44 +44,40 @@ if ($user->isLoggedIn()) {
 
     ?>
     <html >
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
     <body onload="clearInputBoxes()">
     <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
     <div style="background-color:#595959;">
         <div class="container-fluid bg-dark">
                 <div class="row justify-content-md-center bg-blue text-white" style="padding:20px;">
-                    <div class="mx-auto">Catch in the Dark</div>
+                    <div class="mx-auto">JTF Pi Server</div>
                 </div>
             </div>
-        <div class="container-fluid" style="background-color:#e67300;">
-            <div class="row justify-content-md-center">
-                <div class="col-md-6 no-gutters text-center">
+        <div class="container" style="background-color:#e67300;">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-6 col-6 text-center">
                     <form style="margin-top:15px;" action="" method="post">
-                        <div class="form-group field row" >
-                            <div class="field col-md-6" style="text-align:right" >
-                                <label for="username">Username</label>
-                            </div>
-                            <div class="field col-md-6" style="text-align:left" >
-                                <input type="text" value="" name="username" id="username" autocomplete="off" required>
+                        <div class="row justify-content-md-center input-group-lg mb-3">
+                            <label for="inputEmail3" style="text-align:right;" class="col-md-6 col-sm-6 col-6 col-form-label">Username</label>
+                            <div class="col-md-6 col-sm-6 col-6" >
+                            <input type="text" class="form-control" value="" name="username" id="username" autocomplete="off" required>
                             </div>
                         </div>
-
-                        <div class="form-group field row" >
-                            <div class="field col-md-6" style="text-align:right" >
-                                <label for="password">Password</label>
+                        <div class="row justify-content-md-center input-group-lg mb-3">
+                            <label for="inputPassword3" style="text-align:right;" class="col-md-6 col-sm-6 col-6 col-form-label">Password</label>
+                            <div class="col-md-6 col-sm-6 col-6">
+                            <input type="password" class="form-control" value="" name="password" id="password" required>
                             </div>
-                            <div class="field col-md-6" style="text-align:left" >
-                                <input type="password" value="" name="password" id="password" autocomplete="off" required>
-                            </div>
-                        </div>  
-
+                        </div>
                         <div class="form-group field row" >
                             <input type="hidden" name="remember" id="remember" value="1">
                             <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
-                            <div class="field col-md-6" style="text-align:right" >
+                            <div id="submitbut" style="text-align:right;" class="field col-md-6 col-sm-6 col-6" >
                                 <input style="background-color:#4542ff;" class="btn" type="submit" value="Log in">
                             </div>
-                            <div class="field col-md-6" style="text-align:left" >
+                            <div class="field col-md-6 col-sm-6 col-6" style="text-align:left" >
                                 <a href="register.php" style="background-color:#4542ff;" class="btn">Register</a>
                             </div>
                         </div>
@@ -93,3 +94,13 @@ function clearInputBoxes() {
   document.getElementById("username").value= "";
 }
 </script>
+
+<style>
+
+@media (min-width: 576px) { 
+
+}
+
+
+</style>
+

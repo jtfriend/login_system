@@ -13,7 +13,7 @@ class Validate {
             foreach($rules as $rule => $rule_value){
                 $value = $source[$item];
                 if ($rule === 'required' && empty($value)) {
-                    // $this->addError("{$item} is required");
+                    $this->addError("{$item} is required");
                 } else if (!empty($value)) {
                     switch($rule){
                         case 'min':
@@ -35,6 +35,11 @@ class Validate {
                             $check = $this->_db->get($rule_value, ['u_' . $item, '=', $value]);
                             if($check->count()){
                                 $this->addError("{$item} already in system");
+                            }
+                        break;
+                        case 'value':
+                            if ($rule_value != $source[$item]) {
+                                $this->addError("{$item} Incorrect");
                             }
                         break;
                     }

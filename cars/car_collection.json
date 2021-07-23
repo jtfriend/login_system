@@ -1,0 +1,20 @@
+{
+  "Ford": {
+    "Fiesta": {
+      "Mk1" : {
+        "production": "1976 - 1983"
+      },
+      "Mk2" : {
+        "production": "1983 - 1989"
+      }
+    },
+    "Escort" : {
+      "Mk1" : {
+        "production": "1967 - 1975"
+      },
+      "Mk2" : {
+        "production": "1974 - 1980"
+      }
+    }
+  }
+}

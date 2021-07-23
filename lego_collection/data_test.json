@@ -1,0 +1,751 @@
+{
+  "architecture": {
+    "0": {
+      "href": "/en-gb/product/burj-khalifa-21055",
+      "Name": "NewBurj KhalifaAverage rating1.6out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "2": {
+      "href": "/en-gb/product/empire-state-building-21046",
+      "Name": "Empire State BuildingAverage rating4.6out of 5 starsPrice\u00a389.99Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/statue-of-liberty-21042",
+      "Name": "Statue of LibertyAverage rating4.6out of 5 starsPrice\u00a389.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/the-white-house-21054",
+      "Name": "The White HouseAverage rating4.7out of 5 starsPrice\u00a389.99Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/trafalgar-square-21045",
+      "Name": "Trafalgar SquareAverage rating4.3out of 5 starsPrice\u00a379.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/dubai-21052",
+      "Name": "DubaiAverage rating4.4out of 5 starsPrice\u00a354.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/tokyo-21051",
+      "Name": "TokyoAverage rating4.5out of 5 starsPrice\u00a354.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/london-21034",
+      "Name": "LondonAverage rating4.6out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/new-york-city-21028",
+      "Name": "New York CityAverage rating4.3out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/paris-21044",
+      "Name": "ParisAverage rating4.4out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/san-francisco-21043",
+      "Name": "San FranciscoAverage rating4.5out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    }
+  },
+  "lego-batman-sets": {
+    "0": {
+      "href": "/en-gb/product/batman-40386",
+      "Name": "ExclusivesBatman\u2122Average rating4out of 5 starsPrice\u00a314.99Add to BagAdd to Wish list"
+    },
+    "1": {
+      "href": "/en-gb/product/the-joker-40428",
+      "Name": "ExclusivesThe Joker\u2122Average rating4.7out of 5 starsPrice\u00a314.99Add to BagAdd to Wish list"
+    },
+    "2": {
+      "href": "/en-gb/product/batman-vs-the-penguin-harley-quinn-40453",
+      "Name": "NewBatman\u2122 vs. The Penguin\u2122 & Harley Quinn\u2122Average rating4.5out of 5 starsPrice\u00a313.49Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/1989-batmobile-76139",
+      "Name": "Hard to find1989 Batmobile\u2122Average rating4.7out of 5 starsPrice\u00a3219.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/1989-batwing-76161",
+      "Name": "Hard to find1989 BatwingAverage rating4.3out of 5 starsPrice\u00a3179.99Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/mobile-bat-base-76160",
+      "Name": "Mobile Bat BaseAverage rating4.8out of 5 starsPrice\u00a379.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/joker-s-trike-chase-76159",
+      "Name": "Joker's Trike ChaseAverage rating4.8out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/batboat-the-penguin-pursuit-76158",
+      "Name": "Batboat The Penguin Pursuit!Average rating5out of 5 starsPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/lego-batman-movie-luggage-tag-5005273",
+      "Name": "- 20%LEGO BATMAN MOVIE LUGGAGE TAGPrice\u00a37.99Sale Price\u00a36.39Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/batcave-10919",
+      "Name": "Batcave\u2122Average rating3.7out of 5 starsPrice\u00a329.99Out of stockAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/knightmare-batman-acc-set-2018-853744",
+      "Name": "- 30%Knightmare Batman\u2122 Acc. Set 2018Average rating4.3out of 5 starsPrice\u00a310.99Sale Price\u00a37.69Out of stockAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/batman-keyring-853951",
+      "Name": "Batman\u2122 KeyringPrice\u00a33.99Out of stockAdd to Wish list"
+    }
+  },
+  "boost": {
+    "0": {
+      "href": "/en-gb/product/boost-creative-toolbox-17101",
+      "Name": "BOOST Creative ToolboxAverage rating3.5out of 5 starsPrice\u00a3149.99Add to BagAdd to Wish list"
+    }
+  },
+  "brickheadz": {
+    "0": {
+      "href": "/en-gb/product/chinese-new-year-pandas-40466",
+      "Name": "NewChinese New Year PandasAverage rating5out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "1": {
+      "href": "/en-gb/product/budgie-40443",
+      "Name": "NewBudgieAverage rating4.7out of 5 starsPrice\u00a313.49Add to BagAdd to Wish list"
+    },
+    "2": {
+      "href": "/en-gb/product/german-shepherd-40440",
+      "Name": "NewGerman ShepherdAverage rating4.3out of 5 starsPrice\u00a313.49Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/goldfish-40442",
+      "Name": "NewGoldfishAverage rating5out of 5 starsPrice\u00a313.49Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/goofy-pluto-40378",
+      "Name": "ExclusivesGoofy & PlutoAverage rating4.2out of 5 starsPrice\u00a313.49Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/shorthair-cats-40441",
+      "Name": "NewShorthair CatsAverage rating5out of 5 starsPrice\u00a313.49Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/wedding-groom-40384",
+      "Name": "ExclusivesWedding GroomAverage rating5out of 5 starsPrice\u00a311.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/donald-duck-40377",
+      "Name": "ExclusivesDonald DuckAverage rating4.4out of 5 starsPrice\u00a39.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/lady-liberty-40367",
+      "Name": "ExclusivesLady LibertyAverage rating4.9out of 5 starsPrice\u00a39.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/monkey-king-40381",
+      "Name": "ExclusivesMonkey KingAverage rating4.8out of 5 starsPrice\u00a39.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/the-mandalorian-the-child-75317",
+      "Name": "The Mandalorian\u2122 & the ChildAverage rating4.7out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/wedding-bride-40383",
+      "Name": "Wedding BrideAverage rating5out of 5 starsPrice\u00a311.99Add to BagAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/birthday-clown-40348",
+      "Name": "Birthday ClownAverage rating4.3out of 5 starsPrice\u00a39.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/easter-sheep-40380",
+      "Name": "Easter SheepAverage rating5out of 5 starsPrice\u00a39.99Add to BagAdd to Wish list"
+    },
+    "14": {
+      "href": "/en-gb/product/frankenstein-40422",
+      "Name": "FrankensteinAverage rating4.7out of 5 starsPrice\u00a39.99Add to BagAdd to Wish list"
+    },
+    "15": {
+      "href": "/en-gb/product/nutcracker-40425",
+      "Name": "NutcrackerAverage rating4.3out of 5 starsPrice\u00a39.99Add to BagAdd to Wish list"
+    },
+    "16": {
+      "href": "/en-gb/product/valentine-s-bear-40379",
+      "Name": "Valentine's BearAverage rating5out of 5 starsPrice\u00a39.99Add to BagAdd to Wish list"
+    },
+    "17": {
+      "href": "/en-gb/product/lucky-cat-40436",
+      "Name": "ExclusivesLucky CatAverage rating4.8out of 5 starsPrice\u00a39.99Out of stockAdd to Wish list"
+    }
+  },
+  "city": {
+    "0": {
+      "href": "/en-gb/product/town-center-60292",
+      "Name": "NewTown CenterAverage rating4.3out of 5 starsPrice\u00a389.99Add to BagAdd to Wish list"
+    },
+    "2": {
+      "href": "/en-gb/product/shopping-street-60306",
+      "Name": "NewShopping StreetAverage rating4.7out of 5 starsPrice\u00a359.99Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/fire-command-unit-60282",
+      "Name": "NewFire Command UnitAverage rating4.9out of 5 starsPrice\u00a349.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/family-house-60291",
+      "Name": "NewFamily HouseAverage rating4.7out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/police-patrol-boat-60277",
+      "Name": "NewPolice Patrol BoatAverage rating4.9out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/airshow-jet-transporter-60289",
+      "Name": "NewAirshow Jet TransporterAverage rating5out of 5 starsPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/car-transporter-60305",
+      "Name": "NewCar TransporterAverage rating4.7out of 5 starsPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/fire-rescue-helicopter-60281",
+      "Name": "NewFire Rescue HelicopterAverage rating4.9out of 5 starsPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/skate-park-60290",
+      "Name": "NewSkate ParkAverage rating4.6out of 5 starsPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/fire-ladder-truck-60280",
+      "Name": "NewFire Ladder TruckAverage rating4.7out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/holiday-camper-van-60283",
+      "Name": "NewHoliday Camper VanAverage rating4.8out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/race-buggy-transporter-60288",
+      "Name": "NewRace Buggy TransporterAverage rating5out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/road-plates-60304",
+      "Name": "NewRoad PlatesAverage rating3.1out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "14": {
+      "href": "/en-gb/product/police-prisoner-transport-60276",
+      "Name": "NewPolice Prisoner TransportAverage rating4.8out of 5 starsPrice\u00a314.99Add to BagAdd to Wish list"
+    },
+    "15": {
+      "href": "/en-gb/product/tractor-60287",
+      "Name": "NewTractorAverage rating4.9out of 5 starsPrice\u00a314.99Add to BagAdd to Wish list"
+    },
+    "16": {
+      "href": "/en-gb/product/beach-rescue-atv-60286",
+      "Name": "NewBeach Rescue ATVAverage rating5out of 5 starsPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "17": {
+      "href": "/en-gb/product/fire-hazard-truck-60279",
+      "Name": "NewFire Hazard TruckPrice\u00a38.99Add to BagAdd to Wish list"
+    }
+  },
+  "classic": {
+    "0": {
+      "href": "/en-gb/product/bricks-and-wheels-11014",
+      "Name": "NewBricks and WheelsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "1": {
+      "href": "/en-gb/product/creative-building-bricks-11016",
+      "Name": "NewCreative Building BricksAverage rating5out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "2": {
+      "href": "/en-gb/product/creative-transparent-bricks-11013",
+      "Name": "NewCreative Transparent BricksAverage rating3.5out of 5 starsPrice\u00a327.99Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/creative-white-bricks-11012",
+      "Name": "NewCreative White BricksPrice\u00a34.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/bricks-bricks-plates-11717",
+      "Name": "Bricks Bricks PlatesAverage rating5out of 5 starsPrice\u00a364.99Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/bricks-and-animals-11011",
+      "Name": "Bricks and AnimalsAverage rating5out of 5 starsPrice\u00a354.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/bricks-bricks-bricks-10717",
+      "Name": "Bricks Bricks BricksAverage rating3.8out of 5 starsPrice\u00a349.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/lego-large-creative-brick-box-10698",
+      "Name": "LEGO\u00ae Large Creative Brick BoxAverage rating4.6out of 5 starsPrice\u00a339.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/bricks-and-lights-11009",
+      "Name": "Bricks and LightsAverage rating5out of 5 starsPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/lego-medium-creative-brick-box-10696",
+      "Name": "LEGO\u00ae Medium Creative Brick BoxAverage rating4.7out of 5 starsPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/bricks-on-a-roll-10715",
+      "Name": "Bricks on a RollAverage rating4out of 5 starsPrice\u00a319.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/basic-brick-set-11002",
+      "Name": "Basic Brick SetAverage rating5out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/bricks-and-houses-11008",
+      "Name": "Bricks and HousesAverage rating3.5out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/creative-suitcase-10713",
+      "Name": "Creative SuitcaseAverage rating4.5out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "14": {
+      "href": "/en-gb/product/gray-baseplate-10701",
+      "Name": "Gray BaseplateAverage rating4.1out of 5 starsPrice\u00a312.99Add to BagAdd to Wish list"
+    },
+    "15": {
+      "href": "/en-gb/product/lego-creative-bricks-10692",
+      "Name": "LEGO\u00ae Creative BricksAverage rating4out of 5 starsPrice\u00a312.99Add to BagAdd to Wish list"
+    },
+    "16": {
+      "href": "/en-gb/product/bricks-and-ideas-11001",
+      "Name": "Bricks and IdeasAverage rating5out of 5 starsPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "17": {
+      "href": "/en-gb/product/blue-baseplate-10714",
+      "Name": "Blue BaseplateAverage rating4.1out of 5 starsPrice\u00a36.99Add to BagAdd to Wish list"
+    }
+  },
+  "creator-3-in-1": {
+    "0": {
+      "href": "/en-gb/product/surfer-beach-house-31118",
+      "Name": "NewSurfer Beach HouseAverage rating5out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "1": {
+      "href": "/en-gb/product/mosaic-maker-40179?icmp=LP-SHD-Standard-NO_Disruptor_Mosaic_Maker-PR-NO-Y8YKHRA3PL",
+      "Name": "Picture yourself in a LEGO\u00ae MosaicPicture yourself in a LEGO\u00ae MosaicTry Mosaic Maker now"
+    },
+    "2": {
+      "href": "/en-gb/product/safari-wildlife-tree-house-31116",
+      "Name": "NewSafari Wildlife Tree HousePrice\u00a329.99Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/race-car-transporter-31113",
+      "Name": "NewRace Car TransporterAverage rating4.9out of 5 starsPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/space-mining-mech-31115",
+      "Name": "NewSpace Mining MechPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/superbike-31114",
+      "Name": "NewSuperbikeAverage rating5out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/wild-lion-31112",
+      "Name": "NewWild LionAverage rating5out of 5 starsPrice\u00a314.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/cyber-drone-31111",
+      "Name": "NewCyber DroneAverage rating5out of 5 starsPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/tuk-tuk-40469",
+      "Name": "NewTuk TukAverage rating4.8out of 5 starsPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/yellow-taxi-40468",
+      "Name": "NewYellow TaxiAverage rating4.1out of 5 starsPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/pirate-ship-31109",
+      "Name": "Pirate ShipAverage rating4.6out of 5 starsPrice\u00a389.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/caravan-family-holiday-31108",
+      "Name": "Caravan Family HolidayAverage rating4.4out of 5 starsPrice\u00a374.99Add to BagAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/townhouse-pet-shop-cafe-31097",
+      "Name": "Townhouse Pet Shop & Caf\u00e9Average rating5out of 5 starsPrice\u00a374.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/monster-burger-truck-31104",
+      "Name": "Monster Burger TruckAverage rating5out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "14": {
+      "href": "/en-gb/product/space-rover-explorer-31107",
+      "Name": "Space Rover ExplorerAverage rating5out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "15": {
+      "href": "/en-gb/product/townhouse-toy-store-31105",
+      "Name": "Townhouse Toy StoreAverage rating4.8out of 5 starsPrice\u00a339.99Add to BagAdd to Wish list"
+    },
+    "16": {
+      "href": "/en-gb/product/riverside-houseboat-31093",
+      "Name": "Riverside HouseboatAverage rating4.4out of 5 starsPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "17": {
+      "href": "/en-gb/product/fire-dragon-31102",
+      "Name": "Fire DragonAverage rating4.8out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    }
+  },
+  "creator-expert": {
+    "0": {
+      "href": "/en-gb/product/colosseum-10276",
+      "Name": "ExclusivesColosseumAverage rating4.5out of 5 starsPrice\u00a3449.99Add to BagAdd to Wish list"
+    },
+    "1": {
+      "href": "/en-gb/product/tbd-ip-car2-2021-10295?icmp=LP-SHD-Standard-CE_Disruptor_10295_Porsche_911-EX-CE-Q0U6Z11TVF",
+      "Name": "One legendary car. Two iconic models.One legendary car. Two iconic models.New LEGO\u00ae Porsche 911."
+    },
+    "2": {
+      "href": "/en-gb/product/police-station-10278",
+      "Name": "NewPolice StationAverage rating4.3out of 5 starsPrice\u00a3169.99Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/porsche-911-10295",
+      "Name": "NewPorsche 911Average rating4.9out of 5 starsPrice\u00a3119.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/roller-coaster-10261",
+      "Name": "Hard to findRoller CoasterAverage rating4.6out of 5 starsPrice\u00a3299.99Back orderAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/old-trafford-manchester-united-10272",
+      "Name": "Hard to findOld Trafford - Manchester UnitedAverage rating4.6out of 5 starsPrice\u00a3249.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/haunted-house-10273",
+      "Name": "Hard to findHaunted HouseAverage rating4.3out of 5 starsPrice\u00a3209.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/ghostbusters-ecto-1-10274",
+      "Name": "Hard to findGhostbusters\u2122 ECTO-1Average rating4.6out of 5 starsPrice\u00a3179.99Back orderAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/james-bond-aston-martin-db5-10262",
+      "Name": "Hard to findJames Bond\u2122 Aston Martin DB5Average rating4.6out of 5 starsPrice\u00a3129.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/ford-mustang-10265",
+      "Name": "Hard to findFord MustangAverage rating4.8out of 5 starsPrice\u00a3119.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/london-bus-10258",
+      "Name": "Hard to findLondon BusAverage rating4.7out of 5 starsPrice\u00a3109.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/elf-club-house-10275",
+      "Name": "Hard to findElf Club HouseAverage rating4.3out of 5 starsPrice\u00a384.99Add to BagAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/gingerbread-house-10267",
+      "Name": "Hard to findGingerbread HouseAverage rating4.5out of 5 starsPrice\u00a384.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/nasa-apollo-11-lunar-lander-10266",
+      "Name": "Hard to findNASA Apollo 11 Lunar LanderAverage rating4.9out of 5 starsPrice\u00a384.99Add to BagAdd to Wish list"
+    },
+    "14": {
+      "href": "/en-gb/product/fiat-500-10271",
+      "Name": "Hard to findFiat 500Average rating4.1out of 5 starsPrice\u00a374.99Add to BagAdd to Wish list"
+    },
+    "15": {
+      "href": "/en-gb/product/crocodile-locomotive-10277",
+      "Name": "Crocodile LocomotiveAverage rating4.6out of 5 starsPrice\u00a389.99Add to BagAdd to Wish list"
+    },
+    "16": {
+      "href": "/en-gb/product/harley-davidson-fat-boy-10269",
+      "Name": "Harley-Davidson\u00ae Fat Boy\u00aeAverage rating4.7out of 5 starsPrice\u00a384.99Back orderAdd to Wish list"
+    },
+    "17": {
+      "href": "/en-gb/product/race-car-30572",
+      "Name": "Race CarPrice\u00a33.49Add to BagAdd to Wish list"
+    }
+  },
+  "dc": {
+    "0": {
+      "href": "/en-gb/product/batman-40386",
+      "Name": "ExclusivesBatman\u2122Average rating4out of 5 starsPrice\u00a314.99Add to BagAdd to Wish list"
+    },
+    "1": {
+      "href": "/en-gb/product/the-joker-40428",
+      "Name": "ExclusivesThe Joker\u2122Average rating4.7out of 5 starsPrice\u00a314.99Add to BagAdd to Wish list"
+    },
+    "2": {
+      "href": "/en-gb/product/batman-vs-the-penguin-harley-quinn-40453",
+      "Name": "NewBatman\u2122 vs. The Penguin\u2122 & Harley Quinn\u2122Average rating4.5out of 5 starsPrice\u00a313.49Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/1989-batmobile-76139",
+      "Name": "Hard to find1989 Batmobile\u2122Average rating4.7out of 5 starsPrice\u00a3219.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/1989-batwing-76161",
+      "Name": "Hard to find1989 BatwingAverage rating4.3out of 5 starsPrice\u00a3179.99Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/mobile-bat-base-76160",
+      "Name": "Mobile Bat BaseAverage rating4.8out of 5 starsPrice\u00a379.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/joker-s-trike-chase-76159",
+      "Name": "Joker's Trike ChaseAverage rating4.8out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/wonder-woman-vs-cheetah-76157",
+      "Name": "Wonder Woman\u2122 vs CheetahAverage rating4out of 5 starsPrice\u00a334.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/batboat-the-penguin-pursuit-76158",
+      "Name": "Batboat The Penguin Pursuit!Average rating5out of 5 starsPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/batwoman-key-chain-853953",
+      "Name": "Batwoman\u2122 Key ChainPrice\u00a33.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/lego-super-heroes-wonder-woman-keyring-853433",
+      "Name": "LEGO\u00ae Super Heroes Wonder Woman KeyringAverage rating4.3out of 5 starsPrice\u00a33.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/batcave-10919",
+      "Name": "Batcave\u2122Average rating3.7out of 5 starsPrice\u00a329.99Out of stockAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/knightmare-batman-acc-set-2018-853744",
+      "Name": "- 30%Knightmare Batman\u2122 Acc. Set 2018Average rating4.3out of 5 starsPrice\u00a310.99Sale Price\u00a37.69Out of stockAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/batman-keyring-853951",
+      "Name": "Batman\u2122 KeyringPrice\u00a33.99Out of stockAdd to Wish list"
+    },
+    "14": {
+      "href": "/en-gb/product/superman-keyring-853952",
+      "Name": "Superman\u2122 KeyringPrice\u00a33.99Out of stockAdd to Wish list"
+    }
+  },
+  "disney": {
+    "0": {
+      "href": "/en-gb/product/disney-train-and-station-71044",
+      "Name": "ExclusivesDisney Train and StationAverage rating4.2out of 5 starsPrice\u00a3299.99Add to BagAdd to Wish list"
+    },
+    "1": {
+      "href": "/en-gb/product/raya-and-the-heart-palace-43181",
+      "Name": "NewRaya and the Heart PalacePrice\u00a374.99Add to BagAdd to Wish list"
+    },
+    "2": {
+      "href": "/en-gb/product/boun-s-boat-43185",
+      "Name": "NewBoun's BoatPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/cinderella-s-royal-carriage-43192",
+      "Name": "NewCinderella\u2019s Royal CarriageAverage rating5out of 5 starsPrice\u00a339.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/raya-and-sisu-dragon-43184",
+      "Name": "NewRaya and Sisu DragonPrice\u00a327.99Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/ariel-s-celebration-boat-43191",
+      "Name": "NewAriel's Celebration BoatAverage rating5out of 5 starsPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/mickey-minnie-birthday-train-10941",
+      "Name": "NewMickey & Minnie Birthday TrainPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/elsa-and-the-nokk-storybook-adventures-43189",
+      "Name": "NewElsa and the Nokk Storybook AdventuresAverage rating5out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/mickey-mouse-40456",
+      "Name": "NewMickey MouseAverage rating5out of 5 starsPrice\u00a314.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/minnie-mouse-40457",
+      "Name": "NewMinnie MouseAverage rating5out of 5 starsPrice\u00a314.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/goofy-pluto-40378",
+      "Name": "ExclusivesGoofy & PlutoAverage rating4.2out of 5 starsPrice\u00a313.49Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/bruni-the-salamander-buildable-character-43186",
+      "Name": "NewBruni the Salamander Buildable CharacterAverage rating5out of 5 starsPrice\u00a311.99Add to BagAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/donald-duck-40377",
+      "Name": "ExclusivesDonald DuckAverage rating4.4out of 5 starsPrice\u00a39.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/mickey-mouse-minnie-mouse-buildable-characters-43179",
+      "Name": "Hard to findMickey Mouse & Minnie Mouse Buildable CharactersAverage rating4.3out of 5 starsPrice\u00a3169.99Add to BagAdd to Wish list"
+    },
+    "14": {
+      "href": "/en-gb/product/arendelle-castle-village-41167",
+      "Name": "Arendelle Castle VillageAverage rating4.9out of 5 starsPrice\u00a374.99Add to BagAdd to Wish list"
+    },
+    "15": {
+      "href": "/en-gb/product/elsa-s-magical-ice-palace-43172",
+      "Name": "Elsa's Magical Ice PalaceAverage rating5out of 5 starsPrice\u00a364.99Add to BagAdd to Wish list"
+    },
+    "16": {
+      "href": "/en-gb/product/rapunzel-s-tower-43187",
+      "Name": "Rapunzel's TowerAverage rating4out of 5 starsPrice\u00a354.99Add to BagAdd to Wish list"
+    },
+    "17": {
+      "href": "/en-gb/product/belle-s-castle-winter-celebration-43180",
+      "Name": "Belle's Castle Winter CelebrationAverage rating4.9out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    }
+  },
+  "dots": {},
+  "duplo": {
+    "0": {
+      "href": "/en-gb/product/happy-childhood-moments-10943",
+      "Name": "NewHappy Childhood MomentsAverage rating5out of 5 starsPrice\u00a389.99Add to BagAdd to Wish list"
+    },
+    "2": {
+      "href": "/en-gb/product/barn-tractor-farm-animal-care-10952",
+      "Name": "NewBarn, Tractor & Farm Animal CarePrice\u00a359.99Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/creative-birthday-party-10958",
+      "Name": "NewCreative Birthday PartyAverage rating5out of 5 starsPrice\u00a349.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/horse-stable-and-pony-care-10951",
+      "Name": "NewHorse Stable and Pony CarePrice\u00a327.99Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/mickey-minnie-birthday-train-10941",
+      "Name": "NewMickey & Minnie Birthday TrainPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/animal-train-10955",
+      "Name": "NewAnimal TrainPrice\u00a319.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/farm-tractor-animal-care-10950",
+      "Name": "NewFarm Tractor & Animal CarePrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/farm-animal-care-10949",
+      "Name": "NewFarm Animal CarePrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/fire-helicopter-police-car-10957",
+      "Name": "NewFire Helicopter & Police CarPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/unicorn-10953",
+      "Name": "NewUnicornPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/lego-education-my-xl-world-45028",
+      "Name": "LEGO\u00ae Education My XL WorldPrice\u00a3235.99Add to BagAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/coding-express-45025",
+      "Name": "Coding ExpressPrice\u00a3222.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/tech-machines-45002",
+      "Name": "Tech MachinesAverage rating4out of 5 starsPrice\u00a3210.99Add to BagAdd to Wish list"
+    },
+    "14": {
+      "href": "/en-gb/product/tubes-45026",
+      "Name": "TubesAverage rating4out of 5 starsPrice\u00a3135.99Add to BagAdd to Wish list"
+    },
+    "15": {
+      "href": "/en-gb/product/tower-crane-construction-10933",
+      "Name": "Tower Crane & ConstructionPrice\u00a3114.99Add to BagAdd to Wish list"
+    },
+    "16": {
+      "href": "/en-gb/product/cargo-train-10875",
+      "Name": "Cargo TrainAverage rating4.1out of 5 starsPrice\u00a399.99Add to BagAdd to Wish list"
+    },
+    "17": {
+      "href": "/en-gb/product/world-animals-10907",
+      "Name": "World AnimalsAverage rating5out of 5 starsPrice\u00a389.99Add to BagAdd to Wish list"
+    }
+  },
+  "friends": {
+    "0": {
+      "href": "/en-gb/product/heartlake-city-shopping-mall-41450",
+      "Name": "NewHeartlake City Shopping MallAverage rating5out of 5 starsPrice\u00a389.99Add to BagAdd to Wish list"
+    },
+    "1": {
+      "href": "/en-gb/product/andreas-family-house-41449?icmp=LP-SHD-Standard-VIP_Disruptor_VIP2x_41449_Product-P-VIP-T1J09AH792",
+      "Name": "Get double VIP points on this set 01/03 - 31/03*Get double VIP points on this set 01/03 - 31/03*LEGO\u00ae Friends Andrea's Family House"
+    },
+    "2": {
+      "href": "/en-gb/product/andrea-s-family-house-41449",
+      "Name": "NewAndrea's Family HouseAverage rating4.9out of 5 starsPrice\u00a359.99Add to BagAdd to Wish list"
+    },
+    "3": {
+      "href": "/en-gb/product/heartlake-city-movie-theater-41448",
+      "Name": "NewHeartlake City Movie TheaterAverage rating5out of 5 starsPrice\u00a344.99Add to BagAdd to Wish list"
+    },
+    "4": {
+      "href": "/en-gb/product/heartlake-city-park-41447",
+      "Name": "NewHeartlake City ParkAverage rating5out of 5 starsPrice\u00a334.99Add to BagAdd to Wish list"
+    },
+    "5": {
+      "href": "/en-gb/product/heartlake-city-vet-clinic-41446",
+      "Name": "NewHeartlake City Vet ClinicPrice\u00a334.99Add to BagAdd to Wish list"
+    },
+    "6": {
+      "href": "/en-gb/product/vet-clinic-ambulance-41445",
+      "Name": "NewVet Clinic AmbulancePrice\u00a327.99Add to BagAdd to Wish list"
+    },
+    "7": {
+      "href": "/en-gb/product/heartlake-city-organic-cafe-41444",
+      "Name": "NewHeartlake City Organic Caf\u00e9Average rating4.9out of 5 starsPrice\u00a324.99Add to BagAdd to Wish list"
+    },
+    "8": {
+      "href": "/en-gb/product/doggy-day-care-41691",
+      "Name": "NewDoggy Day CareAverage rating4.9out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "9": {
+      "href": "/en-gb/product/vet-clinic-rescue-helicopter-41692",
+      "Name": "NewVet Clinic Rescue HelicopterAverage rating4.9out of 5 starsPrice\u00a317.99Add to BagAdd to Wish list"
+    },
+    "10": {
+      "href": "/en-gb/product/heartlake-city-bakery-41440",
+      "Name": "NewHeartlake City BakeryPrice\u00a314.99Add to BagAdd to Wish list"
+    },
+    "11": {
+      "href": "/en-gb/product/olivia-s-electric-car-41443",
+      "Name": "NewOlivia's Electric CarAverage rating5out of 5 starsPrice\u00a312.99Add to BagAdd to Wish list"
+    },
+    "12": {
+      "href": "/en-gb/product/andrea-s-bunny-cube-41666",
+      "Name": "NewAndrea's Bunny CubePrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "13": {
+      "href": "/en-gb/product/emma-s-dalmatian-cube-41663",
+      "Name": "NewEmma's Dalmatian CubePrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "14": {
+      "href": "/en-gb/product/mia-s-pug-cube-41664",
+      "Name": "NewMia's Pug CubeAverage rating5out of 5 starsPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "15": {
+      "href": "/en-gb/product/olivia-s-flamingo-cube-41662",
+      "Name": "NewOlivia's Flamingo CubeAverage rating4out of 5 starsPrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "16": {
+      "href": "/en-gb/product/stephanie-s-cat-cube-41665",
+      "Name": "NewStephanie's Cat CubePrice\u00a38.99Add to BagAdd to Wish list"
+    },
+    "17": {
+      "href": "/en-gb/product/vet-clinic-rescue-buggy-41442",
+      "Name": "NewVet Clinic Rescue BuggyPrice\u00a38.99Add to BagAdd to Wish list"
+    }
+  }
+}
