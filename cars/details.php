@@ -11,6 +11,12 @@ if ($user->isLoggedIn()) {
 $string = file_get_contents("car_collection.json");
 $json_data = json_decode($string, true);
 
+$carMake = htmlspecialchars($_GET["make"]);
+$carModel = htmlspecialchars($_GET["model"]);
+$carVersion = htmlspecialchars($_GET["version"]);
+
+
+
 ?>
 
 
@@ -34,36 +40,44 @@ $json_data = json_decode($string, true);
             </div>
         </div>
         <div class="container" style="background-color:gray;">
-        <?php foreach ($json_data as $carMake => $carModelList) { ?>
             <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
                 <div class="container-fluid">
-                   <?php echo $carMake ?>
+                   <?php echo ucfirst($carMake) ?>
                 </div>
             </div>
-                <?php foreach ($carModelList as $carModel => $versionList) { ?>
-                    <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
-                        <div class="container-fluid">
-                            <?php echo $carModel ?>
-                        </div>
-                        <?php foreach ($versionList as $carVersion => $data) {?>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 item-box border">
-                            <a id="clickable_div" href="details?make=<?php echo strtolower($carMake) . "&model=". strtolower($carModel) . "&version=". strtolower($carVersion) ?>"></a>
-                                <div class=" h-10 justify-content-center" style="display:flex;flex-direction: column;">
-                                    <input class="boring_button" type="submit" value="<?php echo $carVersion ?>">
-                                </div>
-                                <img src="<?php 
-                                    echo "car_collection_images/" .  
-                                    strtolower($carMake) . 
-                                    "-" . 
-                                    strtolower($carModel) . 
-                                    "-" . 
-                                    strtolower($carVersion) . 
-                                    ".jpeg"; ?>" style="width:auto;height:100px;" />
-                            </div>
-                        <?php } ?>
-                    </div>
-                <?php } ?>
-        <?php } ?>
+            <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
+                <div class="container-fluid">
+                    <?php echo $carModel ?>
+                </div>
+                <div class="col-sm-4 item-box-details ">
+                <table>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                </table>
+                </div>
+                <div class="col-sm-8 item-box-details ">
+                    <img src="<?php 
+                    echo "car_collection_images/" .  
+                    strtolower($carMake) . 
+                    "-" . 
+                    strtolower($carModel) . 
+                    "-" . 
+                    strtolower($carVersion) . 
+                    ".jpeg"; ?>" style="width:auto;height:300px;" />
+                </div>
         </div>
 
         <!-- <img src="<?php echo $image; ?>" style="width:304px;height:228px;" /> -->
@@ -131,6 +145,17 @@ $json_data = json_decode($string, true);
         padding-left: 10px;
         text-align:center;
         height:144px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        /* border-style: solid; */
+        grid-gap: 1px;
+    }
+
+    .item-box-details {
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align:center;
+        height:318px;
         margin-bottom: 15px;
         margin-top: 15px;
         /* border-style: solid; */
