@@ -11,14 +11,19 @@ if ($user->isLoggedIn()) {
 $string = file_get_contents("car_collection.json");
 $json_data = json_decode($string, true);
 
-$carMakeRec = htmlspecialchars($_GET["make"]);
-$carModelRec = htmlspecialchars($_GET["model"]);
-$carVersionRec = htmlspecialchars($_GET["version"]);
+
+foreach ($json_data as $carMake => $carModelList) {
+  $carMakeList[] = $carMake;
+}
+
+var_dump($carMakeList);
+// $carMakeRec = htmlspecialchars($_GET["make"]);
+// $carModelRec = htmlspecialchars($_GET["model"]);
+// $carVersionRec = htmlspecialchars($_GET["version"]);
 
 
 
 ?>
-
 
 
 <html id="system-background">
@@ -26,8 +31,10 @@ $carVersionRec = htmlspecialchars($_GET["version"]);
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
     <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="../CSS/my_css.css">
-    <body >
+    <body>
       <div style="background-color:#ffffff; height:100%;">
         <div class="container-fluid bg-dark">
             <div class="row justify-content-md-center bg-blue text-white" style="padding:20px;">
@@ -37,55 +44,80 @@ $carVersionRec = htmlspecialchars($_GET["version"]);
         </div>
         <div class="container" style="background-color:gray;">
             <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
-            <div class="container-fluid">
-                   <h3>             <a href="index.php">< Back</a> </h3>
-                </div>
-
-                <div class="container-fluid">
-                   <h1> Details </h1>
-                </div>
+              <div class="container-fluid">
+                <h3><a href="index.php">< Back</a> </h3>
+              </div>
+              <div class="container-fluid">
+                <h1> Game </h1>
+              </div>
             </div>
             <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
-                <div class="col-sm-4 item-box-details ">
-                <table>
-                    <tr>
-                        <td>Make</td>
-                        <td><?php echo ucfirst($carMakeRec) ?></td>
-                    </tr>
-                    <tr>
-                        <td>Model</td>
-                        <td><?php echo ucfirst($carModelRec) ?></td>
-                    </tr>
-                    <tr>
-                        <td>Version</td>
-                        <td><?php echo ucfirst($carVersionRec) ?></td>
-                    </tr>
-                    <?php 
-                        $specs = $json_data[ucfirst($carMakeRec)][ucfirst($carModelRec)]
-                            [ucfirst($carVersionRec)];
-                            
-                        foreach ($specs as $item => $value) {  ?>
-                            <tr>
-                                <td><?php echo ucfirst($item) ?></td>
-                                <td><?php echo ucfirst($value); ?></td>
-                            </tr>
-                    <?php
-                        }?>
-                </table>
+              <div class="col-sm-12 item-box-details ">
+                <img src="<?php echo "car_collection_images/ford-fiesta-mk1.jpeg"; ?>" style="width:auto;height:300px;" />
+              </div>
+            </div>
+            <form action='ajax/delete_user.php?>' method="post">
+              <div class="form-row">
+                <div class="form-group col-sm-4">
+                  <label for="inputMake">Make</label>
+                  <select id="inputMake" class="form-control">
+                    <option selected>Choose...</option>
+                    <?php foreach ($json_data as $carMake => $carModelList) { ?>
+                      <option><?php echo $carMake ?></option>
+                    <?php } ?>
+                  </select>
                 </div>
-                <div class="col-sm-8 item-box-details ">
-                    <img src="<?php 
-                    echo "car_collection_images/" .  
-                    strtolower($carMakeRec) . 
-                    "-" . 
-                    strtolower($carModelRec) . 
-                    "-" . 
-                    strtolower($carVersionRec) . 
-                    ".jpeg"; ?>" style="width:auto;height:300px;" />
+                <div class="form-group col-sm-4">
+                  <label for="inputModel">Model</label>
+                  <select id="inputModel" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
                 </div>
+                <div class="form-group col-sm-4">
+                  <label for="inputVersion">Version</label>
+                  <select id="inputVersion" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Go</button>
+              </div>
+            </form>
+            <div id="txtHint"><div>
         </div>
     </body>
 </html>
+
+<script>
+
+  $('#inputMake').change(function () {
+
+    var id = $(this).find('option:selected').val();
+    alert(id);
+    console.log(id);
+    // $.ajax({
+    //     type: 'POST',
+    //     url: '../include/continent.php',
+    //     data: {
+    //         'id': id
+    //     },
+    //     success: function (data) {
+    //         // the next thing you want to do 
+    //         var $country = $('#country');
+    //         $country.empty();
+    //         $('#city').empty();
+    //         for (var i = 0; i < data.length; i++) {
+    //             $country.append('<option id=' + data[i].sysid + ' value=' + data[i].name + '>' + data[i].name + '</option>');
+    //         }
+
+    //         //manually trigger a change event for the contry so that the change handler will get triggered
+    //         $country.change();
+    //     }
+    // });
+  });
+
+</script>
 
 <style>
     #system-background {

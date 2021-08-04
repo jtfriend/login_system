@@ -103,8 +103,4 @@ if ($user->isLoggedIn() && $user->isSuper($user->data()->u_username)) {
     xmlhttp.open("GET", "ajax/delete_user.php?id="+id, true);
     xmlhttp.send();
   }
-
-  function deleteUser2() {
-    
-  }
 </script>

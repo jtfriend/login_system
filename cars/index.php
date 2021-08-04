@@ -21,16 +21,13 @@ $json_data = json_decode($string, true);
     <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="../CSS/my_css.css">
-    <body style="margin:10px;">
-      <div id="heading-box" class="center">
-        <div class="text-center" style="color:white;">Cars</div>
-      </div>
+    <body>
       <div style="background-color:#ffffff; height:100%;">
         <div class="container-fluid bg-dark">
             <div class="row justify-content-md-center bg-blue text-white" style="padding:20px;">
-                <div style="text-align: center;" class="col-sm">Hello <a href="#"><?php echo escape($user->data()->u_username); ?></a>!</div>
-                <div style="text-align: center;" class="col-sm"></div>
-                <div style="text-align: center;" class="col-sm"><a href="logout.php">Log out</a></div>
+                <div style="text-align: center;" class="col-sm">Hello <a href=""><?php echo escape($user->data()->u_username); ?></a>!</div>
+                <div style="text-align: center;" class="col-sm"><a href="game.php">Cars</a></div>
+                <div style="text-align: center;" class="col-sm"><a href="game.php">Play Game</a></div>
             </div>
         </div>
         <div class="container" style="background-color:gray;">
