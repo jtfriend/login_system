@@ -11,6 +11,27 @@ if ($user->isLoggedIn()) {
 $string = file_get_contents("car_collection.json");
 $json_data = json_decode($string, true);
 
+$carMakeRec = htmlspecialchars($_GET["make"]);
+$carModelRec = htmlspecialchars($_GET["model"]);
+$carVersionRec = htmlspecialchars($_GET["version"]);
+
+// var_dump($carMakeRec);
+
+$db = new DB();
+$db->get('cars', [
+  ['c_make', '=', $carMakeRec],
+  ['c_model', '=', $carModelRec],
+  ['c_version', '=', $carVersionRec]
+]);
+
+$carArray = $db->results();
+
+$car = $carArray[0];
+
+
+
+
+
 ?>
 
 
@@ -21,50 +42,58 @@ $json_data = json_decode($string, true);
     <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="../CSS/my_css.css">
-    <body>
+    <body >
       <div style="background-color:#ffffff; height:100%;">
         <div class="container-fluid bg-dark">
             <div class="row justify-content-md-center bg-blue text-white" style="padding:20px;">
-                <div style="text-align: center;" class="col-sm">Hello <a href=""><?php echo escape($user->data()->u_username); ?></a>!</div>
-                <div style="text-align: center;" class="col-sm"><a href="index.php">Cars</a></div>
-                <div style="text-align: center;" class="col-sm"><a href="game.php">Play Game</a></div>
-                <div style="text-align: center;" class="col-sm"><a href="create.php">Add Car</a></div>
+                <div style="text-align: center;" class="col-sm">Hello <a href="#"><?php echo escape($user->data()->u_username); ?></a>!</div>
+                <div style="text-align: center;" class="col-sm"></div>
             </div>
         </div>
         <div class="container" style="background-color:gray;">
-        <?php foreach ($json_data as $carMake => $carModelList) { ?>
             <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
                 <div class="container-fluid">
-                   <?php echo $carMake ?>
+                   <div class="float-left">
+                        <h3><a href="view.php">< Back</a> </h3>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                   <h1> Edit </h1>
                 </div>
             </div>
-                <?php foreach ($carModelList as $carModel => $versionList) { ?>
-                    <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
-                        <div class="container-fluid">
-                            <?php echo $carModel ?>
-                        </div>
-                        <?php foreach ($versionList as $carVersion => $data) {?>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 item-box border">
-                            <a id="clickable_div" href="details?make=<?php echo strtolower($carMake) . "&model=". strtolower($carModel) . "&version=". strtolower($carVersion) ?>"></a>
-                                <div class=" h-10 justify-content-center" style="display:flex;flex-direction: column;">
-                                    <input class="boring_button" type="submit" value="<?php echo $carVersion ?>">
-                                </div>
-                                <img src="<?php 
-                                    echo "car_collection_images/" .  
-                                    strtolower($carMake) . 
-                                    "-" . 
-                                    strtolower($carModel) . 
-                                    "-" . 
-                                    strtolower($carVersion) . 
-                                    ".jpeg"; ?>" style="width:auto;height:100px;" />
-                            </div>
-                        <?php } ?>
-                    </div>
-                <?php } ?>
-        <?php } ?>
+            <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
+                <div class="col-sm-4 item-box-details ">
+                <table>
+                    <tr>
+                        <td>Make</td>
+                        <td><?php echo ucfirst($car->c_make) ?></td>
+                    </tr>
+                    <tr>
+                        <td>Model</td>
+                        <td><?php echo ucfirst($car->c_model) ?></td>
+                    </tr>
+                    <tr>
+                        <td>Version</td>
+                        <td><?php echo ucfirst($car->c_version) ?></td>
+                    </tr>
+                    <tr>
+                        <td>Production</td>
+                        <td><?php echo ucfirst($car->c_production_years) ?></td>
+                    </tr>
+                </table>
+                </div>
+                <div class="col-sm-8 item-box-details ">
+                    <img src="<?php 
+                    echo "uploads/" .  
+                    strtolower($carMakeRec) . 
+                    "-" . 
+                    strtolower($carModelRec) . 
+                    "-" . 
+                    strtolower($carVersionRec) . 
+                    ".jpeg"; ?>" style="width:auto;height:300px;" />
+                </div>
         </div>
-
-        <!-- <img src="<?php echo $image; ?>" style="width:304px;height:228px;" /> -->
     </body>
 </html>
 
@@ -132,6 +161,17 @@ $json_data = json_decode($string, true);
         margin-bottom: 15px;
         margin-top: 15px;
         /* border-style: solid; */
+        grid-gap: 1px;
+    }
+
+    .item-box-details {
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align:center;
+        height:306px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        border-style: solid;
         grid-gap: 1px;
     }
 

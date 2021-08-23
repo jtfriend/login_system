@@ -15,6 +15,21 @@ $carMakeRec = htmlspecialchars($_GET["make"]);
 $carModelRec = htmlspecialchars($_GET["model"]);
 $carVersionRec = htmlspecialchars($_GET["version"]);
 
+// var_dump($carMakeRec);
+
+$db = new DB();
+$db->get('cars', [
+    ['c_make', '=', $carMakeRec],
+    ['c_model', '=', $carModelRec],
+    ['c_version', '=', $carVersionRec]
+]);
+
+$carArray = $db->results();
+
+$car = $carArray[0];
+
+
+
 
 
 ?>
@@ -37,8 +52,13 @@ $carVersionRec = htmlspecialchars($_GET["version"]);
         </div>
         <div class="container" style="background-color:gray;">
             <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
-            <div class="container-fluid">
-                   <h3>             <a href="index.php">< Back</a> </h3>
+                <div class="container-fluid">
+                   <div class="float-left">
+                        <h3><a href="view.php">< Back</a> </h3>
+                    </div>
+                    <div class="float-right">
+                        <h3><a href="edit?make=<?php echo strtolower($car->c_make) . "&model=". strtolower($car->c_model) . "&version=". strtolower($car->c_version) ?>">Edit</a> </h3>
+                    </div>
                 </div>
 
                 <div class="container-fluid">
@@ -50,32 +70,25 @@ $carVersionRec = htmlspecialchars($_GET["version"]);
                 <table>
                     <tr>
                         <td>Make</td>
-                        <td><?php echo ucfirst($carMakeRec) ?></td>
+                        <td><?php echo ucfirst($car->c_make) ?></td>
                     </tr>
                     <tr>
                         <td>Model</td>
-                        <td><?php echo ucfirst($carModelRec) ?></td>
+                        <td><?php echo ucfirst($car->c_model) ?></td>
                     </tr>
                     <tr>
                         <td>Version</td>
-                        <td><?php echo ucfirst($carVersionRec) ?></td>
+                        <td><?php echo ucfirst($car->c_version) ?></td>
                     </tr>
-                    <?php 
-                        $specs = $json_data[ucfirst($carMakeRec)][ucfirst($carModelRec)]
-                            [ucfirst($carVersionRec)];
-                            
-                        foreach ($specs as $item => $value) {  ?>
-                            <tr>
-                                <td><?php echo ucfirst($item) ?></td>
-                                <td><?php echo ucfirst($value); ?></td>
-                            </tr>
-                    <?php
-                        }?>
+                    <tr>
+                        <td>Production</td>
+                        <td><?php echo ucfirst($car->c_production_years) ?></td>
+                    </tr>
                 </table>
                 </div>
                 <div class="col-sm-8 item-box-details ">
                     <img src="<?php 
-                    echo "car_collection_images/" .  
+                    echo "uploads/" .  
                     strtolower($carMakeRec) . 
                     "-" . 
                     strtolower($carModelRec) . 

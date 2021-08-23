@@ -39,25 +39,57 @@ class DB {
                 $this->_count = $this->_query->rowCount();
             } else {
                 $this->_error = true;
+                var_dump($this->_query->errorInfo());
             }
         }
         return $this;
     }
 
     public function action($action, $table, $where = []) {
-        if(count($where) == 3) {
-            $operators = ['=', '>', '<', '>=', '<='];
+        if(is_array($where[0])) {
+            $sql = "{$action} FROM {$table} WHERE ";
+            for ($i=0; $i<count($where);$i++) {
+                if(count($where[$i]) == 3) {
+                    $operators = ['=', '>', '<', '>=', '<='];
+        
+                    $field      = $where[$i][0];
+                    $operator   = $where[$i][1];
+                    $value      = $where[$i][2];
+        
+                    if(in_array($operator, $operators)) {
+                        if($i == (count($where) - 1)) {
+                            $sql = $sql . "{$field} {$operator} ?";
+                        } else {
+                            $sql = $sql . "{$field} {$operator} ? AND ";
+                        }
+                            
+                    }
+                    $value_arr[] = $value; 
+                }
+            }
 
-            $field      = $where[0];
-            $operator   = $where[1];
-            $value      = $where[2];
 
-            if(in_array($operator, $operators)) {
-                $sql = "{$action} FROM {$table} WHERE {$field} {$operator} ?";
-                if(!$this->query($sql, [$value])->error()) {
-                    return $this;
-                } else {
-                    echo "oops you've done something wrong";
+            if(!$this->query($sql, $value_arr)->error()) {
+                return $this;
+            } else {
+                echo $this->query($sql, $value_arr)->errorInfo();
+                echo "oops you've done something wrong";
+            }
+        } else {
+            if(count($where) == 3) {
+                $operators = ['=', '>', '<', '>=', '<='];
+    
+                $field      = $where[0];
+                $operator   = $where[1];
+                $value      = $where[2];
+    
+                if(in_array($operator, $operators)) {
+                    $sql = "{$action} FROM {$table} WHERE {$field} {$operator} ?";
+                    if(!$this->query($sql, [$value])->error()) {
+                        return $this;
+                    } else {
+                        echo "oops you've done something wrong";
+                    }
                 }
             }
         }
@@ -76,8 +108,14 @@ class DB {
         return $this->action('SELECT MAX('.$where[0].')',$table,$where);
     }
 
-    public function getAllFromTable($table, $orderField) {
-        return $this->query("SELECT * ". "from `". $table . "`" ." where 1 order by " . $orderField . " desc LIMIT 50");
+    // public function getAllFromTable($table, $orderField) {
+    //     return $this->query("SELECT * ". "from `". $table . "`" ." where 1 order by " . $orderField . " desc LIMIT 50");
+    // }
+
+    public function getAllFromTable($table, $orderField, $direction, $count) {
+        return $this->query(
+            "SELECT * ". "from `". $table . "`" ." where 1 order by " . $orderField . " " . $direction . " LIMIT " . $count
+        );
     }
 
     public function delete($table, $where) {

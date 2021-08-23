@@ -11,9 +11,16 @@ if ($user->isLoggedIn()) {
 $string = file_get_contents("car_collection.json");
 $json_data = json_decode($string, true);
 
+//Get data from Database to be displayed
+
+$db = new DB();
+$db->getAllFromTable('cars', 'c_make, c_model', 'ASC', 50);
+
+$carArray = $db->results();
+
+$oldCarMake = "";
+
 ?>
-
-
 
 <html id="system-background">
     <meta charset="utf-8"> 
@@ -26,47 +33,40 @@ $json_data = json_decode($string, true);
         <div class="container-fluid bg-dark">
             <div class="row justify-content-md-center bg-blue text-white" style="padding:20px;">
                 <div style="text-align: center;" class="col-sm">Hello <a href=""><?php echo escape($user->data()->u_username); ?></a>!</div>
-                <div style="text-align: center;" class="col-sm"><a href="index.php">Cars</a></div>
+                <div style="text-align: center;" class="col-sm"><a href="view.php">Cars</a></div>
                 <div style="text-align: center;" class="col-sm"><a href="game.php">Play Game</a></div>
                 <div style="text-align: center;" class="col-sm"><a href="create.php">Add Car</a></div>
             </div>
         </div>
         <div class="container" style="background-color:gray;">
-        <?php foreach ($json_data as $carMake => $carModelList) { ?>
             <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
-                <div class="container-fluid">
-                   <?php echo $carMake ?>
-                </div>
-            </div>
-                <?php foreach ($carModelList as $carModel => $versionList) { ?>
-                    <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
-                        <div class="container-fluid">
-                            <?php echo $carModel ?>
-                        </div>
-                        <?php foreach ($versionList as $carVersion => $data) {?>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 item-box border">
-                            <a id="clickable_div" href="details?make=<?php echo strtolower($carMake) . "&model=". strtolower($carModel) . "&version=". strtolower($carVersion) ?>"></a>
-                                <div class=" h-10 justify-content-center" style="display:flex;flex-direction: column;">
-                                    <input class="boring_button" type="submit" value="<?php echo $carVersion ?>">
-                                </div>
-                                <img src="<?php 
-                                    echo "car_collection_images/" .  
-                                    strtolower($carMake) . 
-                                    "-" . 
-                                    strtolower($carModel) . 
-                                    "-" . 
-                                    strtolower($carVersion) . 
-                                    ".jpeg"; ?>" style="width:auto;height:100px;" />
-                            </div>
-                        <?php } ?>
+                <?php foreach ($carArray as $carItem) { ?>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 item-box border">
+                    <a id="clickable_div" href="details?make=<?php echo strtolower($carItem->c_make) . "&model=". strtolower($carItem->c_model) . "&version=". strtolower($carItem->c_version) ?>"></a>
+                    <div class=" h-10 justify-content-center" style="display:flex;flex-direction: column;">
+                        <input class="boring_button" type="submit" value="">
                     </div>
+                    <img src="<?php 
+                        echo "uploads/" .  
+                        strtolower($carItem->c_make) . 
+                        "-" . 
+                        strtolower($carItem->c_model) . 
+                        "-" . 
+                        strtolower($carItem->c_version) . 
+                        ".jpeg"; ?>" style="width:auto;height:100px;" />
+                </div>
                 <?php } ?>
-        <?php } ?>
+            </div>
         </div>
-
-        <!-- <img src="<?php echo $image; ?>" style="width:304px;height:228px;" /> -->
     </body>
 </html>
+
+<?php if ($oldCarMake = $carItem->c_make) {
+
+}
+ 
+$oldCarMake = $carItem->c_make;
+?>
 
 <style>
     #system-background {
