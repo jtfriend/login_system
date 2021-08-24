@@ -126,3 +126,9 @@ a:hover {
   border-width: 3px;
 }
 
+@media only screen and (max-width: 768px){
+  .field-form {
+    text-align: center !important;
+  }
+}
+

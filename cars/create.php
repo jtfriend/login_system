@@ -2,6 +2,13 @@
 <?php
 require_once '../core/init.php';
 
+$user = new User();
+
+if ($user->isLoggedIn()) {
+} else {
+    Redirect::to( '../login.php');
+}
+
 if(Input::exists()) {
 
 
@@ -114,68 +121,90 @@ function saveUploadedFile($fileNameToBe) {
 }
 ?>
 <html>
-<link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.css">
-<link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
-<div style="background-color:#595959;">
-    <div class="container-fluid bg-dark">
-            <div class="row justify-content-md-center bg-blue text-white" style="padding:20px;">
-                <div class="mx-auto">Add Car</div>
-            </div>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="../CSS/my_css.css">
+  <div style="background-color:#595959;">
+    <div style="background-color:#ffffff; height:100%;">
+      <div class="container-fluid bg-dark">
+          <div class="row justify-content-md-center bg-blue text-white" style="padding:20px;">
+              <div style="text-align: center;" class="col-sm">Hello <a href="#"><?php echo escape($user->data()->u_username); ?></a>!</div>
+              <div style="text-align: center;" class="col-sm"></div>
+          </div>
+      </div>
+      <div class="container" style="background-color:gray;">
+        <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
+          <div class="container-fluid">
+            <h3><a href="view.php">< Back</a> </h3>
+          </div>
+          <div class="container-fluid">
+            <h1> Add Car </h1>
+          </div>
         </div>
-    <div class="container-fluid" style="background-color:#e67300;">
         <div class="row justify-content-md-center">
-            <div class="col-md-6 no-gutters text-center">
-                <form style="margin-top:15px;" enctype="multipart/form-data" action="" method="post">
-                    <div class="form-group field row" >
-                        <div class="field col-md-6" style="text-align:right" >
-                            <label for="make">Make</label>
-                        </div>
-                        <div class="field col-md-6" style="text-align:left" >
-                            <input type="text" name="make" id="make" autocomplete="off">
-                        </div>
-                    </div>
-
-                    <div class="form-group field row" >
-                        <div class="field col-md-6" style="text-align:right" >
-                            <label for="model">Model</label>
-                        </div>
-                        <div class="field col-md-6" style="text-align:left" >
-                            <input type="text" name="model" id="model" autocomplete="off">
-                        </div>
-                    </div>
-
-                    <div class="form-group field row" >
-                        <div class="field col-md-6" style="text-align:right" >
-                            <label for="version">Version</label>
-                        </div>
-                        <div class="field col-md-6" style="text-align:left" >
-                            <input type="text" name="version" id="version" autocomplete="off">
-                        </div>
-                    </div>
-
-                    <div class="form-group field row" >
-                        <div class="field col-md-6" style="text-align:right" >
-                            <label for="make">Production</label>
-                        </div>
-                        <div class="field col-md-6" style="text-align:left" >
-                            <input type="text" name="production" id="production" autocomplete="off">
-                        </div>
-                    </div>
-                    <div class="form-group field row" >
-                      <div class="field col-md-12" style="text-align:center" >
-                        <input type="file" name="fileToUpload" id="fileToUpload">
+          <div class="col-md-6 no-gutters text-center">
+              <form style="margin-top:15px;" enctype="multipart/form-data" action="" method="post">
+                  <div class="form-group field row" >
+                      <div class="field col-md-6 field-form" style="text-align:right" >
+                          <label for="make">Make</label>
                       </div>
-                    </div>
+                      <div class="field col-md-6 field-form" style="text-align:left" >
+                          <input type="text" name="make" id="make" autocomplete="off">
+                      </div>
+                  </div>
 
-                    
-                    <div class="form-group field" >
-                        <input style="background-color:#4542ff;" class="btn" type="submit" value="Add">
+                  <div class="form-group field row" >
+                      <div class="field col-md-6 field-form" style="text-align:right" >
+                          <label for="model">Model</label>
+                      </div>
+                      <div class="field col-md-6 field-form" style="text-align:left" >
+                          <input type="text" name="model" id="model" autocomplete="off">
+                      </div>
+                  </div>
+
+                  <div class="form-group field row" >
+                      <div class="field col-md-6 field-form" style="text-align:right" >
+                          <label for="version">Version</label>
+                      </div>
+                      <div class="field col-md-6 field-form" style="text-align:left" >
+                          <input type="text" name="version" id="version" autocomplete="off">
+                      </div>
+                  </div>
+
+                  <div class="form-group field row" >
+                      <div class="field col-md-6 field-form" style="text-align:right" >
+                          <label for="make">Production</label>
+                      </div>
+                      <div class="field col-md-6 field-form" style="text-align:left" >
+                          <input type="text" name="production" id="production" autocomplete="off">
+                      </div>
+                  </div>
+                  <div class="form-group field row" >
+                    <div class="field col-md-12" style="text-align:center" >
+                      <input type="file" name="fileToUpload" id="fileToUpload">
                     </div>
-                </form>
-            </div>
+                  </div>
+
+                  
+                  <div class="form-group field" >
+                      <input style="background-color:#4542ff;" class="btn" type="submit" value="Add">
+                  </div>
+              </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-
+  </div>
 </html>
+
+<style>
+  @media only screen and (max-width: 768px){
+    .field-form {
+      text-align: center !important;
+    }
+  }
+</style>

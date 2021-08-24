@@ -28,13 +28,7 @@ $carArray = $db->results();
 
 $car = $carArray[0];
 
-
-
-
-
 ?>
-
-
 
 <html id="system-background">
     <meta charset="utf-8"> 

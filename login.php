@@ -3,7 +3,7 @@ require_once 'core/init.php';
 
 $user = new User();
 
-$q = $_REQUEST["q"];
+$q = isset($_REQUEST["q"]) ? $_REQUEST["q"]: false;
 
 if ($user->isLoggedIn()) {
     if($q == "1") {

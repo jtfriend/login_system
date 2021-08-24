@@ -65,8 +65,11 @@ if(Input::exists()) {
 }
 ?>
 <html>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
 <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
 <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap-grid.css">
+<link rel="stylesheet" href="CSS/my_css.css">
 <div style="background-color:#595959;">
     <div class="container-fluid bg-dark">
             <div class="row justify-content-md-center bg-blue text-white" style="padding:20px;">
@@ -78,46 +81,46 @@ if(Input::exists()) {
             <div class="col-md-6 no-gutters text-center">
                 <form style="margin-top:15px;" action="" method="post">
                     <div class="form-group field row" >
-                        <div class="field col-md-6" style="text-align:right" >
+                        <div class="field col-md-6 field-form" style="text-align:right" >
                             <label for="username">Username</label>
                         </div>
-                        <div class="field col-md-6" style="text-align:left" >
+                        <div class="field col-md-6 field-form" style="text-align:left" >
                             <input type="text" name="username" id="username" value="<?php echo escape(Input::get('username'));?>" autocomplete="off">
                         </div>
                     </div>
 
                     <div class="form-group field row" >
-                        <div class="field col-md-6" style="text-align:right" >
+                        <div class="field col-md-6 field-form" style="text-align:right" >
                             <label for="password">Choose a password</label>
                         </div>
-                        <div class="field col-md-6" style="text-align:left" >
+                        <div class="field col-md-6 field-form" style="text-align:left" >
                             <input type="password" name="password" id="password">
                         </div>
                     </div>
 
                     <div class="form-group field row" >
-                        <div class="field col-md-6" style="text-align:right" >
+                        <div class="field col-md-6 field-form" style="text-align:right" >
                             <label for="password_again">Re-enter your password</label>
                         </div>
-                        <div class="field col-md-6" style="text-align:left" >
+                        <div class="field col-md-6 field-form" style="text-align:left" >
                             <input type="password" name="password_again" id="password_again">
                         </div>
                     </div>
 
                     <div class="form-group field row" >
-                        <div class="field col-md-6" style="text-align:right" >
+                        <div class="field col-md-6 field-form" style="text-align:right" >
                             <label for="name">Choose a name</label>
                         </div>
-                        <div class="field col-md-6" style="text-align:left" >
+                        <div class="field col-md-6 field-form" style="text-align:left" >
                             <input type="text" name="name" id="name" value="<?php echo escape(Input::get('name'));?>">
                         </div>
                     </div>
 
                     <div class="form-group field row" >
-                        <div class="field col-md-6" style="text-align:right" >
+                        <div class="field col-md-6 field-form" style="text-align:right" >
                             <label for="name">Pass phrase</label>
                         </div>
-                        <div class="field col-md-6" style="text-align:left" >
+                        <div class="field col-md-6 field-form" style="text-align:left" >
                             <input type="text" name="phrase" id="phrase" value="<?php echo escape(Input::get('phrase'));?>">
                         </div>
                     </div>
@@ -134,3 +137,11 @@ if(Input::exists()) {
 
 
 </html>
+
+<style>
+  @media only screen and (max-width: 768px){
+    .field-form {
+      text-align: center !important;
+    }
+  }
+</style>

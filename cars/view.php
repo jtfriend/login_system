@@ -33,6 +33,7 @@ $oldCarMake = "";
         <div class="container-fluid bg-dark">
             <div class="row justify-content-md-center bg-blue text-white" style="padding:20px;">
                 <div style="text-align: center;" class="col-sm">Hello <a href=""><?php echo escape($user->data()->u_username); ?></a>!</div>
+                <div style="text-align: center;" class="col-sm"><a href="../index.php">Home</a></div>
                 <div style="text-align: center;" class="col-sm"><a href="view.php">Cars</a></div>
                 <div style="text-align: center;" class="col-sm"><a href="game.php">Play Game</a></div>
                 <div style="text-align: center;" class="col-sm"><a href="create.php">Add Car</a></div>

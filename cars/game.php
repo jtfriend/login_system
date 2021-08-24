@@ -8,44 +8,21 @@ if ($user->isLoggedIn()) {
     Redirect::to( '../login.php');
 }
 
-$string = file_get_contents("car_collection.json");
-$json_data = json_decode($string, true);
 
-//get size of makes list
-foreach ($json_data as $carMake => $carModelList) {
-  //put list of models inside each make 
-  $carMakeList[] = $carModelList;
-  $carMakeListNames[] = $carMake;
+$db = new DB();
+$db->getAllFromTable('cars', 'c_id', 'ASC', 50);
+
+$carArray = $db->results();
+
+$randomNum = rand(0, count($carArray)-1);
+
+//get unique list of cars
+$uniqueCarList = [];
+foreach ($carArray as $car) { 
+  if (!in_array($car->c_make, $uniqueCarList)) {
+    $uniqueCarList[] = $car->c_make;
+  }
 }
-//choose a random number inside the max of the size
-$randMakeNum = rand(0, sizeof($carMakeList)-1);
-
-//add make to randCar variable
-$randCar = strtolower($carMakeListNames[$randMakeNum]);
-
-//put value into make list and look for models in that make
-foreach ($carMakeList[$randMakeNum] as $carModel => $versionList) {
-  $carModelList[] = $versionList;
-  $carModelListNames[] = $carModel;
-}
-
-//choose a random number inside the max of the size
-$randModelNum = rand(0, (sizeof($carMakeList[$randMakeNum])-1));
-
-//add model to randCar variable
-$randCar = $randCar . "-" . strtolower($carModelListNames[$randModelNum]);
-
-//put value into models list and look for versions in that make
-foreach ($carModelList[$randModelNum] as $carVersion => $data) {
-  $carVersionList[] = $data;
-  $carVersionListNames[] = $carVersion;
-}
-
-//choose a random number inside the max of the size
-$randVersionNum = rand(0, sizeof($carVersionListNames)-1);
-
-//add model to randCar variable
-$randCar = $randCar . "-" . strtolower($carVersionListNames[$randVersionNum]);
 
 ?>
 
@@ -59,7 +36,6 @@ $randCar = $randCar . "-" . strtolower($carVersionListNames[$randVersionNum]);
     <link rel="stylesheet" href="../CSS/my_css.css">
     <body>
       <div style="background-color:#ffffff; height:100%;">
-        
         <div class="container-fluid bg-dark">
             <div class="row justify-content-md-center bg-blue text-white" style="padding:20px;">
                 <div style="text-align: center;" class="col-sm">Hello <a href="#"><?php echo escape($user->data()->u_username); ?></a>!</div>
@@ -97,9 +73,8 @@ $randCar = $randCar . "-" . strtolower($carVersionListNames[$randVersionNum]);
               <a href="#" class="btn active" role="button" aria-pressed="true">Link</a>
               <a href="game.php" class="btn btn-info" role="button">Next</a>
             </div>
-          </div>
+        </div>
         <div id="mainCont" class="container" style="background-color:gray;">
-          
             <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
               <div class="container-fluid">
                 <h3><a href="view.php">< Back</a> </h3>
@@ -111,7 +86,14 @@ $randCar = $randCar . "-" . strtolower($carVersionListNames[$randVersionNum]);
             </div>
             <div class="row" style="font-size: 20; font-weight: 500; padding:10px;">
               <div class="col-sm-12 item-box-details ">
-                <img src="<?php echo "car_collection_images/" . $randCar . ".jpeg"; ?>" style="width:auto;height:300px;" />
+                <img src="<?php 
+                        echo "uploads/" .  
+                        strtolower($carArray[$randomNum]->c_make) . 
+                        "-" . 
+                        strtolower($carArray[$randomNum]->c_model) . 
+                        "-" . 
+                        strtolower($carArray[$randomNum]->c_version) . 
+                        ".jpeg"; ?>" style="width:auto;height:300px;" />
               </div>
             </div>
             <form id="selectForm" action='../ajax/check_answer.php' method="post">
@@ -120,7 +102,7 @@ $randCar = $randCar . "-" . strtolower($carVersionListNames[$randVersionNum]);
                   <label for="inputMake">Make</label>
                   <select id="inputMake" name="make" class="form-control">
                     <option selected>Select</option>
-                    <?php foreach ($json_data as $carMake => $carModelList) { ?>
+                    <?php foreach ($uniqueCarList as $carMake) { ?>
                       <option><?php echo $carMake ?></option>
                     <?php } ?>
                   </select>
@@ -135,7 +117,12 @@ $randCar = $randCar . "-" . strtolower($carVersionListNames[$randVersionNum]);
                   <select id="inputVersion" name="version" class="form-control">
                   </select>
                 </div>
-                <input hidden name="actual" value="<?php echo $randCar; ?>"></label>
+                <input hidden name="actual" value="<?php echo 
+                        strtolower($carArray[$randomNum]->c_make) . 
+                        "-" . 
+                        strtolower($carArray[$randomNum]->c_model) . 
+                        "-" . 
+                        strtolower($carArray[$randomNum]->c_version) ?>"></label>
                 <button id="goButton" class="btn btn-primary">Go</button>
               </div>
             </form>
@@ -304,6 +291,12 @@ $randCar = $randCar . "-" . strtolower($carVersionListNames[$randVersionNum]);
   position: absolute;
   z-index: -1;
 }
+
+@media only screen and (max-width: 768px){
+    .field-form {
+      text-align: center !important;
+    }
+  }
 
 </style>
 

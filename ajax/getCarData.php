@@ -10,24 +10,33 @@ require_once '../core/init.php';
 
 $user = new User();
 
-$string = file_get_contents("../cars/car_collection.json");
-$json_data = json_decode($string, true);
-
 
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
 //#e67300
 
+
+$db = new DB();
+$db->getAllFromTable('cars', 'c_id', 'ASC', 50);
+
+$carArray = $db->results();
+
+// var_dump($carArray);
+
+$randomNum = rand(0, count($carArray)-1);
+
 if ($user->isLoggedIn()) {
+  $modelList = [];
+  $versionList = [];
 
   if (isset($_REQUEST["make"])) {
     $make = $_REQUEST["make"];
 
-    foreach ($json_data as $carMake => $carModelList) {
-      if ($carMake == $make) {
-        foreach ($carModelList as $carModel => $versionList) {
-          $modelList[] = $carModel;
+    foreach ($carArray as $car) {
+      if ($car->c_make == $make) {
+        if (!in_array($car->c_model, $modelList)) {
+          $modelList[] = $car->c_model;
         }
       }
     }
@@ -36,21 +45,14 @@ if ($user->isLoggedIn()) {
 
   if (isset($_REQUEST["model"])) {
     $model = $_REQUEST["model"];
-    foreach ($json_data as $carMake => $carModelList) {
-      foreach ($carModelList as $carModel => $versionList) {
-        if ($carModel == $model) {
-          foreach ($versionList as $carVersion => $carVersionData) {
-            $versionListSend[] = $carVersion;
-          }
+
+    foreach ($carArray as $car) {
+      if ($car->c_model == $model) {
+        if (!in_array($car->c_version, $versionList)) {
+          $versionList[] = $car->c_version;
         }
       }
     }
-    echo json_encode($versionListSend);
+    echo json_encode($versionList);
   }
-  
-  // $user->delete($id);
-  
-  // echo "connection made :" . $id;
-  // return "Fiesta";
-  // Redirect::to("../cars/game.php");
 }
