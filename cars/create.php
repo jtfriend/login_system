@@ -48,7 +48,7 @@ if(Input::exists()) {
               'c_model'  => Input::get('model'),
               'c_version'      => Input::get('version'),
               'c_production_years'      => Input::get('production'),
-              'c_image_ref' => 0,
+              'c_legit' => 1,
               'c_deleted' => 0
           ]);
           echo("Added Car");
@@ -108,7 +108,7 @@ function saveUploadedFile($fileNameToBe) {
   } else {
 
     $temp = explode(".", $_FILES["fileToUpload"]["name"]);
-    $newImageName = $fileNameToBe . '.' . end($temp);
+    $newImageName = $fileNameToBe . '.' . "jpeg";
     
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "uploads/" . $newImageName)) {
       echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";

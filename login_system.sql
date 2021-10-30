@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.9
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 14, 2020 at 06:12 PM
--- Server version: 5.7.21
--- PHP Version: 5.6.35
+-- Generation Time: Oct 29, 2021 at 08:57 PM
+-- Server version: 5.7.31
+-- PHP Version: 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -21,6 +20,134 @@ SET time_zone = "+00:00";
 --
 -- Database: `login_system`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `answers`
+--
+
+DROP TABLE IF EXISTS `answers`;
+CREATE TABLE IF NOT EXISTS `answers` (
+  `a_id` int(20) NOT NULL AUTO_INCREMENT,
+  `a_value` int(20) NOT NULL,
+  `a_uid` int(20) NOT NULL,
+  `a_your_answer_cid` int(20) NOT NULL,
+  `a_correct_answer_cid` int(20) NOT NULL,
+  PRIMARY KEY (`a_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=65 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `answers`
+--
+
+INSERT INTO `answers` (`a_id`, `a_value`, `a_uid`, `a_your_answer_cid`, `a_correct_answer_cid`) VALUES
+(1, 1, 25, 0, 0),
+(2, 1, 25, 0, 0),
+(3, 1, 25, 0, 0),
+(4, 1, 25, 0, 0),
+(5, 0, 25, 0, 0),
+(6, 1, 25, 37, 37),
+(7, 1, 25, 41, 41),
+(8, 1, 25, 27, 27),
+(9, 1, 25, 27, 27),
+(10, 1, 25, 30, 30),
+(11, 0, 25, 36, 37),
+(12, 1, 25, 37, 37),
+(13, 1, 25, 25, 25),
+(14, 1, 25, 34, 34),
+(15, 1, 25, 30, 30),
+(16, 1, 25, 31, 31),
+(17, 1, 25, 25, 25),
+(18, 1, 25, 37, 37),
+(19, 0, 25, 36, 37),
+(20, 0, 25, 25, 28),
+(21, 0, 25, 25, 34),
+(22, 0, 25, 25, 41),
+(23, 0, 25, 25, 28),
+(24, 0, 25, 25, 30),
+(25, 1, 25, 25, 41),
+(26, 0, 25, 25, 37),
+(27, 0, 25, 25, 37),
+(28, 0, 25, 40, 26),
+(29, 0, 25, 40, 40),
+(30, 0, 25, 40, 40),
+(31, 0, 25, 40, 40),
+(32, 1, 25, 30, 30),
+(33, 0, 25, 40, 40),
+(34, 1, 25, 41, 41),
+(35, 0, 25, 28, 29),
+(36, 1, 25, 29, 29),
+(37, 1, 25, 40, 40),
+(38, 0, 25, 40, 27),
+(39, 0, 25, 25, 27),
+(40, 1, 25, 27, 27),
+(41, 1, 25, 40, 40),
+(42, 1, 25, 31, 31),
+(43, 0, 25, 25, 29),
+(44, 0, 25, 30, 29),
+(45, 1, 25, 29, 29),
+(46, 0, 25, 40, 30),
+(47, 0, 25, 25, 29),
+(48, 0, 25, 25, 35),
+(49, 0, 25, 25, 32),
+(50, 0, 25, 26, 32),
+(51, 0, 25, 31, 32),
+(52, 1, 25, 32, 32),
+(53, 1, 25, 41, 41),
+(54, 1, 25, 40, 40),
+(55, 1, 25, 40, 40),
+(56, 1, 25, 40, 40),
+(57, 1, 25, 40, 40),
+(58, 0, 25, 31, 32),
+(59, 1, 25, 29, 29),
+(60, 1, 25, 29, 29),
+(61, 1, 25, 40, 40),
+(62, 1, 25, 36, 36),
+(63, 0, 25, 37, 36),
+(64, 0, 25, 35, 36);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cars`
+--
+
+DROP TABLE IF EXISTS `cars`;
+CREATE TABLE IF NOT EXISTS `cars` (
+  `c_id` int(12) NOT NULL AUTO_INCREMENT,
+  `c_make` varchar(40) NOT NULL,
+  `c_model` varchar(40) NOT NULL,
+  `c_version` varchar(40) NOT NULL,
+  `c_production_years` varchar(40) NOT NULL,
+  `c_legit` int(20) NOT NULL,
+  `c_timestamp` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+  `c_deleted` int(10) NOT NULL,
+  PRIMARY KEY (`c_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cars`
+--
+
+INSERT INTO `cars` (`c_id`, `c_make`, `c_model`, `c_version`, `c_production_years`, `c_legit`, `c_timestamp`, `c_deleted`) VALUES
+(33, 'ford', 'fiesta', 'mk3', '1989-1997', 1, '2021-08-17 15:04:18.856647', 0),
+(32, 'ford', 'fiesta', 'mk2', '1983-1989', 1, '2021-08-17 15:03:55.291407', 0),
+(31, 'ford', 'fiesta', 'mk1', '1976-1983', 1, '2021-08-17 15:03:17.064667', 0),
+(30, 'ford', 'escort', 'mk6', '1995-2002', 1, '2021-08-17 15:02:46.893090', 0),
+(29, 'ford', 'escort', 'mk5', '1990-1997', 1, '2021-08-17 15:02:26.480660', 0),
+(28, 'ford', 'escort', 'mk4', '1986-1992', 1, '2021-08-17 15:02:03.481169', 0),
+(27, 'ford', 'escort', 'mk3', '1980-1986', 1, '2021-08-17 15:01:31.554967', 0),
+(25, 'ford', 'escort', 'mk1', '1978-1983', 1, '2021-08-17 14:07:23.515251', 0),
+(26, 'ford', 'escort', 'mk2', '1974-1989', 1, '2021-08-17 15:01:03.045456', 0),
+(34, 'ford', 'fiesta', 'mk4', '1996-2006', 1, '2021-08-17 15:04:45.605845', 0),
+(35, 'ford', 'fiesta', 'mk5', '2002-2008', 1, '2021-08-17 15:05:07.883191', 0),
+(36, 'ford', 'fiesta', 'mk6', '2008-2019', 1, '2021-08-17 15:05:34.424077', 0),
+(37, 'ford', 'fiesta', 'mk7', '2017-present', 1, '2021-08-17 15:05:54.999532', 0),
+(40, 'Ultimate Frisbee', 'Tactics', 'Dump And Swing', '1970-present', 1, '2021-08-22 20:12:38.966906', 0),
+(41, 'Tesla', '3', 'mk1', '2017-present', 1, '2021-08-24 12:48:01.335667', 0),
+(42, 'ford', 'mondeo', 'mk2', '1997-2000', 1, '2021-08-31 16:09:08.060747', 0),
+(43, 'tesla', 'roadster', 'mk1', '2022-', 1, '2021-08-31 16:14:14.691356', 0);
 
 -- --------------------------------------------------------
 
@@ -7602,7 +7729,7 @@ CREATE TABLE IF NOT EXISTS `scores` (
   `s_value` int(11) NOT NULL,
   `s_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   KEY `s_id` (`s_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `scores`
@@ -7620,7 +7747,10 @@ INSERT INTO `scores` (`s_id`, `s_uid`, `s_value`, `s_timestamp`) VALUES
 (10, 34, 16, '2020-04-14 13:31:04'),
 (11, 25, 1, '2020-04-14 14:38:32'),
 (12, 30, 16, '2020-04-14 15:10:30'),
-(13, 30, 13, '2020-04-14 15:15:38');
+(13, 30, 13, '2020-04-14 15:15:38'),
+(14, 25, 8, '2021-07-23 13:51:46'),
+(15, 25, 10, '2021-09-01 11:16:39'),
+(16, 25, 2, '2021-09-01 11:17:26');
 
 -- --------------------------------------------------------
 
@@ -7638,7 +7768,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `u_joined` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `u_group` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`u_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=43 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
@@ -7646,19 +7776,15 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`u_id`, `u_username`, `u_password`, `u_salt`, `u_name`, `u_joined`, `u_group`) VALUES
 (2, 'jp1bloggs', 'password', 'salt', 'Joe Bloggs', '2018-05-15 00:00:00', 1),
-(32, 'person2', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Person2', '2020-04-13 10:52:23', 1),
 (31, 'person1', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Person1', '2020-04-13 10:50:51', 1),
 (29, 'test1', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Shhhhh', '2020-04-07 14:47:07', 1),
 (28, 'jtf5993', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'JJJJ', '2020-04-04 15:15:40', 1),
-(27, 'one2', '41d9b3edfbb18b3ae5fde17aa84d67ecbf5b57a5fb6009edae69288d549f7822', 'iwishthiswasabettersaltiwiththis', 'One2', '2019-12-03 18:04:52', 1),
 (30, 'jtf5', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'JTF5', '2020-04-12 09:06:55', 1),
 (25, 'jtf3', '06056790e0cc1e61ac9ea2f922a2f212583169c511f729abd00dcdb32a8b2668', '“×/Ï»töœI×s-šçòbÝï×ríËª8™Ä‹nO', 'JTF3', '2019-01-24 14:19:57', 1),
 (24, 'jtf2', 'fca6e5b0f83c82d08fff401640bd808a0aa3a2457dd020a182294f04cba55cd9', 'ØüÄÂ\'ÞÙ1\"CÅêò¾éVÃ–¦ô«©á±ÍS', 'JTF2', '2019-01-24 13:22:47', 1),
-(23, 'jumper', 'ff3595f00e8744f9e08d6d5a4dcc5fedb8603a7272c8d834d06c3b29613c726e', '”åd6YxÚ!’×£„ùŠÁ¢ÌGÕW®+å¡ƒ\'Mä£9ö', 'Jump', '2019-01-09 23:05:24', 1),
-(22, 'jtf', '87b5f633ce46d360a2b15f61fdbd63e9424e66275ff4b3200591b40472b3008a', 'Çö€\rÿf‚ÏW±ùWÖºHób:r5ù$ÒâO@q(—d', 'JTF', '2018-09-16 10:29:58', 1),
-(33, 'person3', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Person3', '2020-04-13 10:53:07', 1),
-(34, 'person4', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Person4', '2020-04-13 16:27:22', 1),
-(35, 'person5', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Person5', '2020-04-13 21:47:02', 1);
+(42, 'jtf', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'JTF', '2021-06-03 18:32:36', 5),
+(36, 'Beth', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Beth', '2021-03-30 12:39:33', 1),
+(41, 'Joe', '05a5b292c2befaf25e319c52a6fb67965c34d9e06cbe6e4002df8f0fbbf148c8', 'iwishthiswasabettersaltiwiththis', 'Joe', '2021-05-20 16:06:37', 1);
 
 -- --------------------------------------------------------
 
@@ -7672,14 +7798,16 @@ CREATE TABLE IF NOT EXISTS `users_session` (
   `us_uid` int(11) NOT NULL,
   `us_hash` varchar(64) NOT NULL,
   KEY `us_id` (`us_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users_session`
 --
 
 INSERT INTO `users_session` (`us_id`, `us_uid`, `us_hash`) VALUES
-(12, 30, '9c17825589970840e6428ee72c97b27a43f66c8a5e46010d4e4e520e8994851f');
+(12, 30, '9c17825589970840e6428ee72c97b27a43f66c8a5e46010d4e4e520e8994851f'),
+(38, 25, '3eca202866ab32d27fe97835fca6df6be42b4e234b62d5bd8019d68500c8745f'),
+(20, 22, 'f997011ff010a318b9d88f5de708464878e99153ce4b880326433b65cb850c71');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

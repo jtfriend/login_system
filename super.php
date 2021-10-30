@@ -17,7 +17,7 @@ error_reporting(E_ALL);
 
 if ($user->isLoggedIn() && $user->isSuper($user->data()->u_username)) {
   $db = new DB();
-  $db->getAllFromTable('users', 'u_id');
+  $db->getAllFromTable('users', 'u_id','ASC', '50');
   $table_array = $db->results();
 
 ?>

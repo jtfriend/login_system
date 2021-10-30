@@ -43,35 +43,45 @@ foreach ($carArray as $car) {
             </div>
         </div>
         <div id="resultWindow" class="center" style="background-color:#8585ad;">
-            <div id="resultValue"></div>
-            <h5>Previous Attempts</h5>
-            <table class="center table table-sm table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Answer</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Correct</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Incorrect</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Incorrect</td>
-                </tr>
-              </tbody>
-            </table>
+            <div id="resultValue" style="text-align:center"></div>
+            <div class="row" style="margin-left:15px; margin-right:15px">
+              <div class="col">
+                <h5>Your Answer</h5>
+              </div>
+              <div class="col">
+                <h5>Correct Answer</h5>
+              </div>
+            </div>
+            <div class="row" style="margin-left:15px; margin-right:15px">
+              <div class="col">
+                <div class="col-sm-12 item-box-details-sm ">
+                  <img src="<?php 
+                          echo "uploads/" .  
+                          strtolower($carArray[$randomNum]->c_make) . 
+                          "-" . 
+                          strtolower($carArray[$randomNum]->c_model) . 
+                          "-" . 
+                          strtolower($carArray[$randomNum]->c_version) . 
+                          ".jpeg"; ?>" style="width:auto;height:50px;" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="col-sm-12 item-box-details-sm ">
+                  <img src="<?php 
+                          echo "uploads/" .  
+                          strtolower($carArray[$randomNum]->c_make) . 
+                          "-" . 
+                          strtolower($carArray[$randomNum]->c_model) . 
+                          "-" . 
+                          strtolower($carArray[$randomNum]->c_version) . 
+                          ".jpeg"; ?>" style="width:auto;height:50px;" />
+                </div>
+              </div>
+            </div>
+            
             <div>
-              <a href="#" id="tryAgainButton" class="btn active" role="button" aria-pressed="true">Try Again</a>
-              <button type="button" id="nextButton" class="btn btn-outline-primary">Primary</button>
-              <a href="#" class="btn active" role="button" aria-pressed="true">Link</a>
-              <a href="game.php" class="btn btn-info" role="button">Next</a>
+              <a href="#" id="tryAgainButton" class="btn my-btn-info" role="button">Try Again</a>
+              <a href="game.php" class="btn my-btn-info" role="button">Next</a>
             </div>
         </div>
         <div id="mainCont" class="container" style="background-color:gray;">
@@ -103,7 +113,7 @@ foreach ($carArray as $car) {
                   <select id="inputMake" name="make" class="form-control">
                     <option selected>Select</option>
                     <?php foreach ($uniqueCarList as $carMake) { ?>
-                      <option><?php echo $carMake ?></option>
+                      <option><?php echo ucfirst($carMake) ?></option>
                     <?php } ?>
                   </select>
                 </div>
@@ -118,11 +128,11 @@ foreach ($carArray as $car) {
                   </select>
                 </div>
                 <input hidden name="actual" value="<?php echo 
-                        strtolower($carArray[$randomNum]->c_make) . 
+                        urlencode(strtolower($carArray[$randomNum]->c_make)) . 
                         "-" . 
-                        strtolower($carArray[$randomNum]->c_model) . 
+                        urlencode(strtolower($carArray[$randomNum]->c_model)) . 
                         "-" . 
-                        strtolower($carArray[$randomNum]->c_version) ?>"></label>
+                        urlencode(strtolower($carArray[$randomNum]->c_version)) ?>"></label>
                 <button id="goButton" class="btn btn-primary">Go</button>
               </div>
             </form>
@@ -132,22 +142,6 @@ foreach ($carArray as $car) {
 </html>
 
 <script>
-
-  // $('#selectForm').submit(function (e) {
-  //   e.preventDefault();
-
-  //   var form = $(this);
-  //   var url = form.attr('action');
-
-  //   $.ajax({
-  //       type: 'POST',
-  //       url: url,
-  //       data: form.serialize(),
-  //       success: function (data) {
-  //         $('#txtHint').text(data);
-  //       }
-  //   });
-  // }​);
 
   $('#tryAgainButton').click(function() {
     $('#resultWindow').css({
@@ -174,6 +168,7 @@ foreach ($carArray as $car) {
         url: url,
         data: form.serialize(),
         success: function (data) {
+          //ff3333
           if(data == '1') {
             $('#resultValue').html('<h2>Correct</h2>');
             $('#tryAgainButton').hide();
@@ -222,7 +217,7 @@ foreach ($carArray as $car) {
             $('#inputModel').empty();
             var models = jQuery.parseJSON(data);
             for (var i = 0; i < models.length; i++) {
-                $model.append('<option id=' + models[i] + ' value=' + models[i] + '>' + models[i] + '</option>');
+                $model.append('<option id=' + models[i] + ' value=' + encodeURIComponent(models[i]) + '>' + models[i] + '</option>');
             }
 
             //manually trigger a change event for the contry so that the change handler will get triggered
@@ -246,7 +241,7 @@ foreach ($carArray as $car) {
             $('#inputVersion').empty();
             var versions = jQuery.parseJSON(data);
             for (var i = 0; i < versions.length; i++) {
-                $version.append('<option id=' + versions[i] + ' value=' + versions[i] + '>' + versions[i] + '</option>');
+                $version.append('<option id=' + versions[i] + ' value=' + encodeURIComponent(versions[i]) + '>' + versions[i] + '</option>');
             }
             // Object.keys(versions).forEach(function(key) {
             //   $version.append('<option id=' + key + ' value=' + key + '>' + key + '</option>');

@@ -34,9 +34,9 @@ if ($user->isLoggedIn()) {
     $make = $_REQUEST["make"];
 
     foreach ($carArray as $car) {
-      if ($car->c_make == $make) {
-        if (!in_array($car->c_model, $modelList)) {
-          $modelList[] = $car->c_model;
+      if (ucfirst($car->c_make) == $make) {
+        if (!in_array(ucfirst($car->c_model), $modelList)) {
+          $modelList[] = ucfirst($car->c_model);
         }
       }
     }
@@ -47,9 +47,9 @@ if ($user->isLoggedIn()) {
     $model = $_REQUEST["model"];
 
     foreach ($carArray as $car) {
-      if ($car->c_model == $model) {
-        if (!in_array($car->c_version, $versionList)) {
-          $versionList[] = $car->c_version;
+      if (ucfirst($car->c_model) == $model) {
+        if (!in_array(ucfirst($car->c_version), $versionList)) {
+          $versionList[] =  ucfirst($car->c_version);
         }
       }
     }
