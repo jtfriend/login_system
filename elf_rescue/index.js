@@ -138,7 +138,6 @@ class WordValue {
     }
 
 
-
     function checkCollision()  {
         if (collisionWithBlob == true) {
             if(lives.getValue() == 1) {
@@ -364,7 +363,8 @@ class WordValue {
             up: false,
             down: false,
             left: false,
-            right: false
+            right: false,
+            shield: false
         };
 
         window.onkeyup = function(e) {
@@ -374,6 +374,7 @@ class WordValue {
             else if (e.keyCode === 38) keyStatus.up = false;
             else if (e.keyCode === 39) keyStatus.right = false;
             else if (e.keyCode === 40) keyStatus.down = false;
+            else if (e.keyCode === 101) keyStatus.shield = false;
         };
     
         window.onkeydown = function(e) {
@@ -383,6 +384,7 @@ class WordValue {
             else if (e.keyCode === 38) keyStatus.up = true; 
             else if (e.keyCode === 39) keyStatus.right = true;
             else if (e.keyCode === 40) keyStatus.down = true;
+            else if (e.keyCode === 101) keyStatus.shield = true;
         };
     }
 
@@ -427,6 +429,7 @@ class WordValue {
 
         //create player
         man = new Shape('man', 30,30,-641,0, 'man');
+        shield = new Shape('shield', 30,30,-681,0, 'man3');
         death = 0;
         end = 0;
         numberOfBlobs = 10;
