@@ -63,6 +63,7 @@ class Bar {
 class WordValue {
     score = 0;
     lives = 0;
+    shield = 0;
     highscore = 0;
 
     constructor (word, value, posX) {
@@ -176,9 +177,6 @@ class WordValue {
             target.setCoords(randomX, randomY);
             collisionWithTarget = false;
         }
-
-
-        $('#man').css({'margin-left': manX+'px','margin-top': manY+'px'});
     }
 
     function getRandomInt(max) {
@@ -192,7 +190,7 @@ class WordValue {
         return isWithinX && isWithinY;
     }
 
-    function runMovementAndmoveBlobs() {
+    function runMovementAndMoveBlobs() {
         for (i = 0; i < numberOfBlobs; i++) {
             // randomVariance = 
             blobWidth = parseFloat($('#blob'+i).css('width'));
@@ -255,7 +253,21 @@ class WordValue {
             if (manY > manYLimit){manY = manYLimit;}
         }
 
+        if (keyStatus.shield) {
+            shield.setValue('shield', 1);
+            shieldX = manX-5;
+            shieldY = manY-5;
+        } else {
+            shieldY = -681;
+        }
+
         man.setCoords(manX, manY);
+
+        $('#man').css({'margin-left': manX+'px','margin-top': manY+'px'});
+
+        shield1.setCoords(shieldX,shieldY);
+
+        $('#shield1').css({'margin-left': shieldX+'px','margin-top': shieldY+'px'});
 
     }
 
@@ -285,6 +297,7 @@ class WordValue {
         new Bar ('score-bar','green');
         score = new WordValue ('score', 0, 0);
         lives = new WordValue ('lives', 5, 560);
+        shield = new WordValue('shield', 0,100);
 
         var title = document.createElement('div');
         var bar = document.getElementById("score-bar");
@@ -374,7 +387,10 @@ class WordValue {
             else if (e.keyCode === 38) keyStatus.up = false;
             else if (e.keyCode === 39) keyStatus.right = false;
             else if (e.keyCode === 40) keyStatus.down = false;
-            else if (e.keyCode === 101) keyStatus.shield = false;
+            else if (e.keyCode === 101) {
+                keyStatus.shield = !keyStatus.shield;
+            }
+
         };
     
         window.onkeydown = function(e) {
@@ -384,8 +400,8 @@ class WordValue {
             else if (e.keyCode === 38) keyStatus.up = true; 
             else if (e.keyCode === 39) keyStatus.right = true;
             else if (e.keyCode === 40) keyStatus.down = true;
-            else if (e.keyCode === 101) keyStatus.shield = true;
         };
+
     }
 
     //environment
@@ -429,7 +445,7 @@ class WordValue {
 
         //create player
         man = new Shape('man', 30,30,-641,0, 'man');
-        shield = new Shape('shield', 30,30,-681,0, 'man3');
+        shield1 = new Shape('shield1', 40,40,-681,0, 'sheild2');
         death = 0;
         end = 0;
         numberOfBlobs = 10;
@@ -460,6 +476,6 @@ class WordValue {
         movementKeyPresses();
         createBlobs();
         createTarget();
-        gameMovement = setInterval(runMovementAndmoveBlobs, intervalSpeed);
+        gameMovement = setInterval(runMovementAndMoveBlobs, intervalSpeed);
 
     }
