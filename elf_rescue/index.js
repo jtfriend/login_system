@@ -413,19 +413,22 @@ class WordValue {
 
     //Easy things to set first would be speed of blobs
 
-
+    ///function :ChangeBlodSpeed
+    ///Desc : Changes speed of blobs
+    /// returns: 
+    
     function changeBlobSpeed() {
         if (score.getValue() >= 5  && score.getValue() < 10) {
-            blobSpeed = 3;
+            blobSpeed = 2;
             
         }
 
         if (score.getValue() >= 10 && score.getValue() < 15) {
-            blobSpeed = 5;
+            blobSpeed = 4;
         }
 
         if (score.getValue() >= 15 && score.getValue() < 20) {
-            blobSpeed = 7;
+            blobSpeed = 6;
         }
     }
 
@@ -453,7 +456,7 @@ class WordValue {
         numberOfBlobs = 10;
         collisionWithBlob = false;
         intervalSpeed = 10;
-        blobSpeed = 2;
+        blobSpeed = 1;
         man.speed = 5;
         manWidth = parseFloat($('#man').css('width'));
         manHeight = parseFloat($('#man').css('height'));
