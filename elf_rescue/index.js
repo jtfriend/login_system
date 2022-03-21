@@ -140,7 +140,7 @@ class WordValue {
 
 
     function checkCollision()  {
-        if (collisionWithBlob == true) {
+        if (collisionWithBlob == true && !keyStatus.shield) {
             if(lives.getValue() == 1) {
                 clearInterval(gameMovement);
                 $.post(
