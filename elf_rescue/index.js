@@ -258,6 +258,8 @@ class WordValue {
             shieldX = manX-5;
             shieldY = manY-5;
         } else {
+            shield.setValue('shield', 0);
+            shieldX = 0;
             shieldY = -681;
         }
 
