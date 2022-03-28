@@ -159,6 +159,7 @@ class WordValue {
                 // window.location.href = '/login_system/elf_rescue/index.php';
                 collisionWithBlob = false;
             } else {
+                deathAnniStart();
                 manX = -640;
                 manY = 0;
                 lives.setValue('lives', lives.getValue()-1);
@@ -188,6 +189,38 @@ class WordValue {
         let isWithinY = (objB.posY + objB.height) > objA.posY && objB.posY < (objA.posY + objA.height);
         
         return isWithinX && isWithinY;
+    }
+
+    function createDeathAnni() {
+        for (i = 0; i < 4; i++) {
+            randomVariance = Math.floor((Math.random() * varianceNumber) + 1);
+            deathArray[i] = new Shape(
+                'death' + i,
+                30,
+                30,
+                -640,
+                -20,
+                'death' + (i + 1)
+            );
+            $('#death'+i).css({
+                'zIndex':-1
+            });
+        }
+
+    }
+
+    function setDiv(id, x, y) {
+        $(id).css({
+            'margin-top': y +'px',
+            'margin-left': x +'px'
+        });
+    }
+
+    function deathAnniStart() {
+        for (i = 0; i < 4; i++) {
+            setInterval(setDiv('#death'+i,manY,manX), 1000)
+        }
+
     }
 
     function runMovementAndMoveBlobs() {
@@ -342,7 +375,6 @@ class WordValue {
         ctx.fillRect(200, 50, 200, 200);
         ctx.fillStyle = "rgba(0, 0, 255, 0.2)";
         ctx.fillRect(300, 50, 200, 200);
-
         ctx.fillStyle = "rgba(0, 230, 64, 1)";
         ctx.fillRect(0, 0, 50, 480);
 
@@ -447,6 +479,7 @@ class WordValue {
         maxY=480;
 
         blobArray = [];
+        deathArray = [];
 
         //create player
         man = new Shape('man', 30,30,-641,0, 'man');
@@ -468,6 +501,7 @@ class WordValue {
         minXLimit = -641;
         manX = parseFloat($('#man').css('margin-left'));
         manY = parseFloat($('#man').css('margin-top'));
+        death = 0;
 
         safetyColumnWidth = 50;
         totalWidth = 640;
@@ -477,7 +511,7 @@ class WordValue {
         randomVariance = Math.floor((Math.random() * varianceNumber) + 1);
 
         // showBlobPlacementLines();
-
+        createDeathAnni();
         movementKeyPresses();
         createBlobs();
         createTarget();
