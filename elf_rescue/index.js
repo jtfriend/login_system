@@ -159,11 +159,12 @@ class WordValue {
                 // window.location.href = '/login_system/elf_rescue/index.php';
                 collisionWithBlob = false;
             } else {
-                deathAnniStart();
                 manX = -640;
                 manY = 0;
                 lives.setValue('lives', lives.getValue()-1);
                 collisionWithBlob = false;
+                stopBlobs = true;
+                deathAnniStart();
             }
 
         }
@@ -220,43 +221,75 @@ class WordValue {
         for (i = 0; i < 4; i++) {
             setInterval(setDiv('#death'+i,manY,manX), 1000)
         }
-
+        stopBlobs = false;
     }
 
-    function runMovementAndMoveBlobs() {
-        for (i = 0; i < numberOfBlobs; i++) {
-            // randomVariance = 
-            blobWidth = parseFloat($('#blob'+i).css('width'));
-            blobHeight = parseFloat($('#blob'+i).css('height'));
-            blobPosX = parseFloat($('#blob'+i).css('margin-left'));
-            blobPosY = parseFloat($('#blob'+i).css('margin-top'));
-            blobArray[i].setCoords(blobPosX, blobPosY);
-            blobPosY += blobSpeed;
-
-            $('#blob'+i).css({
-                'margin-top': blobPosY+'px',
-                'margin-left': '-' + blobPosX+'px'
-            });
+    function ChangeBlobSpeed() {
+        if (score.getValue() < 5) {
+            return blobSpeed = 1; 
+        } else if (score.getValue() >= 5  && score.getValue() < 10) {
+            return blobSpeed = 2; 
+        } else if (score.getValue() >= 10 && score.getValue() < 15) {
+            return blobSpeed = 4;
+        } else if (score.getValue() >= 15 && score.getValue() < 20) {
+            return blobSpeed = 6;
+        } else {
+            return blobSpeed = 9;
+        }  
+    } 
+    
 
             if (blobPosX > maxX) {
+        let blobSpeed = ChangeBlobSpeed();
+        if (stopBlobs == false) {
+            for (i = 0; i < numberOfBlobs; i++) {
+                // randomVariance = 
+                blobWidth = parseFloat($('#blob'+i).css('width'));
+                blobHeight = parseFloat($('#blob'+i).css('height'));
+                blobPosX = parseFloat($('#blob'+i).css('margin-left'));
+                blobPosY = parseFloat($('#blob'+i).css('margin-top'));
+                blobArray[i].setCoords(blobPosX, blobPosY);
+                blobPosY += blobSpeed;
+    
                 $('#blob'+i).css({
-                    'margin-left': Math.floor((Math.random() * varianceNumber) + 1)+'px'
+                    'margin-top': blobPosY+'px',
+                    'margin-left': '-' + blobPosX+'px'
                 });
+    
+                if (blobPosX > maxX) {
+                    $('#blob'+i).css({
+                        'margin-left': Math.floor((Math.random() * varianceNumber) + 1)+'px'
+                    });
+                }
+    
+                if (blobPosY > (maxY-blobHeight)) {
+                    $('#blob'+i).css({
+                        'margin-top': -Math.floor((Math.random() * varianceNumber) + 1)*10 +'px',
+                        'margin-left': Math.floor(-640 + (safetyColumnWidth+(blobColumn*i)+ (Math.random() *varianceNumber))) +'px'
+                    });
+                }
+    
+                collisionWithBlob = checkForCollisionBetween(blobArray[i], man);
+                collisionWithTarget = checkForCollisionBetween(target, man);
+                checkCollision();
             }
-
-            if (blobPosY > (maxY-blobHeight)) {
+        } else {
+            for (i = 0; i < numberOfBlobs; i++) {
+                // randomVariance = 
+                blobWidth = parseFloat($('#blob'+i).css('width'));
+                blobHeight = parseFloat($('#blob'+i).css('height'));
+                blobPosX = parseFloat($('#blob'+i).css('margin-left'));
+                blobPosY = parseFloat($('#blob'+i).css('margin-top'));
+                blobArray[i].setCoords(blobPosX, blobPosY);
+    
                 $('#blob'+i).css({
-                    'margin-top': -Math.floor((Math.random() * varianceNumber) + 1)*10 +'px',
-                    'margin-left': Math.floor(-640 + (safetyColumnWidth+(blobColumn*i)+ (Math.random() *varianceNumber))) +'px'
+                    'margin-top': blobPosY+'px',
+                    'margin-left': '-' + blobPosX+'px'
                 });
+    
             }
-
-            collisionWithBlob = checkForCollisionBetween(blobArray[i], man);
-            collisionWithTarget = checkForCollisionBetween(target, man);
-            checkCollision();
         }
-
-        changeBlobSpeed();
+        
 
         // LEFT
         if (keyStatus.left){
@@ -448,21 +481,6 @@ class WordValue {
     ///function :ChangeBlodSpeed
     ///Desc : Changes speed of blobs
     /// returns: 
-    
-    function changeBlobSpeed() {
-        if (score.getValue() >= 5  && score.getValue() < 10) {
-            blobSpeed = 2;
-            
-        }
-
-        if (score.getValue() >= 10 && score.getValue() < 15) {
-            blobSpeed = 4;
-        }
-
-        if (score.getValue() >= 15 && score.getValue() < 20) {
-            blobSpeed = 6;
-        }
-    }
 
     function main() {
 
@@ -486,10 +504,10 @@ class WordValue {
         shield1 = new Shape('shield1', 40,40,-681,0, 'sheild2');
         death = 0;
         end = 0;
+        stopBlobs = false;
         numberOfBlobs = 10;
         collisionWithBlob = false;
         intervalSpeed = 10;
-        blobSpeed = 1;
         man.speed = 5;
         manWidth = parseFloat($('#man').css('width'));
         manHeight = parseFloat($('#man').css('height'));
